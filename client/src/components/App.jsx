@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header.jsx";
 import Body from "./Body.jsx";
 import Footer from "./Footer.jsx";
 import styled from "styled-components";
 
-const Container = styled.div`
-  display: grid;
+export const Container = styled.div`
   height: 100vh;
-  grid-template-rows: 100px 1fr 100px;
+  width: 100%;
 `
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState("home");
+  console.log(currentPage)
   return (
     <Container>
-      <Header />
-      <Body />
+      <Header setCurrentPage={setCurrentPage} />
+      <Body currentPage={currentPage}/>
       <Footer />
     </Container>
   );
