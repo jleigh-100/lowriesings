@@ -4,12 +4,12 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-	justify-content: center;
+  justify-content: center;
 `
 const Header = () => {
 	return (
 		<Container >
-			<h1>Header</h1>
+			<h1>LowrieSings</h1>
 		</Container>
 	)
 }

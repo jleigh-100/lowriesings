@@ -9,7 +9,10 @@ const Container = styled.div`
 const Footer = () => {
 	return (
 		<Container >
-			<h1>Footer</h1>
+			<div>
+				<p>instagram: @lowriesings</p>
+				<p>facebook: @lowriesings</p>
+			</div>
 		</Container>
 	)
 }
