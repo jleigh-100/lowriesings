@@ -11,16 +11,22 @@ import Stack from '@mui/material/Stack';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Container = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-background-color: #4A306D;
-color: #D3BCCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  background-color: #4A306D;
+  color: #D3BCCC;
+  h1 {
+    font-size: 40px;
+  }
 `
 const MenuContainer = styled.div`
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 10px;
+  width: 100px;
+  height: 100px;
 `;
 
 
@@ -70,7 +76,7 @@ const BurgerMenu = ({ setCurrentPage }) => {
             aria-haspopup="true"
             onClick={handleToggle}
           >
-            <MenuIcon />
+            <MenuIcon sx={{ width: '50px', height: '50px', fill: 'black' }} />
           </Button>
           <Popper
             open={open}
@@ -96,10 +102,10 @@ const BurgerMenu = ({ setCurrentPage }) => {
                       aria-labelledby="composition-button"
                       onKeyDown={handleListKeyDown}
                     >
-                      <MenuItem onClick={() => setCurrentPage('home')}>Home</MenuItem>
-                      <MenuItem onClick={() => setCurrentPage('about')}>About Me</MenuItem>
-                      <MenuItem onClick={() => setCurrentPage('songlist')}>Song list</MenuItem>
-                      <MenuItem onClick={() => setCurrentPage('request')}>Request form</MenuItem>
+                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('home')}>Home</MenuItem>
+                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('about')}>About Me</MenuItem>
+                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('songlist')}>Song list</MenuItem>
+                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('request')}>Request form</MenuItem>
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>

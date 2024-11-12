@@ -11,7 +11,6 @@ export const Container = styled.div`
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
-  console.log(currentPage)
   return (
     <Container>
       <Header setCurrentPage={setCurrentPage} />

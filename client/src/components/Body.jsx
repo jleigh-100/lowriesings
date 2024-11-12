@@ -14,7 +14,7 @@ const Container = styled.div`
 const HomePage = () => {
   return (
     <Container>
-      <h2>A professional events/wedding singer based in Bath, available anywhere</h2>
+      <h2>A professional wedding singer based in Bath, available anywhere</h2>
       <img src="/images/singing.jpg" alt="Lowrie singing" />
       <p>Hello! I'm Lowrie</p>
       <Testimonials />
@@ -25,7 +25,7 @@ const HomePage = () => {
 const AboutPage = () => {
   return (
     <Container>
-      <p>Hi! I'm Lowrie. I'm a singer and musician.</p>
+      <p>Hi! I'm Lowrie. I'm a singer and have grade 8 clarinet</p>
     </Container>
   )
 }
@@ -35,12 +35,15 @@ const RequestForm = () => {
     <Container>
       <p>Request a song!</p>
       <form>
-        <label for="song">Song:</label>
+        <label for="song">Song: </label>
         <input type="text" id="song" name="song" required></input>
+        <br />
         <label for="artist">Artist:</label>
         <input type="text" id="artist" name="artist" required></input>
+        <br />
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required></input>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </Container>
@@ -52,10 +55,10 @@ const SongList = () => {
     <Container>
       <p>Although I can do any song, here are some I can do whenever:</p>
       <ul>
-        <li>song 1</li>
-        <li>song 2</li>
-        <li>song 3</li>
-        <li>song 4</li>
+        <li>Hello - Adele</li>
+        <li>Make you feel my love - Adele</li>
+        <li>Everything - Michael Bublé</li>
+        <li>All Star - Smash Mouth (Shrek theme)</li>
       </ul>
     </Container>
   )
