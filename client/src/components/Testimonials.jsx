@@ -13,17 +13,17 @@ export const Testimonials = () => {
 const testimonials = [
   {
     message: "Lowrie is amazing!",
-    by: "Jamie Leigh",
+    by: "Jamie",
     date: "October 2024",
   },
   {
     message: "I love Lowrie's voice! She's so professional and talented!",
-    by: "Dan Leigh",
+    by: "Dan",
     date: "April 2021",
   },
   {
     message: "Lowrie is the best! It makes me so happy to hear her sing!",
-    by: "Andy Simpson + Sam Leigh",
+    by: "Andy + Sam",
     date: "December 2019",
   }
 ]

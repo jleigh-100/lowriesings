@@ -105,7 +105,8 @@ const BurgerMenu = ({ setCurrentPage }) => {
                       <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('home')}>Home</MenuItem>
                       <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('about')}>About Me</MenuItem>
                       <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('songlist')}>Song list</MenuItem>
-                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('request')}>Request form</MenuItem>
+                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('faqs')}>FAQs</MenuItem>
+                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('videos')}>Videos</MenuItem>
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>
