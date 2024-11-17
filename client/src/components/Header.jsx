@@ -1,128 +1,90 @@
 import React from "react";
 import styled from "styled-components";
-import Button from '@mui/material/Button';
-import ClickAwayListener from '@mui/material/ClickAwayListener';
-import Grow from '@mui/material/Grow';
-import Paper from '@mui/material/Paper';
-import Popper from '@mui/material/Popper';
-import MenuItem from '@mui/material/MenuItem';
-import MenuList from '@mui/material/MenuList';
-import Stack from '@mui/material/Stack';
 import MenuIcon from '@mui/icons-material/Menu';
+import theme from '../theme/theme.json';
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 100px;
-  background-color: #4A306D;
+  background-color: ${theme.headerFooterColor};
   color: #D3BCCC;
   h1 {
-    font-size: 40px;
+    margin-top: 18px;
+    color: ${theme.titleColor};
   }
+  // position: sticky;
+  top: -2px;
 `
-const MenuContainer = styled.div`
+const IconContainer = styled.div`
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 10px;
   width: 100px;
   height: 100px;
 `;
 
+const MenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  color: ${theme.titleColor};
+  background-color: ${theme.headerFooterColor};
+  border-radius: 10px;
+  border: 1px solid #D3BCCC;
+  opacity: ${props => props.open ? 1 : 0};
+  transition: opacity 0.3s;
+`;
+
+const MenuItem = styled.div`
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #D3BCCC;
+  }
+  font-size: 30px;
+`;
 
 const BurgerMenu = ({ setCurrentPage }) => {
   const [open, setOpen] = React.useState(false);
-  const anchorRef = React.useRef(null);
-
+  console.log(open)
   const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen);
+    setOpen(() => !open);
   };
-
-  const handleClose = (event) => {
-    if (anchorRef.current && anchorRef.current.contains(event.target)) {
-      return;
-    }
-
-    setOpen(false);
-  };
-
-  function handleListKeyDown(event) {
-    if (event.key === 'Tab') {
-      event.preventDefault();
-      setOpen(false);
-    } else if (event.key === 'Escape') {
-      setOpen(false);
-    }
-  }
-
-  // return focus to the button when we transitioned from !open -> open
-  const prevOpen = React.useRef(open);
-  React.useEffect(() => {
-    if (prevOpen.current === true && open === false) {
-      anchorRef.current && anchorRef.current.focus();
-    }
-
-    prevOpen.current = open;
-  }, [open]);
 
   return (
-    <MenuContainer>
-      <Stack direction="row" spacing={2}>
-          <Button
-            ref={anchorRef}
-            id="composition-button"
-            aria-controls={open ? 'composition-menu' : undefined}
-            aria-expanded={open ? 'true' : undefined}
-            aria-haspopup="true"
-            onClick={handleToggle}
-          >
-            <MenuIcon sx={{ width: '50px', height: '50px', fill: 'black' }} />
-          </Button>
-          <Popper
-            open={open}
-            anchorEl={anchorRef.current}
-            role={undefined}
-            placement="bottom-end"
-            transition
-            disablePortal
-          >
-            {({ TransitionProps, placement }) => (
-              <Grow
-                {...TransitionProps}
-                style={{
-                  transformOrigin:
-                    placement === 'bottom-start' ? 'left top' : 'left bottom',
-                }}
-              >
-                <Paper>
-                  <ClickAwayListener onClickAway={handleClose}>
-                    <MenuList
-                      autoFocusItem={open}
-                      id="composition-menu"
-                      aria-labelledby="composition-button"
-                      onKeyDown={handleListKeyDown}
-                    >
-                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('home')}>Home</MenuItem>
-                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('about')}>About Me</MenuItem>
-                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('songlist')}>Song list</MenuItem>
-                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('faqs')}>FAQs</MenuItem>
-                      <MenuItem sx={{ fontSize: '30px' }} onClick={() => setCurrentPage('videos')}>Videos</MenuItem>
-                    </MenuList>
-                  </ClickAwayListener>
-                </Paper>
-              </Grow>
-            )}
-          </Popper>
-      </Stack>
+    <>
+    <IconContainer>
+      <MenuIcon style={{ width: '80px', height: '80px', fill: 'black' }} onClick={() => handleToggle()}/>
+    </IconContainer>
+    <MenuContainer open={open} >
+      <MenuItem onClick={() => setCurrentPage('lowrie sings')}>Home</MenuItem>
+      <MenuItem onClick={() => setCurrentPage('about me')}>About Me</MenuItem>
+      <MenuItem onClick={() => setCurrentPage('song list')}>Song list</MenuItem>
+      <MenuItem onClick={() => setCurrentPage('faqs')}>FAQs</MenuItem>
+      <MenuItem onClick={() => setCurrentPage('videos')}>Videos</MenuItem>
     </MenuContainer>
-
-  );
+    </>
+  )
 }
 
-const Header = ({setCurrentPage}) => {
+const StyledMicrophone = styled.img`
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  width: 65px;
+  height: 65px;
+`;
+
+const Header = ({ currentPage, setCurrentPage }) => {
 	return (
 		<Container>
-			<h1 onClick={() => setCurrentPage('home')}>Lowrie GB</h1>
+      <StyledMicrophone src="images/microphone.png" alt="microphone" />
+			<h1 onClick={() => setCurrentPage('lowrie sings')}>{currentPage}</h1>
 			<BurgerMenu setCurrentPage={setCurrentPage}/>
 		</Container>
 	)

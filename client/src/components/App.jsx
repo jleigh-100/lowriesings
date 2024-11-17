@@ -10,10 +10,11 @@ export const Container = styled.div`
 `
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage, setCurrentPage] = useState("lowrie sings");
+
   return (
     <Container>
-      <Header setCurrentPage={setCurrentPage} />
+      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Body currentPage={currentPage}/>
       <Footer />
     </Container>

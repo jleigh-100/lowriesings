@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'SuperWoobly';
+    src: url("fonts/SuperWoobly.ttf");
+}
+
 body {
     margin: 0;
-    background-color: #E8D7F1;
+    background-color: #fff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
+    h1 {
+        font-family: 'SuperWoobly';
+    }
 }
