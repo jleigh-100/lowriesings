@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const MessageArea = styled.div`
-  width: 60%;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -10,10 +10,16 @@ const MessageArea = styled.div`
 const Message = styled.div`
   flex: 1;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #D3BCCC;
   border-radius: 10px;
   padding: 20px;
 `;
+
+const QuoteMark = styled.div`
+  `
 
 export const Testimonials = () => {
 
@@ -38,11 +44,13 @@ const testimonials = [
 
   return (
     <>
-      <h3>Here's what people have said about my singing:</h3>
+      <h3>Recent testimonials:</h3>
       <MessageArea>
       {testimonials.map((testimonial, index) => (
         <Message key={index} style={{ visibility: false}} className="bubble left">
-          "{testimonial.message}"- {testimonial.by} - {testimonial.date}
+          <FormatQuoteIcon style={{ height: '50px', width: '50px' }}/>
+          <p>"{testimonial.message}"</p>
+          {testimonial.by}- {testimonial.date}
         </Message>
       ))}
       </MessageArea>

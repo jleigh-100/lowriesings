@@ -7,7 +7,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100px;
+  height: 125px;
   background-color: ${theme.headerFooterColor};
   color: #D3BCCC;
   h1 {
@@ -18,7 +18,7 @@ const Container = styled.div`
 `
 const IconContainer = styled.div`
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 10px;
   width: 100px;
   height: 100px;
@@ -46,12 +46,12 @@ const MenuItem = styled.div`
   &:hover {
     background-color: #D3BCCC;
   }
-  font-size: 30px;
+  font-size: 40px;
 `;
 
 const BurgerMenu = ({ setCurrentPage }) => {
   const [open, setOpen] = React.useState(false);
-  console.log(open)
+
   const handleToggle = () => {
     setOpen(() => !open);
   };
