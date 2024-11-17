@@ -2,10 +2,17 @@ import React from "react"
 import styled from "styled-components"
 
 const MessageArea = styled.div`
-  background: white;
+  width: 60%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+`;
+const Message = styled.div`
+  flex: 1;
+  height: 400px;
+  background-color: #D3BCCC;
   border-radius: 10px;
-  padding: 2px;
-  border: 1px solid #0E273C;
+  padding: 20px;
 `;
 
 export const Testimonials = () => {
@@ -30,14 +37,15 @@ const testimonials = [
 
 
   return (
-    <div>
+    <>
       <h3>Here's what people have said about my singing:</h3>
+      <MessageArea>
       {testimonials.map((testimonial, index) => (
-        <MessageArea key={index} style={{ visibility: false}}>
-          <i>"{testimonial.message}"</i>
-          <p>- {testimonial.by} - {testimonial.date}</p>
-        </MessageArea>
+        <Message key={index} style={{ visibility: false}} className="bubble left">
+          "{testimonial.message}"- {testimonial.by} - {testimonial.date}
+        </Message>
       ))}
-    </div>
+      </MessageArea>
+    </>
   )
 }

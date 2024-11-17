@@ -14,7 +14,6 @@ const Container = styled.div`
     margin-top: 18px;
     color: ${theme.titleColor};
   }
-  // position: sticky;
   top: -2px;
 `
 const IconContainer = styled.div`
@@ -32,6 +31,7 @@ const MenuContainer = styled.div`
   position: absolute;
   top: 100px;
   right: 0;
+  z-index: 100;
   color: ${theme.titleColor};
   background-color: ${theme.headerFooterColor};
   border-radius: 10px;
@@ -56,34 +56,30 @@ const BurgerMenu = ({ setCurrentPage }) => {
     setOpen(() => !open);
   };
 
+  const handleSelection = (page) => {
+    setCurrentPage(page);
+    setOpen(false);
+  }
+
   return (
     <>
     <IconContainer>
       <MenuIcon style={{ width: '80px', height: '80px', fill: 'black' }} onClick={() => handleToggle()}/>
     </IconContainer>
     <MenuContainer open={open} >
-      <MenuItem onClick={() => setCurrentPage('lowrie sings')}>Home</MenuItem>
-      <MenuItem onClick={() => setCurrentPage('about me')}>About Me</MenuItem>
-      <MenuItem onClick={() => setCurrentPage('song list')}>Song list</MenuItem>
-      <MenuItem onClick={() => setCurrentPage('faqs')}>FAQs</MenuItem>
-      <MenuItem onClick={() => setCurrentPage('videos')}>Videos</MenuItem>
+      <MenuItem onClick={() => handleSelection('lowrie sings')}>Home</MenuItem>
+      <MenuItem onClick={() => handleSelection('about me')}>About Me</MenuItem>
+      <MenuItem onClick={() => handleSelection('song list')}>Song list</MenuItem>
+      <MenuItem onClick={() => handleSelection('faqs')}>FAQs</MenuItem>
+      <MenuItem onClick={() => handleSelection('videos')}>Videos</MenuItem>
     </MenuContainer>
     </>
   )
 }
 
-const StyledMicrophone = styled.img`
-  position: absolute;
-  top: 18px;
-  left: 10px;
-  width: 65px;
-  height: 65px;
-`;
-
 const Header = ({ currentPage, setCurrentPage }) => {
 	return (
 		<Container>
-      <StyledMicrophone src="images/microphone.png" alt="microphone" />
 			<h1 onClick={() => setCurrentPage('lowrie sings')}>{currentPage}</h1>
 			<BurgerMenu setCurrentPage={setCurrentPage}/>
 		</Container>
