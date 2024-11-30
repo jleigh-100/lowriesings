@@ -31,7 +31,7 @@ const MenuContainer = styled.div`
   position: absolute;
   top: 100px;
   right: 0;
-  z-index: 100;
+  z-index: ${props => props.open ? '' : '-'}1;
   color: ${theme.titleColor};
   background-color: ${theme.headerFooterColor};
   border-radius: 10px;
@@ -67,11 +67,12 @@ const BurgerMenu = ({ setCurrentPage }) => {
       <MenuIcon style={{ width: '80px', height: '80px', fill: 'black' }} onClick={() => handleToggle()}/>
     </IconContainer>
     <MenuContainer open={open} >
-      <MenuItem onClick={() => handleSelection('lowrie sings')}>Home</MenuItem>
-      <MenuItem onClick={() => handleSelection('about me')}>About Me</MenuItem>
-      <MenuItem onClick={() => handleSelection('song list')}>Song list</MenuItem>
-      <MenuItem onClick={() => handleSelection('faqs')}>FAQs</MenuItem>
-      <MenuItem onClick={() => handleSelection('videos')}>Videos</MenuItem>
+      <MenuItem onClick={() => handleSelection('LowrieSings')}>Home</MenuItem>
+      <MenuItem onClick={() => handleSelection('About Me')}>About Me</MenuItem>
+      <MenuItem onClick={() => handleSelection('Song List')}>Song list</MenuItem>
+      <MenuItem onClick={() => handleSelection('FAQs')}>FAQs</MenuItem>
+      <MenuItem onClick={() => handleSelection('Videos')}>Videos</MenuItem>
+      <MenuItem onClick={() => handleSelection('Prices')}>Prices</MenuItem>
     </MenuContainer>
     </>
   )
@@ -80,7 +81,7 @@ const BurgerMenu = ({ setCurrentPage }) => {
 const Header = ({ currentPage, setCurrentPage }) => {
 	return (
 		<Container>
-			<h1 onClick={() => setCurrentPage('lowrie sings')}>{currentPage}</h1>
+			<h1 onClick={() => setCurrentPage('LowrieSings')}>{currentPage}</h1>
 			<BurgerMenu setCurrentPage={setCurrentPage}/>
 		</Container>
 	)

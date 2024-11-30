@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'SuperWoobly';
-    src: url("fonts/SuperWoobly.ttf");
+    font-family: 'Magnolia_Script';
+    src: url("fonts/Magnolia_Script.otf");
 }
 
 body {
     margin: 0;
     background-color: #fff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     h1 {
-        font-family: 'SuperWoobly';
+        font-family: 'Magnolia_Script';
     }
 }

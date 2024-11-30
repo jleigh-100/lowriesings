@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("lowrie sings");
+  const [currentPage, setCurrentPage] = useState("LowrieSings");
 
   return (
     <Container>

@@ -5,6 +5,7 @@ import { AboutPage } from "./pages/AboutMe.jsx";
 import { FAQs } from "./pages/FAQs.jsx";
 import { Videos } from "./pages/Videos.jsx";
 import { SongList } from "./pages/SongList.jsx";
+import { PriceList } from "./PriceList.jsx";
 
 export const Container = styled.div`
   margin: 8px;
@@ -14,13 +15,22 @@ export const Container = styled.div`
   align-items: center;
   gap: 5px;
   color: #0E273C;
+  > ul {
+    margin: 0;
+    > p {
+      margin: 0;
+      font-size: 100px;
+    }
+  }
+  
 `
 
 const Body = ({ currentPage }) => {
-  if (currentPage === "about me") return <AboutPage />
-  if (currentPage === "song list") return <SongList />
-  if (currentPage === "faqs") return <FAQs />
-  if (currentPage === "videos") return <Videos />
+  if (currentPage === "About Me") return <AboutPage />
+  if (currentPage === "Song List") return <SongList />
+  if (currentPage === "FAQs") return <FAQs />
+  if (currentPage === "Videos") return <Videos />
+  if (currentPage === "Prices") return <PriceList />
   else return <HomePage />
 }
 

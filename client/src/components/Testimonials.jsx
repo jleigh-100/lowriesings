@@ -18,9 +18,6 @@ const Message = styled.div`
   padding: 20px;
 `;
 
-const QuoteMark = styled.div`
-  `
-
 export const Testimonials = () => {
 
 const testimonials = [
@@ -44,7 +41,6 @@ const testimonials = [
 
   return (
     <>
-      <h3>Recent testimonials:</h3>
       <MessageArea>
       {testimonials.map((testimonial, index) => (
         <Message key={index} style={{ visibility: false}} className="bubble left">
