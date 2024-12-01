@@ -33,9 +33,9 @@ const MenuContainer = styled.div`
   right: 0;
   z-index: ${props => props.open ? '' : '-'}1;
   color: ${theme.titleColor};
-  background-color: ${theme.headerFooterColor};
+  background-color: ${theme.secondaryColor};
   border-radius: 10px;
-  border: 1px solid #D3BCCC;
+  border: 1px solid #ADB5BD;
   opacity: ${props => props.open ? 1 : 0};
   transition: opacity 0.3s;
 `;
@@ -44,7 +44,7 @@ const MenuItem = styled.div`
   padding: 10px;
   cursor: pointer;
   &:hover {
-    background-color: #D3BCCC;
+    background-color: #ADB5BD;
   }
   font-size: 40px;
 `;

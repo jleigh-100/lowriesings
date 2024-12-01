@@ -13,7 +13,8 @@ const Message = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #D3BCCC;
+  color: #E9ECEF;
+  background-color: #6C757D;
   border-radius: 10px;
   padding: 20px;
 `;
