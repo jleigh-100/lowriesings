@@ -19,6 +19,4 @@ server.use(bodyParser.json());
 
 server.set('views', path.join(__dirname, '../public/'));
 
-server.use('/*', (req, res) => res.render('index'));
-
 server.listen(config.PORT, () => console.log(`Listening on port ${config.PORT}`));
