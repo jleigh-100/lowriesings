@@ -5,7 +5,7 @@ export const SongList = () => {
   return (
     <Container>
       <h1>Song List</h1>
-      <img src="/images/shadowylowrie.jpg" alt="Lowrie singing" width='600px' />
+      <img src="/images/shadowylowrie.jpg" alt="Lowrie singing" width='100%' />
       <p>Please just ask if you would like a specific song and I would be more than happy to learn it</p>
       <ul>
         <p>A</p>

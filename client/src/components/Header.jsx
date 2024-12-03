@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import MenuIcon from '@mui/icons-material/Menu';
 import theme from '../theme/theme.json';
@@ -8,7 +8,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 125px;
+  height: 64px;
+  @media (min-width: 768px) {
+    height: 125px;
+  }
   background-color: ${theme.headerFooterColor};
   color: #D3BCCC;
   h1 {
@@ -19,10 +22,17 @@ const Container = styled.div`
 `
 const IconContainer = styled.div`
   position: absolute;
-  top: 25px;
+  top: 5px;
   right: 10px;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+
+  @media (min-width: 768px) {
+    width: 87px;
+    height: 87px;
+    top: 25px;
+    right: 25px;
+}
 `;
 
 const MenuContainer = styled.div`
@@ -30,13 +40,16 @@ const MenuContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   position: absolute;
-  top: 100px;
+  top: 64px;
+  @media (min-width: 768px) {
+    top: 125px;
+  }
   right: 0;
   z-index: ${props => props.open ? '' : '-'}1;
   color: ${theme.titleColor};
   background-color: ${theme.secondaryColor};
   border-radius: 10px;
-  border: 1px solid #ADB5BD;
+  border: 1px solid black;
   opacity: ${props => props.open ? 1 : 0};
   transition: opacity 0.3s;
 `;
@@ -51,7 +64,7 @@ const MenuItem = styled.div`
   font-size: 40px;
 `;
 
-const BurgerMenu = ({ setCurrentPage }) => {
+const BurgerMenu = ({ setCurrentPage, width }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleToggle = () => {
@@ -63,10 +76,16 @@ const BurgerMenu = ({ setCurrentPage }) => {
     setOpen(false);
   }
 
+  const iconStyling = {
+    width: width >= 768 ? '80px' : '60px',
+    height: width >= 768 ? '80px' : '60px',
+    fill: '#F6F5EE'
+  }
+
   return (
     <>
     <IconContainer>
-      <MenuIcon style={{ width: '80px', height: '80px', fill: '#F6F5EE' }} onClick={() => handleToggle()}/>
+      <MenuIcon style={iconStyling} onClick={() => handleToggle()}/>
     </IconContainer>
     <MenuContainer open={open} >
       <MenuItem onClick={() => handleSelection('LowrieSings')}>Home</MenuItem>
@@ -82,14 +101,14 @@ const BurgerMenu = ({ setCurrentPage }) => {
 
 const Header = ({ setCurrentPage }) => {
   const { width } = useWindowDimensions();
+  const imageStyles = {
+    width: width >= 768 ? '500px' : '250px',
+    height: width >= 768 ? '125px' : '62px'
+  }
 	return (
 		<Container>
-      {
-        width >= 768 ?
-        <img src="images/branding.jpg" alt="LowrieSings" style={{ width: '500px', height: '125px' }}/> :
-        <img src="images/icon.jpg" alt="LowrieSings" style={{ width: '120px', height: '120px' }}/>
-    }
-			<BurgerMenu setCurrentPage={setCurrentPage}/>
+      <img onClick={() => setCurrentPage('LowrieSings')} src="images/branding.jpg" alt="LowrieSings" style={imageStyles}/>
+			<BurgerMenu setCurrentPage={setCurrentPage} width={width} />
 		</Container>
 	)
 }
