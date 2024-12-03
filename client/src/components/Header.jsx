@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import MenuIcon from '@mui/icons-material/Menu';
 import theme from '../theme/theme.json';
-import useWindowDimensions from "../hooks.jsx";
+import { useWindowDimensions } from "../hooks.jsx";
 
 const Container = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const Container = styled.div`
 `
 const IconContainer = styled.div`
   position: absolute;
-  top: 5px;
+  top: 2px;
   right: 10px;
   width: 50px;
   height: 50px;
