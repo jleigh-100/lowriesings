@@ -18,7 +18,7 @@ const Message = styled.div`
         var(--_p) 100%/var(--t) var(--t) no-repeat,
       linear-gradient(#000 0 0) padding-box;
     border-box;
-    color: #fff;
+    color: #F6F5EE;
     margin-top: 10px;
   }
 
@@ -40,7 +40,7 @@ const Message = styled.div`
 const TextInputContainer = styled.div`
   margin: 30px;
   width: 90%;
-  background: #fff;
+  background: #F6F5EE;
   border: 1px solid #ccc;
   border-radius: 20px;
   display: flex;
@@ -53,8 +53,10 @@ const TextInputContainer = styled.div`
 const StyledInput = styled.textarea`
   width: 100%;
   font-size: 48px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'ArchitectsDaughter';
   border: none;
+  background: #F6F5EE;
+  resize: none;
 `;
 
 const StyledSendIcon = styled(SendIcon)`
@@ -81,7 +83,7 @@ export const FAQs = () => {
     setMessageText("");
     console.log(messageText);
     // send email
-    toast.success("Message sent!");
+    toast.success("Message sent! I try to response to everyone within 2 days", { theme: "colored" });
   }
 
   const handleMessageTextChange = (e) => {
@@ -115,7 +117,7 @@ export const FAQs = () => {
       <Answer>If you have any more questions, just let ask below!</Answer>
       <TextInputContainer>
         <StyledInput placeholder="Ask me anything... Don't forget to add contact details so I can reply!" value={messageText} onChange={handleMessageTextChange} onKeyUp={handleMessageTextChange}/>
-        <StyledSendIcon sx={{ height: 45, width: 45, fill: 'white' }} onClick={() => handleSendMessage()}/>
+        <StyledSendIcon sx={{ height: 45, width: 45, fill: '#F6F5EE' }} onClick={() => handleSendMessage()}/>
       </TextInputContainer>
       </Container>
   )

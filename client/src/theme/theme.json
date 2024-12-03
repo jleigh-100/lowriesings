@@ -1,8 +1,8 @@
 {
     "primaryColor": "#000",
-    "secondaryColor": "#fff",
-    "backgroundColor": "#fff",
+    "secondaryColor": "#F6F5EE",
+    "backgroundColor": "#F6F5EE",
     "titleColor": "#343A40",
     "headerFooterColor": "#000",
-    "textColor": "#FFFFFF"
+    "textColor": "#F6F5EE"
 }

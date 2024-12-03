@@ -1,15 +1,42 @@
 @font-face {
-    font-family: 'Magnolia_Script';
-    src: url("fonts/Magnolia_Script.otf");
+    font-family: 'ArchitectsDaughter';
+    src: url("fonts/ArchitectsDaughter.ttf");
 }
 
 body {
     margin: 0;
-    background-color: #fff;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F6F5EE;
+    font-family:'ArchitectsDaughter';
     font-size: 36px;
     h1 {
-        font-family: 'Magnolia_Script';
+        font-family: 'ArchitectsDaughter';
         margin: 10px 0;
     }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .Toastify__toast-container--top-right:has(div.Toastify__toast--success) {
+        width: 97vw;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+    .Toastify__toast-container--top-right:has(div.Toastify__toast--success) {
+        width: 50vw;
+    }
+}
+
+.Toastify__toast-body {
+    font-family: 'ArchitectsDaughter';
+    font-size: 48px;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+    background: #008000 !important;
+}
+
+.Toastify__toast-icon {
+    min-width: 42px;
 }

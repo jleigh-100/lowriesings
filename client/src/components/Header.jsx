@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import MenuIcon from '@mui/icons-material/Menu';
 import theme from '../theme/theme.json';
+import useWindowDimensions from "../hooks.jsx";
 
 const Container = styled.div`
   display: flex;
@@ -45,6 +46,7 @@ const MenuItem = styled.div`
   cursor: pointer;
   &:hover {
     background-color: #ADB5BD;
+    border-radius: 10px;
   }
   font-size: 40px;
 `;
@@ -64,7 +66,7 @@ const BurgerMenu = ({ setCurrentPage }) => {
   return (
     <>
     <IconContainer>
-      <MenuIcon style={{ width: '80px', height: '80px', fill: 'white' }} onClick={() => handleToggle()}/>
+      <MenuIcon style={{ width: '80px', height: '80px', fill: '#F6F5EE' }} onClick={() => handleToggle()}/>
     </IconContainer>
     <MenuContainer open={open} >
       <MenuItem onClick={() => handleSelection('LowrieSings')}>Home</MenuItem>
@@ -79,9 +81,14 @@ const BurgerMenu = ({ setCurrentPage }) => {
 }
 
 const Header = ({ setCurrentPage }) => {
+  const { width } = useWindowDimensions();
 	return (
 		<Container>
-      <img src="images/branding.jpg" alt="LowrieSings" style={{ width: '500px', height: '125px' }}/>
+      {
+        width >= 768 ?
+        <img src="images/branding.jpg" alt="LowrieSings" style={{ width: '500px', height: '125px' }}/> :
+        <img src="images/icon.jpg" alt="LowrieSings" style={{ width: '120px', height: '120px' }}/>
+    }
 			<BurgerMenu setCurrentPage={setCurrentPage}/>
 		</Container>
 	)

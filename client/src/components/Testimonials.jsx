@@ -6,15 +6,15 @@ const MessageArea = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 const Message = styled.div`
-  flex: 1;
-  height: 400px;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  color: #E9ECEF;
-  background-color: #6C757D;
+  background-color: lightgrey;
   border-radius: 10px;
   padding: 20px;
 `;
@@ -36,9 +36,23 @@ const testimonials = [
     message: "Lowrie is the best! It makes me so happy to hear her sing!",
     by: "Andy + Sam",
     date: "December 2019",
+  },
+  {
+    message: "Lowrie is so professional, talented and her voice is incredible!",
+    by: "Mark",
+    date: "December 2024",
   }
 ]
 
+const MessageContainer = styled.div`
+  min-height: 300px;
+  
+`;
+const ClientContainer = styled.div`
+  height: 200px;
+  display: flex;
+  align-items: end;
+`;
 
   return (
     <>
@@ -46,8 +60,8 @@ const testimonials = [
       {testimonials.map((testimonial, index) => (
         <Message key={index} style={{ visibility: false}} className="bubble left">
           <FormatQuoteIcon style={{ height: '50px', width: '50px' }}/>
-          <p>"{testimonial.message}"</p>
-          {testimonial.by}- {testimonial.date}
+          <MessageContainer><p>{testimonial.message}</p></MessageContainer>
+          <ClientContainer>{testimonial.by} - {testimonial.date}</ClientContainer>
         </Message>
       ))}
       </MessageArea>
