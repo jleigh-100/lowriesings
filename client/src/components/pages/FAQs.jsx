@@ -5,6 +5,7 @@ import SendIcon from '@mui/icons-material/Send';
 import { toast } from "react-toastify";
 
 const Message = styled.div`
+  font-size: 20px;
   &.bubble {
     --r: 1em;  /* the radius */
     --t: 1.5em; /* the size of the tail */
@@ -52,7 +53,7 @@ const TextInputContainer = styled.div`
 
 const StyledInput = styled.textarea`
   width: 100%;
-  font-size: 48px;
+  font-size: 26px;
   font-family: 'ArchitectsDaughter';
   border: none;
   background: #F6F5EE;
@@ -80,10 +81,12 @@ export const FAQs = () => {
   const [messageText, setMessageText] = useState("");
   
   const handleSendMessage = () => {
-    setMessageText("");
-    console.log(messageText);
-    // send email
-    toast.success("Message sent! I try to response to everyone within 2 days", { theme: "colored" });
+    if (messageText) {
+      setMessageText("");
+      console.log(messageText);
+      // send email
+      toast.success("Thanks for your message! I try to response to everyone within 2 days", { theme: "colored" });
+    }
   }
 
   const handleMessageTextChange = (e) => {

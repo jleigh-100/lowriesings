@@ -16,10 +16,12 @@ export const Container = styled.div`
   gap: 5px;
   color: #000;
   > ul {
+    width: 90%;
     margin: 0;
     > p {
       margin: 0;
-      font-size: 100px;
+      margin-top: 30px;
+      font-size: 50px;
     }
   }
   

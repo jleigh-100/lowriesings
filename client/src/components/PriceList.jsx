@@ -71,7 +71,7 @@ export const PriceList = () => {
         <TypeGroup>
         <h3>Wedding packages</h3>
         {packages.map((p, i) => (
-          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '90%' }}>
+          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '85%' }}>
             <h4>{p.name}</h4>
             <p>{p.description}</p>
             <p>£{p.price}</p>
@@ -82,7 +82,7 @@ export const PriceList = () => {
         <TypeGroup>
         <h3>Performances</h3>
         {performances.map((p, i) => (
-          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '90%' }}>
+          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '85%' }}>
             <h4>{p.name}</h4>
             <p>£{p.price}</p>
           </div>

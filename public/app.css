@@ -7,7 +7,7 @@ body {
     margin: 0;
     background-color: #F6F5EE;
     font-family:'ArchitectsDaughter';
-    font-size: 36px;
+    font-size: 30px;
     h1 {
         font-family: 'ArchitectsDaughter';
         margin: 10px 0;
@@ -18,7 +18,8 @@ body {
 /* mobile */
 @media only screen and (max-width: 768px) {
     .Toastify__toast-container--top-right:has(div.Toastify__toast--success) {
-        width: 97vw;
+        width: 95vw;
+        margin-left: 10px;
     }
 }
 /* desktop */
@@ -30,7 +31,7 @@ body {
 
 .Toastify__toast-body {
     font-family: 'ArchitectsDaughter';
-    font-size: 48px;
+    font-size: 30px;
 }
 
 .Toastify__toast-theme--colored.Toastify__toast--success {
