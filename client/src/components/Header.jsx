@@ -64,7 +64,7 @@ const BurgerMenu = ({ setCurrentPage }) => {
   return (
     <>
     <IconContainer>
-      <MenuIcon style={{ width: '80px', height: '80px', fill: 'black' }} onClick={() => handleToggle()}/>
+      <MenuIcon style={{ width: '80px', height: '80px', fill: 'white' }} onClick={() => handleToggle()}/>
     </IconContainer>
     <MenuContainer open={open} >
       <MenuItem onClick={() => handleSelection('LowrieSings')}>Home</MenuItem>
@@ -78,10 +78,10 @@ const BurgerMenu = ({ setCurrentPage }) => {
   )
 }
 
-const Header = ({ currentPage, setCurrentPage }) => {
+const Header = ({ setCurrentPage }) => {
 	return (
 		<Container>
-			<h1 onClick={() => setCurrentPage('LowrieSings')}>{currentPage}</h1>
+      <img src="images/branding.jpg" alt="LowrieSings" style={{ width: '500px', height: '125px' }}/>
 			<BurgerMenu setCurrentPage={setCurrentPage}/>
 		</Container>
 	)

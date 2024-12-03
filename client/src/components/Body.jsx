@@ -14,7 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: #0E273C;
+  color: #000;
   > ul {
     margin: 0;
     > p {

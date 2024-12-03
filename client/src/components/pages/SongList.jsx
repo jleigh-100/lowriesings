@@ -4,6 +4,7 @@ import { Container } from "../Body.jsx";
 export const SongList = () => {
   return (
     <Container>
+      <h1>Song List</h1>
       <img src="/images/shadowylowrie.jpg" alt="Lowrie singing" width='600px' />
       <p>Please just ask if you would like a specific song and I would be more than happy to learn it</p>
       <ul>

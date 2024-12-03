@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <Container>
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Header setCurrentPage={setCurrentPage} />
       <Body currentPage={currentPage}/>
       <ToastContainer />
       <Footer />

@@ -10,5 +10,6 @@ body {
     font-size: 36px;
     h1 {
         font-family: 'Magnolia_Script';
+        margin: 10px 0;
     }
 }

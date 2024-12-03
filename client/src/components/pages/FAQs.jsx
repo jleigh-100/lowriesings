@@ -92,6 +92,7 @@ export const FAQs = () => {
   }
   return (
     <Container>
+      <h1>FAQs</h1>
       <Question>How much time do you need to set up?</Question>
       <Answer>I like to arrive one hour before the event starts, so I can make sure everything is set up and do a sound check.</Answer>
       <Question>Can you provide an iPod/DJ service before and between your sets?</Question>

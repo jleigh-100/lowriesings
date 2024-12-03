@@ -3,15 +3,20 @@ import styled from "styled-components";
 
 const Container = styled.div`
 display: flex;
+align-items: center;
 padding: 5px;
 flex-direction: column;
 `
 
 const TypeGroup = styled.div`
 background-color: lightgray;
+display: flex;
+flex-direction: column;
+align-items: center;
 border-radius: 30px;
-padding: 30px 5px;
+padding-bottom: 1%; 
 margin-bottom: 20px;
+width: 95%;
 `;
 
 const performances = [
@@ -55,32 +60,34 @@ const packages = [
 export const PriceList = () => {
   return (
       <Container>
-        <h2>Prices</h2>
-        <TypeGroup>
-        <h3>Performances</h3>
-        {performances.map((p, i) => (
-          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px' }}>
-            <h4>{p.name}</h4>
-            <p>£{p.price}</p>
-          </div>
-        ))}
-        </TypeGroup>
-        <TypeGroup>
-        <h3>Wedding packages</h3>
-        {packages.map((p, i) => (
-          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px' }}>
-            <h4>{p.name}</h4>
-            <p>{p.description}</p>
-            <p>£{p.price}</p>
-          </div>
-        ))}
-        </TypeGroup>
+        <h1>Price List</h1>
         <>
         <h4>All prices include:</h4>
         <p>- PA equipment, a video conversation (if required), and learning up to three new songs.</p>
         <p>- Travel up to 20 miles including, thereafter mileage will be charged at the standard rate of 45p per mile</p>
         <p>- Public liability insurance of £10 million</p>
         </>
+        
+        <TypeGroup>
+        <h3>Wedding packages</h3>
+        {packages.map((p, i) => (
+          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '90%' }}>
+            <h4>{p.name}</h4>
+            <p>{p.description}</p>
+            <p>£{p.price}</p>
+          </div>
+        ))}
+        </TypeGroup>
+
+        <TypeGroup>
+        <h3>Performances</h3>
+        {performances.map((p, i) => (
+          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '90%' }}>
+            <h4>{p.name}</h4>
+            <p>£{p.price}</p>
+          </div>
+        ))}
+        </TypeGroup>
         </Container>
   )
 }
