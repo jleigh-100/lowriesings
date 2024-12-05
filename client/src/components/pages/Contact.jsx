@@ -15,7 +15,6 @@ export const sendMessage = (messageText) => {
 const StyledForm = styled.form`
 display: flex;
 flex-direction: column;
-width: 80%;
 gap: 10px;
 margin-bottom: 40px;
 `;
@@ -27,9 +26,11 @@ const StyledInput = styled.input`
 `;
 
 const StyledTextArea = styled.textarea`
-  width: 98%;
+  width: calc(100% - 6px);
+  min-width: 300px;
   font-family: 'ArchitectsDaughter';
   font-size: 20px;
+  resize: none;
 `;
 
 export const Contact = ({ message, setMessage }) => {
