@@ -27,7 +27,7 @@ const StyledInput = styled.input`
 `;
 
 const StyledTextArea = styled.textarea`
-  width: 100%;
+  width: 98%;
   font-family: 'ArchitectsDaughter';
   font-size: 20px;
 `;
