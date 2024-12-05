@@ -13,21 +13,22 @@ export const sendMessage = (messageText) => {
 }
 
 const StyledForm = styled.form`
+width: 100%;
 display: flex;
 flex-direction: column;
+align-items: center;
 gap: 10px;
 margin-bottom: 40px;
 `;
 
 const StyledInput = styled.input`
-  width: 100%;
+  width: 90%;
   font-family: 'ArchitectsDaughter';
   font-size: 20px;
 `;
 
 const StyledTextArea = styled.textarea`
-  width: calc(100% - 6px);
-  min-width: 300px;
+  width: calc(90% - 6px);
   font-family: 'ArchitectsDaughter';
   font-size: 20px;
   resize: none;
