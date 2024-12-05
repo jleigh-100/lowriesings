@@ -5,6 +5,8 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 const MessageArea = styled.div`
   display: flex;
   gap: 20px;
+  width: 60%;
+  margin: 30px 0;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,6 +14,7 @@ const MessageArea = styled.div`
 const Message = styled.div`
   display: flex;
   flex: 1;
+  min-height: 370px;
   flex-direction: column;
   justify-content: space-between;
   background-color: lightgrey;
@@ -20,11 +23,11 @@ const Message = styled.div`
   `;
   
 const MessageContainer = styled.div`
-  min-height: 300px;  
+  min-height: 100px;  
 `;
 
 const ClientContainer = styled.div`
-  height: 200px;
+  height: 100px;
   display: flex;
   align-items: end;
 `;
@@ -55,16 +58,14 @@ const testimonials = [
 ]
 
   return (
-    <>
       <MessageArea>
       {testimonials.map((testimonial, index) => (
-        <Message key={index} style={{ visibility: false}} className="bubble left">
+        <Message key={index}>
           <FormatQuoteIcon style={{ height: '50px', width: '50px' }}/>
           <MessageContainer><p>{testimonial.message}</p></MessageContainer>
           <ClientContainer>{testimonial.by} - {testimonial.date}</ClientContainer>
         </Message>
       ))}
       </MessageArea>
-    </>
   )
 }

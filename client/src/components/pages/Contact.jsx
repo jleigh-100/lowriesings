@@ -28,7 +28,9 @@ const StyledInput = styled.input`
 `;
 
 const StyledTextArea = styled.textarea`
-  width: calc(90% - 6px);
+  padding: 10px;
+  width: calc(90% - 22px);
+  border-radius: 10px;
   font-family: 'ArchitectsDaughter';
   font-size: 20px;
   resize: none;
@@ -37,9 +39,8 @@ const StyledTextArea = styled.textarea`
 export const Contact = ({ message, setMessage }) => {
   console.log(message);
   return (
-    <Container>
-      <h1>Contact</h1>
-      <p>For more information or to book, please send me a message below, or using any of my socials!</p>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <p id="contact-form">For more information or to book, please send me a message below, or using any of my socials!</p>
       <StyledForm action={`mailto:jamie.leigh100@hotmail.co.uk?subject=Website request&body=${message.replaceAll('\n', '%0D')}`} method="post">
         <StyledTextArea
           placeholder="Your message"
@@ -48,6 +49,6 @@ export const Contact = ({ message, setMessage }) => {
           onChange={(e) => setMessage(e.target.value)} />
         <StyledInput type="submit" value="Send" />
       </StyledForm>
-    </Container>
+    </div>
   )
 }

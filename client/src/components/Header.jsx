@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   height: 64px;
+  width: 100%;
   @media (min-width: 768px) {
     height: 125px;
   }
@@ -115,12 +116,9 @@ const BurgerMenu = ({ setCurrentPage, width }) => {
     </IconContainer>
     <MenuContainer open={open} >
       <MenuItem onClick={() => handleSelection('LowrieSings')}>Home</MenuItem>
-      <MenuItem onClick={() => handleSelection('About Me')}>About Me</MenuItem>
       <MenuItem onClick={() => handleSelection('Song List')}>Song list</MenuItem>
       <MenuItem onClick={() => handleSelection('FAQs')}>FAQs</MenuItem>
-      <MenuItem onClick={() => handleSelection('Videos')}>Videos</MenuItem>
       <MenuItem onClick={() => handleSelection('Prices')}>Prices</MenuItem>
-      <MenuItem onClick={() => handleSelection('Contact')}>Contact</MenuItem>
     </MenuContainer>
     </>
   )
