@@ -5,7 +5,7 @@ export const AboutPage = () => {
   return (
     <Container>
       <h1>About Me</h1>
-      <img href="" src="/images/lowrie.jpg" alt="Lowrie" width='100%' />
+      <img href="" src="/images/lowrie.jpg" alt="A photo of Lowrie" width='100%' />
       <p>I'm Lowrie, a 27 year old female solo singer, based in Bath (South West England) - I perform with top-quality backing tracks at weddings and events.</p>
       <p>My favourite songs to sing includes Adele, Amy Winehouse and Alicia Keys. I absolutely love to perform a wide range of music, spanning from the 1980's to current chart hits. I also love learning new songs on request and discovering new tunes.</p>
       <p>I have a First Class degree in Music with Performance from the University of Southampton. During my time at University, I also studied specialised singing for one year in Norway.</p>

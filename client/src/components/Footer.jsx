@@ -11,13 +11,19 @@ const Container = styled.div`
 	background-color: ${theme.headerFooterColor};
 	padding: 20px;
 `
+
+const StyledImage = styled.img`
+	width: 50px;
+	height: 50px;
+`;
+
 const Footer = () => {
 	return (
 		<Container >
-				<a href="https://www.instagram.com/lowrie_gb" target="_blank"><img src="images/instagram.png"  width='50px' height='50px' /></a>
-				<a href="https://www.facebook.com/lowrie.gelbierbull"><img src="images/facebook.png" width='50px' height='50px'/></a>
-				<a href="https://www.tiktok.com/@lowrie_gb"><img src="images/tiktok.png" width='50px' height='50px'/></a>
-				<a href="https://www.youtube.com/@lowriegelbier-bull" ><img src="images/youtube.png" width='50px' height='50px'/></a>
+				<a href="https://www.instagram.com/lowrie_gb" target="_blank"><StyledImage src="images/instagram.png" alt="instagram logo"/></a>
+				<a href="https://www.facebook.com/lowrie.gelbierbull"><StyledImage src="images/facebook.png" alt="facebook logo" /></a>
+				<a href="https://www.tiktok.com/@lowrie_gb"><StyledImage src="images/tiktok.png" alt="tiktok logo" /></a>
+				<a href="https://www.youtube.com/@lowriegelbier-bull" ><StyledImage src="images/youtube.png" alt="youtube logo"/></a>
 		</Container>
 	)
 }
