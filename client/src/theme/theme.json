@@ -2,7 +2,7 @@
     "primaryColor": "#000",
     "secondaryColor": "#F6F5EE",
     "backgroundColor": "#F6F5EE",
-    "titleColor": "#343A40",
+    "titleColor": "#000",
     "headerFooterColor": "#000",
     "textColor": "#F6F5EE"
 }

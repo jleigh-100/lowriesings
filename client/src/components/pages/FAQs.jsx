@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Container } from "../Body.jsx";
 import SendIcon from '@mui/icons-material/Send';
-import { toast } from "react-toastify";
+import { sendMessage } from "./Contact.jsx";
 
 const Message = styled.div`
   font-size: 20px;
@@ -64,7 +64,28 @@ const StyledSendIcon = styled(SendIcon)`
   background: green;
   padding: 10px;
   border-radius: 50%;
+  cursor: pointer;
   `;
+
+
+const StyledForm = styled.form`
+display: flex;
+flex-direction: row;
+width: 100%;
+gap: 10px;
+margin-bottom: 40px;
+`;
+
+const StyledTextArea = styled.textarea`
+  width: 100%;
+  font-family: 'ArchitectsDaughter';
+  font-size: 20px;
+`;
+
+const StyledButton = styled.button`
+  background: inherit;
+  border: none;
+`;
 
 const Question = ({ children }) => {
   return (
@@ -77,22 +98,16 @@ const Answer = ({ children }) => {
   )
 }
 
-export const FAQs = () => {
-  const [messageText, setMessageText] = useState("");
+export const FAQs = ({ message, setMessage, setCurrentPage }) => {
   
   const handleSendMessage = () => {
-    if (messageText) {
-      setMessageText("");
-      console.log(messageText);
-      // send email
-      toast.success("Thanks for your message! I try to response to everyone within 2 days", { theme: "colored" });
-    }
+    setCurrentPage("Contact");
   }
 
-  const handleMessageTextChange = (e) => {
-    setMessageText(e.target.value);
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
     if (e.key === "Enter") {
-      handleSendMessage(messageText);
+      handleSendMessage(message);
     }
   }
   return (
@@ -117,11 +132,18 @@ export const FAQs = () => {
       <Answer>I will always try my best to be flexible to help ensure your event runs as smoothly as possible. If timings change slightly in the run up to the event just let me know and I'm sure I can accommodate this for you</Answer>
       <Question>Which artists have you been most influenced by?</Question>
       <Answer>My influences range from Amy Winehouse, to Adele, to Yebba</Answer>
-      <Answer>If you have any more questions, just let ask below!</Answer>
+      <Answer>If you have any more questions, feel free to ask below!</Answer>
       <TextInputContainer>
-        <StyledInput placeholder="Ask me anything... Don't forget to add contact details so I can reply!" value={messageText} onChange={handleMessageTextChange} onKeyUp={handleMessageTextChange}/>
-        <StyledSendIcon sx={{ height: 45, width: 45, fill: '#F6F5EE' }} onClick={() => handleSendMessage()}/>
-      </TextInputContainer>
+        <StyledForm action={`mailto:jamie.leigh100@hotmail.co.uk?subject=Website request&body=${message.replaceAll('\n', '%0D')}`} method="post">
+          <StyledInput
+            placeholder="Ask me anything..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)} />
+          <StyledButton type="submit">
+            <StyledSendIcon sx={{ height: 45, width: 45, fill: '#F6F5EE' }}/>
+          </StyledButton>
+          </StyledForm>
+        </TextInputContainer>
       </Container>
   )
 }

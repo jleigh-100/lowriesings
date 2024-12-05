@@ -1,6 +1,6 @@
 import React from "react"
 import { Container } from "../Body.jsx"
-import { Testimonials } from "../Testimonials.jsx"
+import { Testimonials } from "./Testimonials.jsx"
 import { useWindowDimensions } from "../../hooks.jsx"
 
 export const HomePage = () => {

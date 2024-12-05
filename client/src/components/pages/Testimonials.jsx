@@ -17,10 +17,20 @@ const Message = styled.div`
   background-color: lightgrey;
   border-radius: 10px;
   padding: 20px;
+  `;
+  
+const MessageContainer = styled.div`
+  min-height: 300px;  
 `;
 
-export const Testimonials = () => {
+const ClientContainer = styled.div`
+  height: 200px;
+  display: flex;
+  align-items: end;
+`;
 
+
+export const Testimonials = () => {
 const testimonials = [
   {
     message: "Lowrie is amazing!",
@@ -43,16 +53,6 @@ const testimonials = [
     date: "December 2024",
   }
 ]
-
-const MessageContainer = styled.div`
-  min-height: 300px;
-  
-`;
-const ClientContainer = styled.div`
-  height: 200px;
-  display: flex;
-  align-items: end;
-`;
 
   return (
     <>

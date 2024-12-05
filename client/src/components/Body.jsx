@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { HomePage } from "./pages/HomePage.jsx";
 import { AboutPage } from "./pages/AboutMe.jsx";
 import { FAQs } from "./pages/FAQs.jsx";
 import { Videos } from "./pages/Videos.jsx";
 import { SongList } from "./pages/SongList.jsx";
-import { PriceList } from "./PriceList.jsx";
+import { PriceList } from "./pages/PriceList.jsx";
+import { Contact } from "./pages/Contact.jsx";
 
 export const Container = styled.div`
   margin: 8px;
@@ -27,12 +28,15 @@ export const Container = styled.div`
   
 `
 
-const Body = ({ currentPage }) => {
+const Body = ({ currentPage, setCurrentPage }) => {
+  const [message, setMessage] = useState("");
+
   if (currentPage === "About Me") return <AboutPage />
   if (currentPage === "Song List") return <SongList />
-  if (currentPage === "FAQs") return <FAQs />
+  if (currentPage === "FAQs") return <FAQs message={message} setMessage={setMessage} setCurrentPage={setCurrentPage}/>
   if (currentPage === "Videos") return <Videos />
   if (currentPage === "Prices") return <PriceList />
+  if (currentPage === "Contact") return <Contact message={message} setMessage={setMessage}/>
   else return <HomePage />
 }
 

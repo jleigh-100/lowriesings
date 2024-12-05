@@ -21,6 +21,7 @@ const Container = styled.div`
   top: -2px;
 `
 const IconContainer = styled.div`
+  cursor: pointer;
   position: absolute;
   top: 2px;
   right: 10px;
@@ -61,7 +62,32 @@ const MenuItem = styled.div`
     background-color: #ADB5BD;
     border-radius: 10px;
   }
-  font-size: 40px;
+  font-size: 30px;
+`;
+
+const MobileHeaderContainer = styled.div`
+  cursor: pointer;
+  height: 40px;
+  margin-top: 12px;
+  background-color: #F6F5EE;
+  border-radius: 10px;
+  padding: 0 10px;
+  > h1 {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+`;
+
+const HeaderContainer = styled.div`
+  cursor: pointer;
+  height: 100px;
+  margin-top: 12px;
+  background-color: #F6F5EE;
+  border-radius: 10px;
+  padding: 0 10px;
+  > h1 {
+    margin-top: 12px;
+  }
 `;
 
 const BurgerMenu = ({ setCurrentPage, width }) => {
@@ -94,21 +120,28 @@ const BurgerMenu = ({ setCurrentPage, width }) => {
       <MenuItem onClick={() => handleSelection('FAQs')}>FAQs</MenuItem>
       <MenuItem onClick={() => handleSelection('Videos')}>Videos</MenuItem>
       <MenuItem onClick={() => handleSelection('Prices')}>Prices</MenuItem>
+      <MenuItem onClick={() => handleSelection('Contact')}>Contact</MenuItem>
     </MenuContainer>
     </>
   )
 }
 
+
 const Header = ({ setCurrentPage }) => {
   const { width } = useWindowDimensions();
-  const imageStyles = {
-    width: width >= 768 ? '500px' : '250px',
-    height: width >= 768 ? '125px' : '62px'
-  }
 	return (
 		<Container>
-      <img onClick={() => setCurrentPage('LowrieSings')} src="images/branding.jpg" alt="LowrieSings" style={imageStyles}/>
-			<BurgerMenu setCurrentPage={setCurrentPage} width={width} />
+      {
+        width < 768 ?
+        <MobileHeaderContainer width={width}>
+          <h1 onClick={() => setCurrentPage('LowrieSings')}>LOWRIESINGS</h1>
+        </MobileHeaderContainer>
+        :
+        <HeaderContainer width={width}>
+          <h1 onClick={() => setCurrentPage('LowrieSings')}>LOWRIESINGS</h1>
+        </HeaderContainer>
+      }
+      <BurgerMenu setCurrentPage={setCurrentPage} width={width} />
 		</Container>
 	)
 }
