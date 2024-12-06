@@ -6,6 +6,10 @@ const MessageArea = styled.div`
   display: flex;
   gap: 20px;
   width: 60%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
   margin: 30px 0;
   align-items: center;
   flex-direction: row;
@@ -14,7 +18,10 @@ const MessageArea = styled.div`
 const Message = styled.div`
   display: flex;
   flex: 1;
-  min-height: 370px;
+  height: 400px;
+  @media (max-width: 768px) {
+    width: calc(100% - 40px);
+  }
   flex-direction: column;
   justify-content: space-between;
   background-color: lightgrey;

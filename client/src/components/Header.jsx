@@ -88,6 +88,9 @@ const HeaderContainer = styled.div`
   padding: 0 10px;
   > h1 {
     margin-top: 12px;
+    @media (min-width: 768px) {
+      font-size: 64px;
+    } 
   }
 `;
 
