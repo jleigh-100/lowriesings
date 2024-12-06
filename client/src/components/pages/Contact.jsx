@@ -37,11 +37,17 @@ const StyledTextArea = styled.textarea`
 `;
 
 export const Contact = ({ message, setMessage }) => {
-  console.log(message);
+  const handleClick = (e) => {
+    const email = "jamie.leigh100@hotmail.co.uk"
+    const subject = "Website request";
+    const toSend = message.replaceAll('\n', '%0D');
+    e.preventDefault();
+    window.open(`mailto:${email}?subject=${subject}&body=${toSend}`);
+ }
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <p id="contact-form">For more information or to book, please send me a message below, or using any of my socials!</p>
-      <StyledForm action={`mailto:jamie.leigh100@hotmail.co.uk?subject=Website request&body=${message.replaceAll('\n', '%0D')}`} method="post">
+      <StyledForm onSubmit={handleClick}>
         <StyledTextArea
           placeholder="Your message"
           rows={10}
