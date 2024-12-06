@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../Body.jsx";
-import { useWindowDimensions } from "../../hooks.jsx";
+import { useWindowDimensions } from "../../hooks.js";
 
 export const SongList = () => {
   const { width } = useWindowDimensions();

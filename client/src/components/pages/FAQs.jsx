@@ -73,7 +73,6 @@ display: flex;
 flex-direction: row;
 width: 100%;
 gap: 10px;
-margin-bottom: 40px;
 `;
 
 const StyledTextArea = styled.textarea`
@@ -85,6 +84,7 @@ const StyledTextArea = styled.textarea`
 const StyledButton = styled.button`
   background: inherit;
   border: none;
+  padding-top: 10px;
 `;
 
 const Question = ({ children }) => {
@@ -140,7 +140,7 @@ export const FAQs = ({ message, setMessage, setCurrentPage }) => {
             value={message}
             onChange={(e) => setMessage(e.target.value)} />
           <StyledButton type="submit">
-            <StyledSendIcon sx={{ height: 45, width: 45, fill: '#F6F5EE' }}/>
+            <StyledSendIcon sx={{ height: 30, width: 30, fill: '#F6F5EE' }}/>
           </StyledButton>
           </StyledForm>
         </TextInputContainer>

@@ -5,7 +5,7 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 const MessageArea = styled.div`
   display: flex;
   gap: 20px;
-  width: 60%;
+  width: 70vw;
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;

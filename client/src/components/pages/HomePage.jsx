@@ -1,6 +1,6 @@
 import React from "react"
 import { Testimonials } from "./Testimonials.jsx"
-import { useWindowDimensions } from "../../hooks.jsx"
+import { useWindowDimensions } from "../../hooks.js"
 import styled from "styled-components"
 import { Contact } from "./Contact.jsx"
 import { Videos } from "./Videos.jsx"
@@ -37,6 +37,8 @@ export const HomePage = ({ message, setMessage }) => {
           <p>Sit back, relax, and let me bring the cosy, acoustic vibes to your special day or memorable event. It doesn't matter how big or small, music is so integral to any event.</p>
           <p>If I cannot wait to hear from you and be a part of your day!</p>
         <Testimonials />
+        <Videos />
+        <Contact message={message} setMessage={setMessage} />
       </Container>
     )
   }
