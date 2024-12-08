@@ -8,11 +8,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 64px;
-  width: 100%;
-  @media (min-width: 768px) {
-    height: 125px;
-  }
+  : 64px;
+  height: ${props => props.width > 768 ? "125px" : "64px"};
   background-color: ${theme.headerFooterColor};
   color: #D3BCCC;
   h1 {
@@ -24,17 +21,10 @@ const Container = styled.div`
 const IconContainer = styled.div`
   cursor: pointer;
   position: absolute;
-  top: 2px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-
-  @media (min-width: 768px) {
-    width: 87px;
-    height: 87px;
-    top: 25px;
-    right: 25px;
-}
+  width: ${props => props.width > 768 ? "87px" : "50px"};
+  height: ${props => props.width > 768 ? "87px" : "50px"};
+  top: ${props => props.width > 768 ? "25px" : "2px"};
+  right: ${props => props.width > 768 ? "25px" : "10px"};
 `;
 
 const MenuContainer = styled.div`
@@ -42,10 +32,7 @@ const MenuContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   position: absolute;
-  top: 64px;
-  @media (min-width: 768px) {
-    top: 125px;
-  }
+  top: ${props => props.width > 768 ? "125px" : "64px"};
   right: 0;
   z-index: ${props => props.open ? '' : '-'}1;
   color: ${theme.titleColor};
@@ -53,7 +40,6 @@ const MenuContainer = styled.div`
   border-radius: 10px;
   border: 1px solid black;
   opacity: ${props => props.open ? 1 : 0};
-  transition: opacity 0.3s;
 `;
 
 const MenuItem = styled.div`
@@ -66,31 +52,16 @@ const MenuItem = styled.div`
   font-size: 30px;
 `;
 
-const MobileHeaderContainer = styled.div`
-  cursor: pointer;
-  height: 40px;
-  margin-top: 12px;
-  background-color: #F6F5EE;
-  border-radius: 10px;
-  padding: 0 10px;
-  > h1 {
-    font-size: 20px;
-    margin-top: 8px;
-  }
-`;
-
 const HeaderContainer = styled.div`
   cursor: pointer;
-  height: 100px;
+  height: ${(props) => props.width < 768 ? "40px" : "100px"};
   margin-top: 12px;
   background-color: #F6F5EE;
   border-radius: 10px;
   padding: 0 10px;
   > h1 {
-    margin-top: 12px;
-    @media (min-width: 768px) {
-      font-size: 64px;
-    } 
+    margin-top: ${(props) => props.width < 768 ? "8px" : "12px"};
+    font-size: ${(props) => props.width < 768 ? "20px" : "64px"};
   }
 `;
 
@@ -114,14 +85,15 @@ const BurgerMenu = ({ setCurrentPage, width }) => {
 
   return (
     <>
-    <IconContainer>
+    <IconContainer width={width}>
       <MenuIcon style={iconStyling} onClick={() => handleToggle()}/>
     </IconContainer>
-    <MenuContainer open={open} >
+    <MenuContainer open={open} width={width}>
       <MenuItem onClick={() => handleSelection('LowrieSings')}>Home</MenuItem>
       <MenuItem onClick={() => handleSelection('Song List')}>Song list</MenuItem>
       <MenuItem onClick={() => handleSelection('FAQs')}>FAQs</MenuItem>
       <MenuItem onClick={() => handleSelection('Prices')}>Prices</MenuItem>
+      <MenuItem onClick={() => handleSelection('Contact')}>Contact</MenuItem>
     </MenuContainer>
     </>
   )
@@ -131,17 +103,10 @@ const BurgerMenu = ({ setCurrentPage, width }) => {
 const Header = ({ setCurrentPage }) => {
   const { width } = useWindowDimensions();
 	return (
-		<Container>
-      {
-        width < 768 ?
-        <MobileHeaderContainer width={width}>
-          <h1 onClick={() => setCurrentPage('LowrieSings')}>LOWRIESINGS</h1>
-        </MobileHeaderContainer>
-        :
-        <HeaderContainer width={width}>
-          <h1 onClick={() => setCurrentPage('LowrieSings')}>LOWRIESINGS</h1>
-        </HeaderContainer>
-      }
+		<Container width={width}>
+      <HeaderContainer width={width}>
+        <h1 onClick={() => setCurrentPage('LowrieSings')}>LOWRIESINGS</h1>
+      </HeaderContainer>
       <BurgerMenu setCurrentPage={setCurrentPage} width={width} />
 		</Container>
 	)

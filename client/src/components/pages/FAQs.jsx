@@ -69,16 +69,10 @@ const StyledSendIcon = styled(SendIcon)`
 
 
 const StyledForm = styled.form`
-display: flex;
-flex-direction: row;
-width: 100%;
-gap: 10px;
-`;
-
-const StyledTextArea = styled.textarea`
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  font-family: 'ArchitectsDaughter';
-  font-size: 20px;
+  gap: 10px;
 `;
 
 const StyledButton = styled.button`
@@ -104,12 +98,6 @@ export const FAQs = ({ message, setMessage, setCurrentPage }) => {
     setCurrentPage("Contact");
   }
 
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-    if (e.key === "Enter") {
-      handleSendMessage(message);
-    }
-  }
   return (
     <Container>
       <h1>FAQs</h1>

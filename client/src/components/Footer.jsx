@@ -21,9 +21,9 @@ const Footer = () => {
 	return (
 		<Container >
 				<a href="https://www.instagram.com/lowrie_gb" target="_blank"><StyledImage src="images/instagram.png" alt="instagram logo"/></a>
-				<a href="https://www.facebook.com/lowrie.gelbierbull"><StyledImage src="images/facebook.png" alt="facebook logo" /></a>
-				<a href="https://www.tiktok.com/@lowrie_gb"><StyledImage src="images/tiktok.png" alt="tiktok logo" /></a>
-				<a href="https://www.youtube.com/@lowriegelbier-bull" ><StyledImage src="images/youtube.png" alt="youtube logo"/></a>
+				<a href="https://www.facebook.com/lowrie.gelbierbull" target="_blank"><StyledImage src="images/facebook.png" alt="facebook logo" /></a>
+				<a href="https://www.tiktok.com/@lowrie_gb" target="_blank"><StyledImage src="images/tiktok.png" alt="tiktok logo" /></a>
+				<a href="https://www.youtube.com/@lowriegelbier-bull" target="_blank"><StyledImage src="images/youtube.png" alt="youtube logo"/></a>
 		</Container>
 	)
 }

@@ -7,7 +7,7 @@ export const SongList = () => {
   return (
     <Container>
       <h1>Song List</h1>
-      <img src="/images/singing.jpg" alt="Lowrie singing" width={`${width > 768 ? "50%" : "100%"}`} />
+      <img src="/images/singing.jpg" alt="Lowrie singing" width={`${width > 768 ? "50%" : "100%"}`} style={{ border: '1px solid black', borderRadius: '10px' }}/>
       <p>Please just ask if you would like a specific song and I would be more than happy to learn it</p>
       <ul>
         <p>A</p>

@@ -7,7 +7,7 @@ import { Videos } from "./Videos.jsx"
 
 const Container = styled.div`
   margin: 8px;
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,44 +22,44 @@ const Container = styled.div`
       font-size: 50px;
     }
   }
-  
 `
-export const HomePage = ({ message, setMessage }) => {
+const StyledInfo = styled.div`
+  ${props => {
+    if (props.width > 768) { // desktop
+      return `
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 30px;
+      `
+    }
+  }};
+`
+
+const StyledImg = styled.img`
+  border-radius: 50%;
+  width: ${props => props.width < 768 ? '85vw' : '500px'};
+  height: ${props => props.width < 768 ? '85vw' : '500px'};
+`;
+
+export const HomePage = ({ message, setMessage, setCurrentPage }) => {
   const { width } = useWindowDimensions();
-  if (width < 768) { // mobile
     return (
       <Container>
-          <p>I'm Lowrie, a 27 year old female solo singer, based in Bath (South West England) - I perform with top-quality backing tracks at weddings and events.</p>
-          <img src="/images/shadowylowrie.jpg" alt="Lowrie singing" width={`${width >= 768 ? '50%' : '100%'}`} style={{ borderRadius: '50%' }} />
-          <p>My favourite songs to sing includes Adele, Amy Winehouse and Alicia Keys. I absolutely love to perform a wide range of music, spanning from the 1980's to current chart hits. I also love learning new songs on request and discovering new tunes.</p>
-          <p>I have a First Class degree in Music with Performance from the University of Southampton. During my time at University, I also studied specialised singing for one year in Norway.</p>
-          <p>I have my own portable PA system and microphone.</p>
-          <p>Sit back, relax, and let me bring the cosy, acoustic vibes to your special day or memorable event. It doesn't matter how big or small, music is so integral to any event.</p>
-          <p>If I cannot wait to hear from you and be a part of your day!</p>
-        <Testimonials />
-        <Videos />
-        <Contact message={message} setMessage={setMessage} />
-      </Container>
-    )
-  }
-  else { // desktop
-    return (
-      <Container>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr' }}>
-          <img src="/images/shadowylowrie.jpg" alt="Lowrie singing" style={{ width: 500, height: 500, borderRadius: '50%' }} />
-          <div style={{ padding: '0 30px' }}>
-            <p>I'm Lowrie, a 27 year old female solo singer, based in Bath (South West England) - I perform with top-quality backing tracks at weddings and events.</p>
-            <p>My favourite songs to sing includes Adele, Amy Winehouse and Alicia Keys. I absolutely love to perform a wide range of music, spanning from the 1980's to current chart hits. I also love learning new songs on request and discovering new tunes.</p>
+        <h1>Welcome to Lowrie Sings</h1>
+        <StyledInfo width={width}>
+          {width < 768 && <p>I'm Lowrie, a 27 year old female solo singer, based in Bath (South West England) - I perform with top-quality backing tracks at weddings and events.</p>}
+          <StyledImg width={width} src="/images/shadowylowrie.jpg" alt="Lowrie singing" />
+          <div>
+            {width >= 768 && <p>I'm Lowrie, a 27 year old female solo singer, based in Bath (South West England) - I perform with top-quality backing tracks at weddings and events.</p>}
+            <p>My favourite songs to sing includes Adele, Amy Winehouse and Alicia Keys. I absolutely love to perform a wide range of music, spanning from the 1960's to current chart hits. I also love learning new songs on request and discovering new tunes.</p>
             <p>I have a First Class degree in Music with Performance from the University of Southampton. During my time at University, I also studied specialised singing for one year in Norway.</p>
             <p>I have my own portable PA system and microphone.</p>
             <p>Sit back, relax, and let me bring the cosy, acoustic vibes to your special day or memorable event. It doesn't matter how big or small, music is so integral to any event.</p>
-            <p>I cannot wait to hear from you and be a part of your day! <a style={{ color: 'inherit' }} href="#contact-form">Get in touch</a></p>
+            <p onClick={() => setCurrentPage('Contact')} style={{ textDecoration: 'underline', cursor: 'pointer' }}>I cannot wait to hear from you and be a part of your special day!</p>
           </div>
-        </div>
+          </StyledInfo>
         <Testimonials />
-        <Videos />
-        <Contact message={message} setMessage={setMessage} />
+        <img src="images/lowireatawedding.jpg" alt="Lowrie at a wedding" width={882} style={{ border: '1px solid black', borderRadius: '10px' }}/>
       </Container>
     )
   }
-}

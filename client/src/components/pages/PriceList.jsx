@@ -57,6 +57,14 @@ const packages = [
   }
 ]
 
+const StyledPackage = styled.div`
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10;
+  width: 85%;
+`;
+
 export const PriceList = () => {
   return (
       <Container>
@@ -71,21 +79,21 @@ export const PriceList = () => {
         <TypeGroup>
         <h3>Wedding packages</h3>
         {packages.map((p, i) => (
-          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '85%' }}>
+          <StyledPackage key={i}>
             <h4>{p.name}</h4>
             <p>{p.description}</p>
             <p>£{p.price}</p>
-          </div>
+          </StyledPackage>
         ))}
         </TypeGroup>
 
         <TypeGroup>
         <h3>Performances</h3>
         {performances.map((p, i) => (
-          <div key={i} style={{ border: '1px solid black', borderRadius: '10px', marginBottom: '10px', padding: 10, width: '85%' }}>
+          <StyledPackage key={i}>
             <h4>{p.name}</h4>
             <p>£{p.price}</p>
-          </div>
+          </StyledPackage>
         ))}
         </TypeGroup>
         </Container>

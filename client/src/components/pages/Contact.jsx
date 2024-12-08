@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Container } from "../Body.jsx";
 
 export const sendMessage = (messageText) => {
   console.log(messageText)
@@ -36,6 +35,14 @@ const StyledTextArea = styled.textarea`
   resize: none;
 `;
 
+const Container = styled.div`
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+`;
+
 export const Contact = ({ message, setMessage }) => {
   const handleClick = (e) => {
     const email = "jamie.leigh100@hotmail.co.uk"
@@ -45,16 +52,19 @@ export const Contact = ({ message, setMessage }) => {
     window.open(`mailto:${email}?subject=${subject}&body=${toSend}`);
  }
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <p id="contact-form">For more information or to book, please send me a message below, or using any of my socials!</p>
+    <Container>
+      <h1>Contact</h1>
+      <img src="images/lowriebandw.jpeg" alt="Black and white photo of Lowrie" width={750} style={{ marginTop: 20, border: '1px solid black', borderRadius: '10px' }}/>
+      <p>I'd love to hear from you! Please get in touch to let me know your name, event date and location and I'll get back to you as soon as possible!</p>
       <StyledForm onSubmit={handleClick}>
         <StyledTextArea
-          placeholder="Your message"
+          placeholder="Your message here"
           rows={10}
           value={message}
           onChange={(e) => setMessage(e.target.value)} />
         <StyledInput type="submit" value="Send" />
       </StyledForm>
-    </div>
+      <p>Or if you'd prefer, you can reach out to me on my socials below:</p>
+    </Container>
   )
 }

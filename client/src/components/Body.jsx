@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { HomePage } from "./pages/HomePage.jsx";
-import { AboutPage } from "./pages/AboutMe.jsx";
 import { FAQs } from "./pages/FAQs.jsx";
 import { SongList } from "./pages/SongList.jsx";
 import { PriceList } from "./pages/PriceList.jsx";
+import { Contact } from "./pages/Contact.jsx";
 
 export const Container = styled.div`
   margin: 8px;
@@ -32,7 +32,8 @@ const Body = ({ currentPage, setCurrentPage }) => {
   if (currentPage === "Song List") return <SongList />
   if (currentPage === "FAQs") return <FAQs message={message} setMessage={setMessage} setCurrentPage={setCurrentPage}/>
   if (currentPage === "Prices") return <PriceList />
-  else return <HomePage message={message} setMessage={setMessage}/>
+  if (currentPage === "Contact") return <Contact message={message} setMessage={setMessage} />
+  else return <HomePage message={message} setMessage={setMessage} setCurrentPage={setCurrentPage} />
 }
 
 export default Body;
