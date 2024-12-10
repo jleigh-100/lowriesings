@@ -43,6 +43,16 @@ const Container = styled.div`
   padding: 0 20px;
 `;
 
+const StyledImg = styled.img`
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 750px;
+`;
+
 export const Contact = ({ message, setMessage }) => {
   const handleClick = (e) => {
     const email = "jamie.leigh100@hotmail.co.uk"
@@ -54,7 +64,7 @@ export const Contact = ({ message, setMessage }) => {
   return (
     <Container>
       <h1>Contact</h1>
-      <img src="images/lowriebandw.jpeg" alt="Black and white photo of Lowrie" width={750} style={{ marginTop: 20, border: '1px solid black', borderRadius: '10px' }}/>
+      <StyledImg src="images/lowriebandw.jpeg" alt="Black and white photo of Lowrie" />
       <p>I'd love to hear from you! Please get in touch to let me know your name, event date and location and I'll get back to you as soon as possible!</p>
       <StyledForm onSubmit={handleClick}>
         <StyledTextArea

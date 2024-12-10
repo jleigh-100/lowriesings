@@ -61,7 +61,7 @@ const StyledPackage = styled.div`
   border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 10px;
-  padding: 10;
+  padding: 10px;
   width: 85%;
 `;
 

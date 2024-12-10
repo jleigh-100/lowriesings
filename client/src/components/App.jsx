@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: ${props => props.width < 768 ? "64px 1fr 100px" : "125px 1fr 100px"};
+  grid-template-rows: ${props => props.width < 768 ? "64px 1fr 100px" : "200px 1fr 100px"};
 `;
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
   const { width } = useWindowDimensions();
   return (
     <Container width={width}>
-      <Header setCurrentPage={setCurrentPage} />
+      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Body currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Footer />
     </Container>
