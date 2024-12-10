@@ -35,12 +35,18 @@ const StyledInfo = styled.div`
   }};
 `
 
-const StyledImg = styled.img`
+const StyledMainImg = styled.img`
   border-radius: 50%;
   width: ${props => props.width < 768 ? '85vw' : '500px'};
   height: ${props => props.width < 768 ? '85vw' : '500px'};
 `;
 
+
+const StyledSubImg = styled.img`
+  width: ${props => props.width < 768 ? '100%' : '50%'};
+  border: 1px solid black;
+  border-radius: 10px;
+`;
 export const HomePage = ({ message, setMessage, setCurrentPage }) => {
   const { width } = useWindowDimensions();
     return (
@@ -48,7 +54,7 @@ export const HomePage = ({ message, setMessage, setCurrentPage }) => {
         <h1>Welcome to Lowrie Sings</h1>
         <StyledInfo width={width}>
           {width < 768 && <p>I'm Lowrie, a 27 year old female solo singer, based in Bath (South West England) - I perform with top-quality backing tracks at weddings and events.</p>}
-          <StyledImg width={width} src="/images/shadowylowrie.jpg" alt="Lowrie singing" />
+          <StyledMainImg width={width} src="/images/shadowylowrie.jpg" alt="Lowrie singing" />
           <div>
             {width >= 768 && <p>I'm Lowrie, a 27 year old female solo singer, based in Bath (South West England) - I perform with top-quality backing tracks at weddings and events.</p>}
             <p>My favourite songs to sing includes Adele, Amy Winehouse and Alicia Keys. I absolutely love to perform a wide range of music, spanning from the 1960's to current chart hits. I also love learning new songs on request and discovering new tunes.</p>
@@ -59,7 +65,7 @@ export const HomePage = ({ message, setMessage, setCurrentPage }) => {
           </div>
           </StyledInfo>
         <Testimonials />
-        <img src="images/lowireatawedding.jpg" alt="Lowrie at a wedding" width={882} style={{ border: '1px solid black', borderRadius: '10px' }}/>
+        <StyledSubImg width={width} src="images/lowireatawedding.jpg" alt="Lowrie at a wedding" />
       </Container>
     )
   }
