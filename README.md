@@ -1,6 +1,8 @@
 # LowrieSings
 Lowrie is starting up a singing business and wants to advertise her talents! This is a website that she can use to promote her singing!
 
+You can find the live instance running at https://www.lowriesings.com
+
 
 ## Setup for local deployment
 
