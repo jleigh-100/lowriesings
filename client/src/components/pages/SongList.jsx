@@ -1,14 +1,24 @@
 import React from "react";
 import { Container } from "../Body.jsx";
 import { useWindowDimensions } from "../../hooks.js";
+import styled from "styled-components";
+
+const StyledImg = styled.img`
+  width: ${(props) => (props.width > 768 ? "50%" : "100%")};
+  border: 1px solid black;
+  border-radius: 10px;
+`;
 
 export const SongList = () => {
   const { width } = useWindowDimensions();
   return (
     <Container>
       <h1>Song List</h1>
-      <img src="/images/singing.jpg" alt="Lowrie singing" width={`${width > 768 ? "50%" : "100%"}`} style={{ border: '1px solid black', borderRadius: '10px' }}/>
-      <p>Please just ask if you would like a specific song and I would be more than happy to learn it</p>
+      <StyledImg width={width} src="/images/singing.jpg" alt="Lowrie singing" />
+      <p>
+        Please just ask if you would like a specific song and I would be more
+        than happy to learn it
+      </p>
       <ul>
         <p>A</p>
         <li>ABBA - I Do, I Do, I Do, I Do, I Do,</li>
@@ -156,11 +166,13 @@ export const SongList = () => {
         <li>Leona Lewis - One More Sleep</li>
         <li>Mariah Carey - All I Want For Christmas Is You</li>
         <li>Michael Buble - Let It Snow</li>
-        <li>Michael Buble - It &#x27;s Beginning to Look a Lot Like Christmas</li>
+        <li>
+          Michael Buble - It &#x27;s Beginning to Look a Lot Like Christmas
+        </li>
         <li>Sia - Snowman</li>
         <li>Wham - Last Christmas</li>
         <li>Wizzard - I Wish It Could Be Christmas Everyday</li>
       </ul>
     </Container>
-  )
-}
+  );
+};

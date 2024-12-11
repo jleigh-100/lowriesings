@@ -23,17 +23,30 @@ export const Container = styled.div`
       font-size: 50px;
     }
   }
-  
-`
+`;
 
 const Body = ({ currentPage, setCurrentPage }) => {
   const [message, setMessage] = useState("");
-
-  if (currentPage === "Song List") return <SongList />
-  if (currentPage === "FAQs") return <FAQs message={message} setMessage={setMessage} setCurrentPage={setCurrentPage}/>
-  if (currentPage === "Prices") return <PriceList />
-  if (currentPage === "Contact") return <Contact message={message} setMessage={setMessage} />
-  else return <HomePage message={message} setMessage={setMessage} setCurrentPage={setCurrentPage} />
-}
+  if (currentPage === "Song List") return <SongList />;
+  if (currentPage === "FAQs")
+    return (
+      <FAQs
+        message={message}
+        setMessage={setMessage}
+        setCurrentPage={setCurrentPage}
+      />
+    );
+  if (currentPage === "Prices") return <PriceList />;
+  if (currentPage === "Contact")
+    return <Contact message={message} setMessage={setMessage} />;
+  else
+    return (
+      <HomePage
+        message={message}
+        setMessage={setMessage}
+        setCurrentPage={setCurrentPage}
+      />
+    );
+};
 
 export default Body;

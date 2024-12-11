@@ -7,7 +7,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: ${props => props.width < 768 ? "64px 1fr 100px" : "200px 1fr 100px"};
+  grid-template-rows: ${(props) =>
+    props.width < 768 ? "64px 1fr 100px" : "200px 1fr 100px"};
 `;
 
 const App = () => {
@@ -20,6 +21,6 @@ const App = () => {
       <Footer />
     </Container>
   );
-}
+};
 
 export default App;

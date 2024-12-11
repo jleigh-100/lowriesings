@@ -3,4 +3,4 @@ export const timeConverter = (time) => {
   const minutes = time % 60;
   if (hours === 0) return `${minutes} minutes`;
   return `${hours} hours, ${minutes} minutes`;
-}
+};
