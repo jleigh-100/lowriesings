@@ -54,7 +54,7 @@ const TextInputContainer = styled.div`
 const StyledInput = styled.textarea`
   width: 100%;
   font-size: 26px;
-  font-family: "ArchitectsDaughter";
+  font-family: "Edensor";
   border: none;
   background: #f6f5ee;
   resize: none;
