@@ -3,7 +3,7 @@ import { Container } from "../Body.jsx";
 import { useWindowDimensions } from "../../hooks.js";
 import styled from "styled-components";
 
-const StyledImg = styled.img`
+export const StyledImg = styled.img`
   width: ${(props) => (props.width > 768 ? "50%" : "100%")};
   border: 1px solid black;
   border-radius: 10px;
