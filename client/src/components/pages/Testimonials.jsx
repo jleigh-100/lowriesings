@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-import { use } from "react";
 import { useWindowDimensions } from "../../hooks";
 
 const MessageArea = styled.div`
   display: flex;
   gap: 20px;
-  flex-direction: ${(props) => (props.width < 768 ? "column" : "row")}
-  width: ${(props) => (props.width < 768 ? "70vw" : "100%")};
+  flex-direction: ${(props) => (props.width < 768 ? "column" : "row")};
+  width: 100%;
   margin: 30px 0;
   align-items: center;
   flex-wrap: wrap;
@@ -17,7 +16,6 @@ const Message = styled.div`
   display: flex;
   flex: 1;
   height: 300px;
-  min-width: 300px;
   ${(props) => (props.width < 768 ? "width: calc(100% - 40px)" : "")};
   flex-direction: column;
   justify-content: space-between;

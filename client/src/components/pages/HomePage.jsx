@@ -54,7 +54,7 @@ export const HomePage = ({ setCurrentPage }) => {
   const { width } = useWindowDimensions();
   return (
     <Container>
-      <h1>Welcome to Lowrie Sings</h1>
+      <h1 style={{ textAlign:"center" }}>Welcome to Lowrie Sings</h1>
       <StyledInfo width={width}>
         {width < 768 && (
           <p>
