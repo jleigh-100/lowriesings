@@ -13,27 +13,13 @@ const Container = styled.div`
 `;
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState("LowrieSings");
   const { width } = useWindowDimensions();
 
-  useEffect(() => {
-    setLoading(true);
-    const currentPage = localStorage.getItem("currentPage");
-    setCurrentPage(currentPage || "LowrieSings");
-    setTimeout(() => {
-      setLoading(false);
-    }, 333); /// show loader for 333ms to prevent flicker
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("currentPage", currentPage);
-  }, [currentPage]);
-
   return (
-    <Container width={width} loading={loading}>
+    <Container width={width}>
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <Body currentPage={currentPage} setCurrentPage={setCurrentPage} loading={loading} />
+      <Body currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Footer />
     </Container>
   );

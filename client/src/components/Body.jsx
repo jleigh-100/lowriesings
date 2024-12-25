@@ -26,29 +26,9 @@ export const Container = styled.div`
   }
 `;
 
-const Loader = styled.span`
-  width: 48px;
-  height: 48px;
-  border: 5px solid black;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
 
-  @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-  }
-`;
-
-const Body = ({ currentPage, setCurrentPage, loading }) => {
+const Body = ({ currentPage, setCurrentPage }) => {
   const [message, setMessage] = useState("");
-  if (loading) return <Container><Loader /></Container>;
 
   if (currentPage === "Song List") return <SongList />;
   if (currentPage === "FAQs")
