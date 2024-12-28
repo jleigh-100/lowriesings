@@ -59,7 +59,7 @@ const StyledImg = styled.img`
 
 export const Contact = ({ message, setMessage }) => {
   const handleClick = (e) => {
-    const email = "jamie.leigh100@hotmail.co.uk";
+    const email = "lowriesings@gmail.com";
     const subject = "Website request";
     const toSend = message.replaceAll("\n", "%0D");
     e.preventDefault();

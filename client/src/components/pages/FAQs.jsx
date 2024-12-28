@@ -139,7 +139,7 @@ export const FAQs = ({ message, setMessage, setCurrentPage }) => {
       <Answer>If you have any more questions, feel free to ask below!</Answer>
       <TextInputContainer>
         <StyledForm
-          action={`mailto:jamie.leigh100@hotmail.co.uk?subject=Website request&body=${message.replaceAll("\n", "%0D")}`}
+          action={`mailto:lowriesings@gmail.com?subject=Website request&body=${message.replaceAll("\n", "%0D")}`}
           method="post"
         >
           <StyledInput

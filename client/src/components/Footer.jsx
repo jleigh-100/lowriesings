@@ -26,9 +26,6 @@ const Footer = () => {
       <a href="https://www.facebook.com/lowrie.gelbierbull" target="_blank">
         <StyledImage src="images/facebook.png" alt="facebook logo" />
       </a>
-      <a href="https://www.tiktok.com/@lowrie_gb" target="_blank">
-        <StyledImage src="images/tiktok.png" alt="tiktok logo" />
-      </a>
       <a href="https://www.youtube.com/@lowriegelbier-bull" target="_blank">
         <StyledImage src="images/youtube.png" alt="youtube logo" />
       </a>
