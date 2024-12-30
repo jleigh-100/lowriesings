@@ -15,7 +15,7 @@ const MessageArea = styled.div`
 const Message = styled.div`
   display: flex;
   flex: 1;
-  height: 300px;
+  height: 400px;
   ${(props) => (props.width < 768 ? "width: calc(100% - 40px)" : "")};
   flex-direction: column;
   justify-content: space-between;
@@ -43,26 +43,23 @@ const StyledFormatQuoteIcon = styled(FormatQuoteIcon)`
 export const Testimonials = () => {
   const testimonials = [
     {
-      message: "Lowrie is amazing!",
-      by: "Jamie",
-      date: "October 2024",
+      message: "It was such a pleasure to have Lowrie's beautiful voice as the backdrop of our wedding ceremony! Lowrie is truly the most talented singer, we can't recommend her enough!",
+      by: "Olivia L",
     },
     {
-      message: "I love Lowrie's voice! She's so professional and talented!",
-      by: "Dan",
-      date: "April 2021",
+      message: "Our wedding ceremony was made all the more special with Lowrie's  performance and many of our guests commented on her beautiful voice. Thank you, Lowrie, for making our day so special. ",
+      by: "Sam S",
     },
     {
-      message: "Lowrie is the best! It makes me so happy to hear her sing!",
-      by: "Andy + Sam",
-      date: "December 2019",
+      message: "She set the perfect atmosphere for our drinks reception. She learnt a few special songs for us too. I would recommended her to anyone. ",
+      by: "Kieran S",
     },
     {
       message:
-        "Lowrie is so professional, talented and her voice is incredible!",
-      by: "Mark",
-      date: "December 2024",
+        "I hired Lowrie to perform at my company Christmas party. Alongside her stunning voice, she brought fantastic energy to the night and got everyone dancing! I would definitely hire her again for future company events.",
+      by: "Daisy T",
     },
+    
   ];
   const { width } = useWindowDimensions();
 
@@ -75,7 +72,7 @@ export const Testimonials = () => {
             <p>{testimonial.message}</p>
           </MessageContainer>
           <ClientContainer>
-            {testimonial.by} - {testimonial.date}
+            {testimonial.by}
           </ClientContainer>
         </Message>
       ))}
