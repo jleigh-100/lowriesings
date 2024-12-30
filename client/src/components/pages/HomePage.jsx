@@ -75,18 +75,11 @@ const YoutubeVideo = ({ src, title }) => {
 }
 
 
-const MainYoutubeVideoSection = ({ width }) => {
+const MainYoutubeVideoSection = ({ width, children }) => {
   // if (width < 768) return null;
   return (
     <StyledYoutubeVideoContainer width={width}>
-      <YoutubeVideo
-        src="https://www.youtube.com/embed/D6hvEztdGZs"
-        title="Valerie - Amy Winehouse (Cover by Lowrie)"
-      />
-      <YoutubeVideo
-        src="https://www.youtube.com/embed/0cBMQ6M75Pw"
-        title="First Times - Ed Sheeran (Cover by Lowrie)"
-      />
+      {children}
     </StyledYoutubeVideoContainer>
   );
 }
@@ -123,13 +116,24 @@ export const HomePage = ({ setCurrentPage }) => {
             from the 1960's to current chart hits. I also love learning new
             songs on request and discovering new tunes.
           </p>
+          {width < 768 && <MainYoutubeVideoSection width={width}>
+              <YoutubeVideo
+                src="https://www.youtube.com/embed/D6hvEztdGZs"
+                title="Valerie - Amy Winehouse (Cover by Lowrie)"
+              />
+            </MainYoutubeVideoSection>}
           <p>
             I have a First Class degree in Music with Performance from the
             University of Southampton. During my time at University, I also
             studied specialised singing for one year in Norway.
           </p>
-          {width < 768 && <MainYoutubeVideoSection width={width} />}
           <p>I have my own portable PA system and microphone.</p>
+          {width < 768 && <MainYoutubeVideoSection width={width}>
+              <YoutubeVideo
+                src="https://www.youtube.com/embed/0cBMQ6M75Pw"
+                title="First Times - Ed Sheeran (Cover by Lowrie)"
+              />
+            </MainYoutubeVideoSection>}
           <p>
             Sit back, relax, and let me bring the cosy, acoustic vibes to your
             special day or memorable event. It doesn't matter how big or small,
@@ -140,7 +144,16 @@ export const HomePage = ({ setCurrentPage }) => {
           </StyledLink>
         </div>
       </StyledInfo>
-      {width > 769 && <MainYoutubeVideoSection width={width} />}
+      {width > 769 && <MainYoutubeVideoSection width={width}>
+        <YoutubeVideo
+          src="https://www.youtube.com/embed/D6hvEztdGZs"
+          title="Valerie - Amy Winehouse (Cover by Lowrie)"
+        />
+        <YoutubeVideo
+            src="https://www.youtube.com/embed/0cBMQ6M75Pw"
+            title="First Times - Ed Sheeran (Cover by Lowrie)"
+          />
+        </MainYoutubeVideoSection>}
       <Testimonials />
       <StyledSubImg
         width={width}
