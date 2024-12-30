@@ -43,12 +43,53 @@ const StyledSubImg = styled.img`
   width: ${(props) => (props.width < 768 ? "100%" : "50%")};
   border: 1px solid black;
   border-radius: 10px;
+  margin: 35px 0;
 `;
 
 const StyledLink = styled.p`
   text-decoration: underline;
   cursor: pointer;
 `;
+
+const StyledYoutubeVideoContainer = styled.div`
+  width: 100%;
+  height: ${(props) => (props.width < 768 ? '100vw' : '25vw')};
+  display: flex;
+  gap: 20px;
+  flex-direction: ${(props) => (props.width < 768 ? "column" : "row")};
+`;
+
+const YoutubeVideo = ({ src, title }) => {
+  return (
+    <iframe
+      style={{ border: "1px solid black", borderRadius: "10px" }}
+      src={src}
+      title={title}
+      width="100%"
+      height="100%"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    />
+  );
+}
+
+
+const MainYoutubeVideoSection = ({ width }) => {
+  // if (width < 768) return null;
+  return (
+    <StyledYoutubeVideoContainer width={width}>
+      <YoutubeVideo
+        src="https://www.youtube.com/embed/D6hvEztdGZs"
+        title="Valerie - Amy Winehouse (Cover by Lowrie)"
+      />
+      <YoutubeVideo
+        src="https://www.youtube.com/embed/0cBMQ6M75Pw"
+        title="First Times - Ed Sheeran (Cover by Lowrie)"
+      />
+    </StyledYoutubeVideoContainer>
+  );
+}
 
 export const HomePage = ({ setCurrentPage }) => {
   const { width } = useWindowDimensions();
@@ -87,6 +128,7 @@ export const HomePage = ({ setCurrentPage }) => {
             University of Southampton. During my time at University, I also
             studied specialised singing for one year in Norway.
           </p>
+          {width < 768 && <MainYoutubeVideoSection width={width} />}
           <p>I have my own portable PA system and microphone.</p>
           <p>
             Sit back, relax, and let me bring the cosy, acoustic vibes to your
@@ -98,6 +140,7 @@ export const HomePage = ({ setCurrentPage }) => {
           </StyledLink>
         </div>
       </StyledInfo>
+      {width > 769 && <MainYoutubeVideoSection width={width} />}
       <Testimonials />
       <StyledSubImg
         width={width}
