@@ -84,7 +84,7 @@ export const Contact = ({ message, setMessage }) => {
         />
         <StyledInput type="submit" value="Send" />
       </StyledForm>
-      <p>Or if you'd prefer, you can reach out to me on my socials below:</p>
+      <p>Alternatively, you can email me at: <a href="mailto:lowriesings@gmail.com">lowriesings@gmail.com</a> or you can reach out to me on my socials below:</p>
     </Container>
   );
 };
