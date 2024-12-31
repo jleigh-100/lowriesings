@@ -33,11 +33,7 @@ const Body = ({ currentPage, setCurrentPage }) => {
   if (currentPage === "Song List") return <SongList />;
   if (currentPage === "FAQs")
     return (
-      <FAQs
-        message={message}
-        setMessage={setMessage}
-        setCurrentPage={setCurrentPage}
-      />
+      <FAQs message={message} setMessage={setMessage} />
     );
   if (currentPage === "Prices") return <PriceList />;
   if (currentPage === "Contact")

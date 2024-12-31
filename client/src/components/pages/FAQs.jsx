@@ -6,40 +6,19 @@ import { sendMessage } from "./Contact.jsx";
 
 const Message = styled.div`
   font-size: 20px;
-  &.bubble {
-    --r: 1em;
-    --t: 1.5em;
-    
-    max-width: 600px;
-    padding: 1em;
-    border-inline: var(--t) solid #0000;
-    border-radius: calc(var(--r) + var(--t))/var(--r);
-    mask: 
-      radial-gradient(100% 100% at var(--_p) 0,#0000 99%,#000 102%) 
-        var(--_p) 100%/var(--t) var(--t) no-repeat,
-      linear-gradient(#000 0 0) padding-box;
-    border-box;
-    color: #F6F5EE;
-    margin-top: 10px;
+  align-self: start;
+  &.question {
+    font-style: italic;
+    font-size: 30px;
+    padding-bottom: 10px;
   }
-
-  &.left {
-    --_p: 0;
-    border-bottom-left-radius: 0 0;
-    place-self: start;
-    background: grey;
-  }
-
-  &.right {
-    --_p: 100%;
-    border-bottom-right-radius: 0 0;
-    place-self: end;
-    background: green;
+  &.answer {
+    padding-bottom: 30px
   }
 `;
 
 const TextInputContainer = styled.div`
-  margin: 30px;
+  margin: 0 30px;
   width: 90%;
   background: #f6f5ee;
   border: 1px solid #ccc;
@@ -81,16 +60,13 @@ const StyledButton = styled.button`
 `;
 
 const Question = ({ children }) => {
-  return <Message className="bubble left">{children}</Message>;
+  return <Message className="question">{children}</Message>;
 };
 const Answer = ({ children }) => {
-  return <Message className="bubble right">{children}</Message>;
+  return <Message className="answer">{children}</Message>;
 };
 
-export const FAQs = ({ message, setMessage, setCurrentPage }) => {
-  const handleSendMessage = () => {
-    setCurrentPage("Contact");
-  };
+export const FAQs = ({ message, setMessage }) => {
 
   return (
     <Container>
@@ -136,7 +112,7 @@ export const FAQs = ({ message, setMessage, setCurrentPage }) => {
       <Answer>
         My influences range from Amy Winehouse, to Adele, to Yebba
       </Answer>
-      <Answer>If you have any more questions, feel free to ask below!</Answer>
+      <p>If you have any more questions, feel free to ask below!</p>
       <TextInputContainer>
         <StyledForm
           action={`mailto:lowriesings@gmail.com?subject=Website request&body=${message.replaceAll("\n", "%0D")}`}
