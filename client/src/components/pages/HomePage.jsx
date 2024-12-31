@@ -53,7 +53,7 @@ const StyledLink = styled.p`
 
 const StyledYoutubeVideoContainer = styled.div`
   width: 100%;
-  height: ${(props) => (props.width < 768 ? '100vw' : '25vw')};
+  height: ${(props) => (props.width < 768 ? '50vw' : '25vw')};
   display: flex;
   gap: 20px;
   flex-direction: ${(props) => (props.width < 768 ? "column" : "row")};
@@ -76,7 +76,6 @@ const YoutubeVideo = ({ src, title }) => {
 
 
 const MainYoutubeVideoSection = ({ width, children }) => {
-  // if (width < 768) return null;
   return (
     <StyledYoutubeVideoContainer width={width}>
       {children}
@@ -86,6 +85,7 @@ const MainYoutubeVideoSection = ({ width, children }) => {
 
 export const HomePage = ({ setCurrentPage }) => {
   const { width } = useWindowDimensions();
+  // TODO: refactor based on mobile and desktop view to make it more maintainable
   return (
     <Container>
       <h1 style={{ textAlign:"center" }}>Welcome to Lowrie Sings</h1>
@@ -130,8 +130,8 @@ export const HomePage = ({ setCurrentPage }) => {
           <p>I have my own portable PA system and microphone.</p>
           {width < 768 && <MainYoutubeVideoSection width={width}>
               <YoutubeVideo
-                src="https://www.youtube.com/embed/0cBMQ6M75Pw"
-                title="First Times - Ed Sheeran (Cover by Lowrie)"
+                src="https://www.youtube.com/embed/bnVc4gxL_Wo"
+                title="Everything - Michael Bublé (Cover by Lowrie)"
               />
             </MainYoutubeVideoSection>}
           <p>
@@ -150,8 +150,8 @@ export const HomePage = ({ setCurrentPage }) => {
           title="Valerie - Amy Winehouse (Cover by Lowrie)"
         />
         <YoutubeVideo
-            src="https://www.youtube.com/embed/0cBMQ6M75Pw"
-            title="First Times - Ed Sheeran (Cover by Lowrie)"
+            src="https://www.youtube.com/embed/bnVc4gxL_Wo"
+            title="Everything - Michael Bublé (Cover by Lowrie)"
           />
         </MainYoutubeVideoSection>}
       <Testimonials />
