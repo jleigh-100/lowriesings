@@ -19,7 +19,7 @@ const Message = styled.div`
   ${(props) => (props.width < 768 ? "width: calc(100% - 40px)" : "")};
   flex-direction: column;
   justify-content: space-between;
-  background-color: lightgrey;
+  background-color: #FFE0F5;
   border-radius: 10px;
   padding: 20px;
   border: 1px solid black;
@@ -81,7 +81,7 @@ export const Testimonials = () => {
             <p>{testimonial.message}</p>
           </MessageContainer>
           <ClientContainer>
-            {testimonial.by}
+            - {testimonial.by}
           </ClientContainer>
         </Message>
       ))}

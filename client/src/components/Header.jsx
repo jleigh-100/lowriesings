@@ -10,7 +10,7 @@ const Container = styled.div`
   justify-content: center;
   height: ${(props) => (props.width > 768 ? "200px" : "105px")};
   background-color: ${theme.headerFooterColor};
-  color: #D3BCCC;
+  color: #FBEFF7;
   top: -2px;
 `;
 const IconContainer = styled.div`
@@ -49,12 +49,12 @@ const MenuContainer = styled.div`
 const MenuItem = styled.div`
   padding: 10px;
   cursor: pointer;
-  background-color: ${(props) => (props.selected ? "lightgrey" : "")};
+  background-color: ${(props) => (props.selected ? "#FBEFF7" : "")};
   color: ${(props) => (props.selected ? "black" : "")};
   border-radius: 10px;
   &:hover {
     color: black;
-    background-color: #b2b2b2;
+    background-color: #FBEFF7dd;
   }
   font-size: 30px;
 `;
@@ -63,7 +63,7 @@ const HeaderContainer = styled.div`
   cursor: pointer;
   height: 80px;
   margin-top: 12px;
-  background-color: #D3BCCC;
+  background-color: #FBEFF7;
   border-radius: 10px;
 `;
 
@@ -86,7 +86,7 @@ const BurgerMenu = ({ currentPage, setCurrentPage, width }) => {
   const iconStyling = {
     width: width >= 768 ? "80px" : "60px",
     height: width >= 768 ? "80px" : "60px",
-    fill: "#D3BCCC",
+    fill: "#FBEFF7",
   };
 
   return (

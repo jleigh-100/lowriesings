@@ -31,15 +31,15 @@ const Footer = () => {
         <StyledImage src="images/youtube.png" alt="youtube logo" />
       </a>
       <a
-        href='https://encoremusicians.com/hire/singers?utm_source=badge&utm_medium=web&utm_campaign=verified_badge&utm_content=dark-small'
+        href='https://encoremusicians.com/Lowrieweddingsinger'
         target="_blank"
-        >
-          <StyledImage
-            src='https://encoremusicians.com/img/embeds/badge-dark.svg'
-            alt='Book Lowrie on Encore Musicians'
-            style={{ border: "2px solid white", borderRadius: "40px" }}
-          />
-        </a>
+      >
+        <StyledImage
+          src='https://encoremusicians.com/img/embeds/badge-dark.svg'
+          alt='Book Lowrie on Encore Musicians'
+          style={{ border: "2px solid white", borderRadius: "40px" }}
+        />
+      </a>
     </Container>
   );
 };

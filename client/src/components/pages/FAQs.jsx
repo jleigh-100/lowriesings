@@ -20,7 +20,7 @@ const Message = styled.div`
 const TextInputContainer = styled.div`
   margin: 0 30px;
   width: 90%;
-  background: #f6f5ee;
+  background: #FBEFF7;
   border: 1px solid #ccc;
   border-radius: 20px;
   display: flex;
@@ -35,7 +35,7 @@ const StyledInput = styled.textarea`
   font-size: 26px;
   font-family: "Edensor";
   border: none;
-  background: #f6f5ee;
+  background: #FBEFF7;
   resize: none;
 `;
 
@@ -124,7 +124,7 @@ export const FAQs = ({ message, setMessage }) => {
             onChange={(e) => setMessage(e.target.value)}
           />
           <StyledButton type="submit">
-            <StyledSendIcon sx={{ height: 30, width: 30, fill: "#F6F5EE" }} />
+            <StyledSendIcon sx={{ height: 30, width: 30, fill: "#FBEFF7" }} />
           </StyledButton>
         </StyledForm>
       </TextInputContainer>
