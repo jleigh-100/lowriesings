@@ -7,6 +7,7 @@ const Container = styled.div`
   flex-direction: row;
   gap: 15px;
   justify-content: center;
+  align-items: center;
   bottom: -2px;
   background-color: ${theme.headerFooterColor};
   padding: 20px;
@@ -29,6 +30,16 @@ const Footer = () => {
       <a href="https://www.youtube.com/@lowriegelbier-bull" target="_blank">
         <StyledImage src="images/youtube.png" alt="youtube logo" />
       </a>
+      <a
+        href='https://encoremusicians.com/hire/singers?utm_source=badge&utm_medium=web&utm_campaign=verified_badge&utm_content=dark-small'
+        target="_blank"
+        >
+          <StyledImage
+            src='https://encoremusicians.com/img/embeds/badge-dark.svg'
+            alt='Book Lowrie on Encore Musicians'
+            style={{ border: "2px solid white", borderRadius: "40px" }}
+          />
+        </a>
     </Container>
   );
 };

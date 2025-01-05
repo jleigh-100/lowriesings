@@ -8,14 +8,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  :64px;
-  height: ${(props) => (props.width > 768 ? "200px" : "64px")};
+  height: ${(props) => (props.width > 768 ? "200px" : "105px")};
   background-color: ${theme.headerFooterColor};
-  color: #d3bccc;
-  h1 {
-    margin-top: 18px;
-    color: ${theme.titleColor};
-  }
+  color: #D3BCCC;
   top: -2px;
 `;
 const IconContainer = styled.div`
@@ -23,7 +18,7 @@ const IconContainer = styled.div`
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 2px;
+  top: 25px;
   right: 10px;
 `;
 
@@ -43,7 +38,7 @@ const MenuContainer = styled.div`
     `}
   gap: 10px;
   position: absolute;
-  top: ${(props) => (props.width > 768 ? "125px" : "64px")};
+  top: ${(props) => (props.width > 768 ? "125px" : "105px")};
   right: 0;
   z-index: ${(props) => (props.open ? "" : "-")}1;
   border-radius: 10px;
@@ -66,15 +61,14 @@ const MenuItem = styled.div`
 
 const HeaderContainer = styled.div`
   cursor: pointer;
-  height: ${(props) => (props.width < 768 ? "40px" : "100px")};
+  height: 80px;
   margin-top: 12px;
-  background-color: #f6f5ee;
+  background-color: #D3BCCC;
   border-radius: 10px;
-  padding: 0 10px;
-  > h1 {
-    margin-top: ${(props) => (props.width < 768 ? "8px" : "12px")};
-    font-size: ${(props) => (props.width < 768 ? "20px" : "64px")};
-  }
+`;
+
+const StyledImage = styled.img`
+  border-radius: 5px;
 `;
 
 const BurgerMenu = ({ currentPage, setCurrentPage, width }) => {
@@ -92,7 +86,7 @@ const BurgerMenu = ({ currentPage, setCurrentPage, width }) => {
   const iconStyling = {
     width: width >= 768 ? "80px" : "60px",
     height: width >= 768 ? "80px" : "60px",
-    fill: "#F6F5EE",
+    fill: "#D3BCCC",
   };
 
   return (
@@ -143,8 +137,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
   return (
     <Container width={width}>
       <HeaderContainer width={width}>
-        <h1 onClick={() => setCurrentPage("LowrieSings")}>LOWRIESINGS</h1>
-        {/* <img src="/images/logo.png" alt="Lowrie Sings Logo" height="80" style={{ marginTop: 10, borderRadius: 10}}/> */}
+        <StyledImage src="/images/logo.jpg" alt="Lowrie Sings Logo" height={width > 768 ? "100px" : "80px"} />
       </HeaderContainer>
       <BurgerMenu
         currentPage={currentPage}

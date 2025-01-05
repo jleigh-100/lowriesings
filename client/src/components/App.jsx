@@ -8,7 +8,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: grid;
   grid-template-rows: ${(props) =>
-    props.width < 768 ? "64px 1fr 100px" : "200px 1fr 100px"};
+    props.width < 768 ? "120px 1fr 100px" : "200px 1fr 100px"};
   ${(props) => props.loading && "height: 100vh;"}
 `;
 
