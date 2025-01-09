@@ -76,17 +76,6 @@ export const FAQs = ({ message, setMessage }) => {
         I like to arrive one hour before the event starts, so I can make sure
         everything is set up and do a sound check.
       </Answer>
-      <Question>
-        Can you provide an iPod/DJ service before and between your sets?
-      </Question>
-      <Answer>Absolutely, I can keep music playing between sets</Answer>
-      <Question>Can you learn specific pieces before the event?</Question>
-      <Answer>
-        If a song isn't included in my song list, I am happy to learn up to two
-        new songs for your event free of charge. If you would like me to learn
-        more than two there will be an extra fee, which was can discuss
-        depending on the number of extra songs.
-      </Answer>
       <Question>Do you bring all the equipment you need to perform?</Question>
       <Answer>
         Yes, of course! I will bring my own microphone, leads and an amp. All I
