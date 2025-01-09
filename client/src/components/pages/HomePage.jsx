@@ -88,7 +88,7 @@ export const HomePage = ({ setCurrentPage }) => {
   // TODO: refactor based on mobile and desktop view to make it more maintainable
   return (
     <Container>
-      <h1 style={{ textAlign:"center" }}>Welcome to Lowrie Sings</h1>
+      <h1 style={{ textAlign:"center" }}>About Me</h1>
       <StyledInfo width={width}>
         {width < 768 && (
           <p>
