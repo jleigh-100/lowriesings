@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useWindowDimensions } from "../../hooks";
 
 const Container = styled.div`
   display: flex;
@@ -8,102 +9,137 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const TypeGroup = styled.div`
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 30px;
-  padding-bottom: 1%;
-  margin-bottom: 20px;
-  width: 95%;
+const Header = styled.h3`
+  font-size: 40px;
 `;
 
-const performances = [
-  {
-    name: "Short performance (Up to 15 minutes)",
-    price: 100,
-  },
-  {
-    name: "Up to 1 hour",
-    price: 160,
-  },
-  {
-    name: "Up to 2 hours",
-    price: 275,
-  },
-  {
-    name: "Up to 3 hours",
-    price: 375,
-  },
-];
-
-const packages = [
-  {
-    name: "Wedding Ceremony",
-    description:
-      "This includes two songs before the service begins, music during the signing of the register, and music as guests leave.",
-    price: 175,
-  },
-  {
-    name: "Drinks Reception",
-    description:
-      "Two performances of up to 45 mins each during your drinks reception.",
-    price: 300,
-  },
-  {
-    name: "Wedding ceremony + Drinks reception",
-    description:
-      "- Music before the service begins, music during the signing of the register, and music as guests leave.\n- 2 x 45 min performances at the drinks reception.",
-    price: 375,
-  },
-];
+const StyledWeddingContainer = styled.div`
+  display: flex;
+  padding: 0 10px;
+  flex-direction: ${(props) => (props.width < 768 ? "column" : "row")};
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  align-self: center; 
+  border-radius: 30px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: max-content;
+  max-width: ${(props) => {
+    if (props.width < 768) return "350px"
+    if (props.width < 1150) return "744px"
+    if (props.width < 1900) return "1096px"
+    return "1840px"
+  }
+  };
+`;
 
 const StyledPackage = styled.div`
   border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  width: 85%;
+  max-width: 330px;
+  width: 100%;
 `;
 
+const StyledPerformanceContainer = styled.div`
+  display: flex;
+  flex-direction: ${props => props.width < 768 ? 'column' : 'row'};
+  gap: 20px;
+  align-items: center;
+`;
+
+const StyledPerformancePackage = styled.div`
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 330px;
+  height: 200px;
+  width: ${props => props.width < 768 ? "100vw" : '25vw'};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+`;
+
+const StyledImg = styled.img`
+width: 100%;
+`;
+
+const performances = [
+  {
+    name: "Up to 1 hour",
+    price: 150,
+  },
+  {
+    name: "Up to 2 hours",
+    price: 230,
+  },
+  {
+    name: "Up to 3 hours",
+    price: 300,
+  },
+];
+
+const packages = [
+  {
+    name: "Ceremony Package",
+    img: "images/packages/ceremony.png",
+  },
+  {
+    name: "Drinks Reception Package",
+    img: "images/packages/drinksreception.png",
+  },
+  {
+    name: "Ceremony and Drinks Reception Package",
+    img: "images/packages/ceremonyanddrinks.png",
+  },
+  {
+    name: "Wedding Breakfast Package",
+    img: "images/packages/breakfast.png",
+  },
+  {
+    name: "Anything else?",
+    img: "images/packages/anythingelse.png",
+  },
+];
+
+
 export const PriceList = () => {
+  const { width } = useWindowDimensions();
   return (
     <Container>
       <h1>Price List</h1>
       <>
         <h4>All prices include:</h4>
+        <p>- PA equipment and a video consultation (or an in-person meet up if we're local)</p>
         <p>
-          - PA equipment, a video conversation (if required), and learning up to
-          three new songs.
-        </p>
-        <p>
-          - Travel up to 20 miles including, thereafter mileage will be charged
+          - Travel up to 20 miles, thereafter mileage will be charged
           at the standard rate of 45p per mile
         </p>
         <p>- Public liability insurance of £10 million</p>
       </>
 
-      <TypeGroup>
-        <h3>Wedding packages</h3>
+      <Header>Wedding Packages</Header>
+      <StyledWeddingContainer width={width}>
         {packages.map((p, i) => (
-          <StyledPackage key={i}>
-            <h4>{p.name}</h4>
-            <p>{p.description}</p>
-            <p>£{p.price}</p>
+          <StyledPackage key={i} width={width}>
+            <StyledImg src={p.img} alt={p.name} />
           </StyledPackage>
         ))}
-      </TypeGroup>
+      </StyledWeddingContainer>
 
-      <TypeGroup>
-        <h3>Performances</h3>
+      <Header>Other events</Header>
+      <p>If you're looking for a singer for your corporate event, birthday party, baby shower, anniversary, Christmas party, or absolutely anything else please get in touch. I charge an hourly fee for these events</p>
+      <StyledPerformanceContainer width={width}>
         {performances.map((p, i) => (
-          <StyledPackage key={i}>
+          <StyledPerformancePackage key={i} width={width}>
             <h4>{p.name}</h4>
-            <p>£{p.price}</p>
-          </StyledPackage>
+            <p>From £{p.price}</p>
+          </StyledPerformancePackage>
         ))}
-      </TypeGroup>
+      </StyledPerformanceContainer>
     </Container>
   );
 };

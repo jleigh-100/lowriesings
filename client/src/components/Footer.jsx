@@ -21,7 +21,7 @@ const StyledImage = styled.img`
 const Footer = () => {
   return (
     <Container>
-      <a href="https://www.instagram.com/lowrie_gb" target="_blank">
+      <a href="https://www.instagram.com/lowriesings/" target="_blank">
         <StyledImage src="images/instagram.png" alt="instagram logo" />
       </a>
       <a href="https://www.facebook.com/lowrie.gelbierbull" target="_blank">
