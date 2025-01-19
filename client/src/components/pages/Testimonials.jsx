@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import { Quote } from "../Icons.jsx";
 import { useWindowDimensions } from "../../hooks";
 
 const MessageArea = styled.div`
@@ -44,7 +44,7 @@ const ClientContainer = styled.div`
   align-items: end;
 `;
 
-const StyledFormatQuoteIcon = styled(FormatQuoteIcon)`
+const StyledQuote = styled(Quote)`
   height: 50px;
   width: 50px;
 `;
@@ -76,7 +76,7 @@ export const Testimonials = () => {
     <MessageArea width={width}>
       {testimonials.map((testimonial, index) => (
         <Message key={index} width={width}>
-          <StyledFormatQuoteIcon />
+          <StyledQuote />
           <MessageContainer>
             <p>{testimonial.message}</p>
           </MessageContainer>

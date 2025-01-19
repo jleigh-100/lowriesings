@@ -2,6 +2,8 @@ import React from "react";
 import { Testimonials } from "./Testimonials.jsx";
 import { useWindowDimensions } from "../../hooks.js";
 import styled from "styled-components";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import { Quote } from "../Icons.jsx";
 
 const Container = styled.div`
   margin: 8px;
@@ -52,35 +54,26 @@ const StyledLink = styled.p`
 `;
 
 const StyledYoutubeVideoContainer = styled.div`
-  width: 100%;
-  height: ${(props) => (props.width < 768 ? '50vw' : '25vw')};
-  display: flex;
-  gap: 20px;
-  flex-direction: ${(props) => (props.width < 768 ? "column" : "row")};
+width: 100%;
+height: ${(props) => (props.width < 768 ? '50vw' : '25vw')};
+display: flex;
+gap: 20px;
+flex-direction: ${(props) => (props.width < 768 ? "column" : "row")};
+  .yt-lite {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
 `;
 
 const YoutubeVideo = ({ src, title }) => {
   return (
-    <iframe
-      style={{ border: "1px solid black", borderRadius: "10px" }}
-      src={src}
+    <LiteYouTubeEmbed
+      id={src.split("/").pop()}
       title={title}
-      width="100%"
-      height="100%"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    />
-  );
-}
-
-
-const MainYoutubeVideoSection = ({ width, children }) => {
-  return (
-    <StyledYoutubeVideoContainer width={width}>
-      {children}
-    </StyledYoutubeVideoContainer>
-  );
+    >
+    </LiteYouTubeEmbed>
+  )
 }
 
 export const HomePage = ({ setCurrentPage }) => {
@@ -99,6 +92,9 @@ export const HomePage = ({ setCurrentPage }) => {
         )}
         <StyledMainImg
           width={width}
+          rel="preload"
+          // loading="lazy"
+          fetchPriority="high"
           src="/images/shadowylowrie.jpg"
           alt="Lowrie singing"
         />
@@ -116,24 +112,24 @@ export const HomePage = ({ setCurrentPage }) => {
             from the 1960's to current chart hits. I also love learning new
             songs on request and discovering new tunes.
           </p>
-          {width < 768 && <MainYoutubeVideoSection width={width}>
+          {width < 768 && <StyledYoutubeVideoContainer width={width}>
               <YoutubeVideo
                 src="https://www.youtube.com/embed/D6hvEztdGZs"
                 title="Valerie - Amy Winehouse (Cover by Lowrie)"
               />
-            </MainYoutubeVideoSection>}
+            </StyledYoutubeVideoContainer>}
           <p>
             I have a First Class degree in Music with Performance from the
             University of Southampton. During my time at University, I also
             studied specialised singing for one year in Norway.
           </p>
           <p>I have my own portable PA system and microphone.</p>
-          {width < 768 && <MainYoutubeVideoSection width={width}>
+          {width < 768 && <StyledYoutubeVideoContainer width={width}>
               <YoutubeVideo
                 src="https://www.youtube.com/embed/bnVc4gxL_Wo"
                 title="Everything - Michael Bublé (Cover by Lowrie)"
               />
-            </MainYoutubeVideoSection>}
+            </StyledYoutubeVideoContainer>}
           <p>
             Sit back, relax, and let me bring the cosy, acoustic vibes to your
             special day or memorable event. It doesn't matter how big or small,
@@ -144,7 +140,7 @@ export const HomePage = ({ setCurrentPage }) => {
           </StyledLink>
         </div>
       </StyledInfo>
-      {width > 769 && <MainYoutubeVideoSection width={width}>
+      {width > 769 && <StyledYoutubeVideoContainer width={width}>
         <YoutubeVideo
           src="https://www.youtube.com/embed/D6hvEztdGZs"
           title="Valerie - Amy Winehouse (Cover by Lowrie)"
@@ -153,10 +149,11 @@ export const HomePage = ({ setCurrentPage }) => {
             src="https://www.youtube.com/embed/bnVc4gxL_Wo"
             title="Everything - Michael Bublé (Cover by Lowrie)"
           />
-        </MainYoutubeVideoSection>}
+        </StyledYoutubeVideoContainer>}
       <Testimonials />
       <StyledSubImg
         width={width}
+        loading="lazy"
         src="images/lowireatawedding.jpg"
         alt="Lowrie at a wedding"
       />

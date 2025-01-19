@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import MenuIcon from "@mui/icons-material/Menu";
+// import MenuIcon from "@mui/icons-material/Menu";
 import theme from "../theme/theme.json";
 import { useWindowDimensions } from "../hooks.js";
+import { MenuIcon } from "./Icons.jsx";
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +21,11 @@ const IconContainer = styled.div`
   height: 50px;
   top: 25px;
   right: 10px;
+  .menu-icon {
+    width: 60px;
+    height: 60px;
+    fill: #FBEFF7;
+  }
 `;
 
 const MenuContainer = styled.div`
@@ -83,17 +89,12 @@ const BurgerMenu = ({ currentPage, setCurrentPage, width }) => {
     setOpen(false);
   };
 
-  const iconStyling = {
-    width: width >= 768 ? "80px" : "60px",
-    height: width >= 768 ? "80px" : "60px",
-    fill: "#FBEFF7",
-  };
-
   return (
     <>
       {width < 768 && (
-        <IconContainer>
-          <MenuIcon style={iconStyling} onClick={() => handleToggle()} />
+        <IconContainer onClick={() => handleToggle()}>
+          <MenuIcon />
+          {/* <CustomMenuIcon onClick={() => handleToggle()} /> */}
         </IconContainer>
       )}
       <MenuContainer open={width > 768 || open} width={width}>

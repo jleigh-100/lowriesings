@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { lazy, useState } from "react";
 import styled from "styled-components";
 import { HomePage } from "./pages/HomePage.jsx";
 import { FAQs } from "./pages/FAQs.jsx";
 import { SongList } from "./pages/SongList.jsx";
 import { PriceList } from "./pages/PriceList.jsx";
 import { Contact } from "./pages/Contact.jsx";
+
+// const FAQs = lazy(() => import("./pages/FAQs.jsx"));
+// const SongList = lazy(() => import("./pages/SongList.jsx"));
+// const PriceList = lazy(() => import("./pages/PriceList.jsx"));
+// const Contact = lazy(() => import("./pages/Contact.jsx"));
 
 export const Container = styled.div`
   margin: 8px;

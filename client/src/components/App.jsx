@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "./Header.jsx";
 import Body from "./Body.jsx";
 import Footer from "./Footer.jsx";
 import { useWindowDimensions } from "../hooks.js";
 import styled from "styled-components";
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 const Container = styled.div`
   display: grid;

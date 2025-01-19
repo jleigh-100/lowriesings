@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Container } from "../Body.jsx";
-import SendIcon from "@mui/icons-material/Send";
-import { sendMessage } from "./Contact.jsx";
+import { SendIcon } from "../Icons.jsx";
 
 const Message = styled.div`
   font-size: 20px;
@@ -57,6 +56,16 @@ const StyledButton = styled.button`
   background: inherit;
   border: none;
   padding-top: 10px;
+
+  .send-icon {
+    background: green;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    fill: white;
+    height: 30px;
+    width: 30px;
+  }
 `;
 
 const Question = ({ children }) => {
@@ -113,7 +122,7 @@ export const FAQs = ({ message, setMessage }) => {
             onChange={(e) => setMessage(e.target.value)}
           />
           <StyledButton type="submit">
-            <StyledSendIcon sx={{ height: 30, width: 30, fill: "#FBEFF7" }} />
+            <StyledSendIcon />
           </StyledButton>
         </StyledForm>
       </TextInputContainer>
