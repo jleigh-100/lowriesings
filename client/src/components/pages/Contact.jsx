@@ -68,7 +68,7 @@ export const Contact = ({ message, setMessage }) => {
     <Container>
       <h1>Contact</h1>
       <StyledImg
-        src="images/lowriebandw.jpeg"
+        src="images/lowriebandw.jpg"
         alt="Black and white photo of Lowrie"
       />
       <p>
