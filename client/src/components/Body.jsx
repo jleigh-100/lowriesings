@@ -6,13 +6,8 @@ import { SongList } from "./pages/SongList.jsx";
 import { PriceList } from "./pages/PriceList.jsx";
 import { Contact } from "./pages/Contact.jsx";
 
-// const FAQs = lazy(() => import("./pages/FAQs.jsx"));
-// const SongList = lazy(() => import("./pages/SongList.jsx"));
-// const PriceList = lazy(() => import("./pages/PriceList.jsx"));
-// const Contact = lazy(() => import("./pages/Contact.jsx"));
-
 export const Container = styled.div`
-  margin: 8px;
+  margin: 0 20px;
   display: flex;
   min-height: 85%;
   flex-direction: column;
