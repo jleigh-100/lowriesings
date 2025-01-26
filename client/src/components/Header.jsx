@@ -108,7 +108,7 @@ const BurgerMenu = ({ currentPage, setCurrentPage, width }) => {
           selected={currentPage === "Song List"}
           onClick={() => handleSelection("Song List")}
         >
-          Song list
+          Song List
         </MenuItem>
         <MenuItem
           selected={currentPage === "FAQs"}
@@ -120,7 +120,7 @@ const BurgerMenu = ({ currentPage, setCurrentPage, width }) => {
           selected={currentPage === "Prices"}
           onClick={() => handleSelection("Prices")}
         >
-          Prices
+          Price List
         </MenuItem>
         <MenuItem
           selected={currentPage === "Contact"}
