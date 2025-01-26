@@ -69,15 +69,15 @@ width: 100%;
 
 const performances = [
   {
-    name: "Up to 1 hour",
+    name: "1 hour",
     price: 150,
   },
   {
-    name: "Up to 2 hours",
+    name: "2 hours",
     price: 230,
   },
   {
-    name: "Up to 3 hours",
+    name: "3 hours",
     price: 300,
   },
 ];
@@ -115,7 +115,7 @@ export const PriceList = () => {
         <h4>All prices include:</h4>
         <p>- PA equipment and a video consultation (or an in-person meet up if we're local)</p>
         <p>
-          - Travel up to 20 miles, thereafter mileage will be charged
+          - Travel up to 25 miles, thereafter mileage will be charged
           at the standard rate of 45p per mile
         </p>
         <p>- Public liability insurance of £10 million</p>
