@@ -24,9 +24,9 @@ const Footer = () => {
       <a href="https://www.instagram.com/lowriesings/" target="_blank">
         <StyledImage src="images/instagram.png" alt="instagram logo" />
       </a>
-      {/* <a href="https://www.facebook.com/lowrie.gelbierbull" target="_blank">
+      <a href="https://www.facebook.com/profile.php?id=61572252174173" target="_blank">
         <StyledImage src="images/facebook.png" alt="facebook logo" />
-      </a> */}
+      </a>
       <a href="https://www.youtube.com/@lowriegelbier-bull" target="_blank">
         <StyledImage src="images/youtube.png" alt="youtube logo" />
       </a>
