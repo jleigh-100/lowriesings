@@ -16,8 +16,9 @@ export const SongList = () => {
       <h1>Song List</h1>
       <StyledImg width={width} src="/images/singing.jpg" alt="Lowrie singing" />
       <p>
-        Please just ask if you would like a specific song and I would be more
-        than happy to learn it
+        Please let me know if you are looking for a specific song that's not on my list. 
+        I'm normally very happy to learn new songs, provided I have enough notice; 
+        I can find an appropriate backing track; and that the song is appropriate for my voice!
       </p>
       <ul>
         <p>A</p>
@@ -35,18 +36,15 @@ export const SongList = () => {
         <li>Aretha Franklin - I Say a Little Prayer</li>
         <li>Aretha Franklin - (You Make Me Feel Like) A Natural Woman</li>
         <li>Aretha Franklin - Bridge Over Troubled Water</li>
-        <li>Aretha Franklin - Respect</li>
         <li>Ariana Grande - Into You</li>
         <p>B</p>
         <li>Beatles - All You Need Is Love</li>
         <li>Beatles - Here Comes The Sun</li>
         <li>Beatles - Hey Jude</li>
         <li>Beatles - Let It Be</li>
-        <li>Becky Hill - Crazy What Love Can Do</li>
         <li>Ben E. King - Stand By Me</li>
-        <li>Beyonce - Love On Top</li>
         <li>Beyonce - Ave Maria</li>
-        <li>Beyonce - Crazy In Love</li>
+        <li>Beyonce - Crazy In Love (Acoustic)</li>
         <li>Beyonce - Halo</li>
         <li>Bill Withers - Lean On Me</li>
         <li>Billie Eilish - Ocean Eyes</li>
@@ -57,6 +55,7 @@ export const SongList = () => {
         <li>Bruno Mars - Marry You</li>
         <li>Bruno Mars - Just The Way You Are</li>
         <p>C</p>
+        <li>Chappell Roan - Pink Pony Club</li>
         <li>Christina Perri - A Thousand Years</li>
         <li>Clean Bandit - Rather Be</li>
         <li>Coldplay - Yellow</li>
@@ -79,6 +78,7 @@ export const SongList = () => {
         <li>Elton John - Can You Feel The Love Tonight</li>
         <li>Elton John - Your Song</li>
         <li>Elvis Presley - Can &#x27;t Help Falling in Love</li>
+        <li>Emeli Sande - Read All About It (Part III)</li>
         <li>Emeli Sande - Next To Me</li>
         <li>Etta James - At Last</li>
         <li>Eva Cassidy - Songbird</li>
@@ -100,11 +100,12 @@ export const SongList = () => {
         <li>Justin Bieber - Love Yourself</li>
         <li>John Legend - All Of Me</li>
         <p>L</p>
+        <li>Lady Gaga - Bad Romance</li>
         <li>Leon Bridges - Beyond</li>
         <li>Leonard Cohen - Hallelujah</li>
         <li>Lily Allen - Smile</li>
-        <li>Little Mix - Black Magic</li>
         <li>Lorde - Royals</li>
+        <li>Lorde - Solar Power</li>
         <p>M</p>
         <li>Marvin Gaye - Ain &#x27;t No Mountain High Enough</li>
         <li>McFadden &amp;Whitehead - Ain &#x27;t No Stoppin &#x27;Us Now</li>
@@ -118,6 +119,7 @@ export const SongList = () => {
         <li>Nial Horan - Slow Hands</li>
         <li>Noah Kahan - Stick Season</li>
         <p>O</p>
+        <li>Olivia Dean - Dive</li>
         <li>One Direction - Little Things</li>
         <p>Q</p>
         <li>Queen - Crazy Little Thing Called Love</li>
@@ -129,7 +131,6 @@ export const SongList = () => {
         <li>Ruelle - I Get To Love You</li>
         <li>RuthAnne - The Vow</li>
         <p>S</p>
-        <li>Sabrina Carpenter - Espresso</li>
         <li>Sam Smith - Latch</li>
         <li>Sam Smith - Stay With Me</li>
         <li>Sam Smith - How Will I Know</li>
