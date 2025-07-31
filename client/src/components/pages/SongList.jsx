@@ -55,6 +55,7 @@ export const SongList = () => {
         <li>Bruno Mars - Marry You</li>
         <li>Bruno Mars - Just The Way You Are</li>
         <p>C</p>
+        </li>Candi Statin - You Got The Love</li>
         <li>Chappell Roan - Pink Pony Club</li>
         <li>Christina Perri - A Thousand Years</li>
         <li>Clean Bandit - Rather Be</li>
@@ -87,6 +88,7 @@ export const SongList = () => {
         <p>G</p>
         <li>Gabrielle Aplin - The Power Of Love</li>
         <li>George Michael - Faith</li>
+        </li>Goo Goo Dolls - Iris
         <p>H</p>
         <li>Harry Styles - Adore You</li>
         <p>J</p>
@@ -104,6 +106,7 @@ export const SongList = () => {
         <li>Leon Bridges - Beyond</li>
         <li>Leonard Cohen - Hallelujah</li>
         <li>Lily Allen - Smile</li>
+        <li>Lily Allen - Somewhere Only We Know</li>
         <li>Lorde - Royals</li>
         <li>Lorde - Solar Power</li>
         <p>M</p>
@@ -116,7 +119,7 @@ export const SongList = () => {
         <p>N</p>
         <li>Natalie Cole - This Will Be (An Everlasting Love)</li>
         <li>Natasha Beddingfield - Unwritten</li>
-        <li>Nial Horan - Slow Hands</li>
+        <li>Niall Horan - Slow Hands</li>
         <li>Noah Kahan - Stick Season</li>
         <p>O</p>
         <li>Olivia Dean - Dive</li>
@@ -147,6 +150,7 @@ export const SongList = () => {
         <li>Tina Turner - What &#x27;s Love Got To Do</li>
         <li>Tracey Chapman - Fast Car</li>
         <p>W</p>
+        <li>Whitney Houston - My Love Is Your Love</li>
         <li>Whitney Houston - Wanna Dance With Somebody</li>
         <p>Z</p>
         <li>Zara Larson - Lush Life</li>
