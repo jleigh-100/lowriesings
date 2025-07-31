@@ -92,15 +92,12 @@ export const FAQs = ({ message, setMessage }) => {
       </Answer>
       <Question>Can I pick the pieces you play from the set list?</Question>
       <Answer>
-        Absolutely, I'm happy for your set list to be curated however you
-        choose. You can pick any number of the songs from my song list.
+        Absolutely, I'm happy for your set list to be curated however you choose. You can pick each individual song from my song list or I can put together a playlist for you.
       </Answer>
       <Answer>
-        Alternatively, if you give me a few artists/genres you like then I can
-        curate your set list from there. I'm always happy to chat through
-        anything so we can find the perfect set list!
+       I'm always happy to chat through anything so we can find the perfect set list!
       </Answer>
-      <Question>What if my timings change after I've booked you?</Question>
+      <Question>What happens if my timings change after I've booked you?</Question>
       <Answer>
         I will always try my best to be flexible to help ensure your event runs
         as smoothly as possible. If timings change slightly in the run up to the
@@ -108,7 +105,7 @@ export const FAQs = ({ message, setMessage }) => {
       </Answer>
       <Question>Which artists have you been most influenced by?</Question>
       <Answer>
-        My influences range from Amy Winehouse, to Adele, to Yebba
+        My influences range from Amy Winehouse, to Adele, to Aretha Franklin
       </Answer>
       <p>If you have any more questions, feel free to ask below!</p>
       <TextInputContainer>
