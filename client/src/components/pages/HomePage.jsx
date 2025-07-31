@@ -85,7 +85,7 @@ export const HomePage = ({ setCurrentPage }) => {
       <StyledInfo width={width}>
         {width < 768 && (
           <p>
-            I'm Lowrie, a 27 year old female solo singer, based in Bath (South
+            I'm Lowrie, a 28 year old female solo singer, based in Bath (South
             West England) - I perform with top-quality backing tracks at
             weddings and events.
           </p>
