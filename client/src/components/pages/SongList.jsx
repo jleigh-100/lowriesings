@@ -55,7 +55,7 @@ export const SongList = () => {
         <li>Bruno Mars - Marry You</li>
         <li>Bruno Mars - Just The Way You Are</li>
         <p>C</p>
-        </li>Candi Statin - You Got The Love</li>
+        <li>Candi Statin - You Got The Love</li>
         <li>Chappell Roan - Pink Pony Club</li>
         <li>Christina Perri - A Thousand Years</li>
         <li>Clean Bandit - Rather Be</li>
