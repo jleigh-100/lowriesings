@@ -88,7 +88,7 @@ export const SongList = () => {
         <p>G</p>
         <li>Gabrielle Aplin - The Power Of Love</li>
         <li>George Michael - Faith</li>
-        </li>Goo Goo Dolls - Iris
+        <li>Goo Goo Dolls - Iris</li>
         <p>H</p>
         <li>Harry Styles - Adore You</li>
         <p>J</p>
