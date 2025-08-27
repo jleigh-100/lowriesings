@@ -123,7 +123,7 @@ export const HomePage = ({ setCurrentPage }) => {
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
               src="https://www.youtube.com/embed/lKodQL8kfBA"
-              title="Singing Showreel 2025"
+              title="Lowrie Sings Showreel 2025"
             />
           </StyledYoutubeVideoContainer>}
           <p>
@@ -134,8 +134,8 @@ export const HomePage = ({ setCurrentPage }) => {
           <p>I have my own portable PA system and microphone.</p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
-              src="https://www.youtube.com/embed/bnVc4gxL_Wo"
-              title="Everything - Michael Bublé (Cover by Lowrie)"
+              src="https://www.youtube.com/embed/xCULUKBj2kQ"
+              title="Isn't She Lovely - Stevie Wonder (Cover by Lowrie)"
             />
           </StyledYoutubeVideoContainer>}
           <p>
@@ -155,11 +155,11 @@ export const HomePage = ({ setCurrentPage }) => {
       {width > 769 && <StyledYoutubeVideoContainer width={width}>
         <YoutubeVideo
           src="https://www.youtube.com/embed/lKodQL8kfBA"
-          title="Singing Showreel 2025"
+          title="Lowrie Sings Showreel 2025"
         />
         <YoutubeVideo
-          src="https://www.youtube.com/embed/bnVc4gxL_Wo"
-          title="Everything - Michael Bublé (Cover by Lowrie)"
+          src="https://www.youtube.com/embed/xCULUKBj2kQ"
+          title="Isn't She Lovely - Stevie Wonder (Cover by Lowrie)"
         />
       </StyledYoutubeVideoContainer>}
       <Testimonials />
