@@ -3,7 +3,6 @@ import { Testimonials } from "./Testimonials.jsx";
 import { useWindowDimensions } from "../../hooks.js";
 import styled from "styled-components";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
-import { Quote } from "../Icons.jsx";
 
 const Container = styled.div`
   margin: 8px;
@@ -95,7 +94,7 @@ export const HomePage = ({ setCurrentPage }) => {
           rel="preload"
           // loading="lazy"
           fetchPriority="high"
-          src="/images/shadowylowrie.jpg"
+          src="/images/lowrie_singing_blue.jpg"
           alt="Lowrie singing"
         />
         <div>
@@ -114,7 +113,7 @@ export const HomePage = ({ setCurrentPage }) => {
           </p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
               <YoutubeVideo
-                src="https://www.youtube.com/embed/D6hvEztdGZs"
+                src="https://www.youtube.com/embed/lKodQL8kfBA"
                 title="Valerie - Amy Winehouse (Cover by Lowrie)"
               />
             </StyledYoutubeVideoContainer>}
@@ -138,6 +137,10 @@ export const HomePage = ({ setCurrentPage }) => {
           <StyledLink onClick={() => setCurrentPage("Contact")}>
             I cannot wait to hear from you and be a part of your special day!
           </StyledLink>
+          {/* <audio controls>
+            <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
+            Your browser does not support the audio element.
+          </audio> */}
         </div>
       </StyledInfo>
       {width > 769 && <StyledYoutubeVideoContainer width={width}>
