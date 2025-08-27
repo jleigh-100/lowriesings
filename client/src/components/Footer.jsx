@@ -40,6 +40,15 @@ const Footer = () => {
           style={{ border: "2px solid white", borderRadius: "40px" }}
         />
       </a>
+      <a
+        href="https://www.lastminutemusicians.com/members/lowriesings.html"
+        target="_blank"
+      >
+        <StyledImage
+          src="https://www.lastminutemusicians.com/images/v5/LMM-Black.png"
+          alt="Lowrie Sings on Last Minute Musicians"
+        />
+      </a>
     </Container>
   );
 };
