@@ -56,22 +56,31 @@ const StyledYoutubeVideoContainer = styled.div`
 width: 100%;
 height: ${(props) => (props.width < 768 ? '50vw' : '25vw')};
 display: flex;
+flex: 1;
 gap: 20px;
+margin-bottom: ${(props) => (props.width < 768 ? "75px" : "0")};
 flex-direction: ${(props) => (props.width < 768 ? "column" : "row")};
   .yt-lite {
     width: 100%;
     border-radius: 10px;
     border: 1px solid black;
   }
+p {
+  margin: ${(props) => (props.width < 768 ? '5px 0 20px' : '5px 0')};
+  font-size: 20px;
+  text-align: center;
+}
 `;
 
 const YoutubeVideo = ({ src, title }) => {
   return (
-    <LiteYouTubeEmbed
-      id={src.split("/").pop()}
-      title={title}
-    >
-    </LiteYouTubeEmbed>
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+      <LiteYouTubeEmbed
+        id={src.split("/").pop()}
+        title={title}
+      />
+      <p>{title}</p>
+    </div>
   )
 }
 
@@ -80,7 +89,7 @@ export const HomePage = ({ setCurrentPage }) => {
   // TODO: refactor based on mobile and desktop view to make it more maintainable
   return (
     <Container>
-      <h1 style={{ textAlign:"center" }}>About Me</h1>
+      <h1 style={{ textAlign: "center" }}>About Me</h1>
       <StyledInfo width={width}>
         {width < 768 && (
           <p>
@@ -112,11 +121,11 @@ export const HomePage = ({ setCurrentPage }) => {
             songs on request and discovering new tunes.
           </p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
-              <YoutubeVideo
-                src="https://www.youtube.com/embed/lKodQL8kfBA"
-                title="Singing Showreel 2025"
-              />
-            </StyledYoutubeVideoContainer>}
+            <YoutubeVideo
+              src="https://www.youtube.com/embed/lKodQL8kfBA"
+              title="Singing Showreel 2025"
+            />
+          </StyledYoutubeVideoContainer>}
           <p>
             I have a First Class degree in Music with Performance from the
             University of Southampton. During my time at University, I also
@@ -124,11 +133,11 @@ export const HomePage = ({ setCurrentPage }) => {
           </p>
           <p>I have my own portable PA system and microphone.</p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
-              <YoutubeVideo
-                src="https://www.youtube.com/embed/bnVc4gxL_Wo"
-                title="Everything - Michael Bublé (Cover by Lowrie)"
-              />
-            </StyledYoutubeVideoContainer>}
+            <YoutubeVideo
+              src="https://www.youtube.com/embed/bnVc4gxL_Wo"
+              title="Everything - Michael Bublé (Cover by Lowrie)"
+            />
+          </StyledYoutubeVideoContainer>}
           <p>
             Sit back, relax, and let me bring the cosy, acoustic vibes to your
             special day or memorable event. It doesn't matter how big or small,
@@ -149,10 +158,10 @@ export const HomePage = ({ setCurrentPage }) => {
           title="Singing Showreel 2025"
         />
         <YoutubeVideo
-            src="https://www.youtube.com/embed/bnVc4gxL_Wo"
-            title="Everything - Michael Bublé (Cover by Lowrie)"
-          />
-        </StyledYoutubeVideoContainer>}
+          src="https://www.youtube.com/embed/bnVc4gxL_Wo"
+          title="Everything - Michael Bublé (Cover by Lowrie)"
+        />
+      </StyledYoutubeVideoContainer>}
       <Testimonials />
       <StyledSubImg
         width={width}
