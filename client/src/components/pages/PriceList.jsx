@@ -71,11 +71,11 @@ width: 100%;
 const performances = [
   {
     name: "1 hour",
-    price: 150,
+    price: 160,
   },
   {
     name: "2 hours",
-    price: 230,
+    price: 240,
   },
   {
     name: "3 hours",
@@ -86,32 +86,44 @@ const performances = [
 const packages = [
   {
     name: "Ceremony Package",
-    img: "images/packages/ceremony.png",
+    img: "images/packages/ceremony.jpeg",
   },
   {
     name: "Drinks Reception Package",
-    img: "images/packages/drinksreception.png",
+    img: "images/packages/drinksreception.jpeg",
   },
   {
     name: "Ceremony and Drinks Reception Package",
-    img: "images/packages/ceremonyanddrinks.png",
+    img: "images/packages/ceremonyanddrinks.jpeg",
   },
   {
     name: "Wedding Breakfast Package",
-    img: "images/packages/breakfast.png",
+    img: "images/packages/diamond.jpeg",
   },
   {
     name: "Anything else?",
-    img: "images/packages/anythingelse.png",
+    img: "images/packages/anythingelse.jpeg",
   },
 ];
 
+const StyledPhoto = styled.img`
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 750px;
+`;
 
 export const PriceList = () => {
   const { width } = useWindowDimensions();
   return (
     <Container>
       <h1>Price List</h1>
+        <StyledPhoto
+        src="images/lowrie_smiling.jpg"
+        alt="Black and white photo of Lowrie"
+      />
       <>
         <h4>All prices include:</h4>
         <p>- PA equipment and a video consultation (or an in-person meet up if we're local)</p>
