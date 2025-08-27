@@ -114,7 +114,7 @@ export const HomePage = ({ setCurrentPage }) => {
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
               <YoutubeVideo
                 src="https://www.youtube.com/embed/lKodQL8kfBA"
-                title="Valerie - Amy Winehouse (Cover by Lowrie)"
+                title="Singing Showreel 2025"
               />
             </StyledYoutubeVideoContainer>}
           <p>
@@ -145,8 +145,8 @@ export const HomePage = ({ setCurrentPage }) => {
       </StyledInfo>
       {width > 769 && <StyledYoutubeVideoContainer width={width}>
         <YoutubeVideo
-          src="https://www.youtube.com/embed/D6hvEztdGZs"
-          title="Valerie - Amy Winehouse (Cover by Lowrie)"
+          src="https://www.youtube.com/embed/lKodQL8kfBA"
+          title="Singing Showreel 2025"
         />
         <YoutubeVideo
             src="https://www.youtube.com/embed/bnVc4gxL_Wo"
