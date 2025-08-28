@@ -121,7 +121,7 @@ export const PriceList = () => {
     <Container>
       <h1>Price List</h1>
         <StyledPhoto
-        src="images/lowrie_smiling.jpg"
+        src="images/lowrie_lights.jpg"
         alt="Black and white photo of Lowrie"
       />
       <>

@@ -3,10 +3,13 @@ import { Container } from "../Body.jsx";
 import { useWindowDimensions } from "../../hooks.js";
 import styled from "styled-components";
 
-export const StyledImg = styled.img`
-  width: ${(props) => (props.width > 768 ? "50%" : "100%")};
+const StyledPhoto = styled.img`
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
   border: 1px solid black;
   border-radius: 10px;
+  max-width: 750px;
 `;
 
 export const SongList = () => {
@@ -14,7 +17,7 @@ export const SongList = () => {
   return (
     <Container>
       <h1>Song List</h1>
-      <StyledImg width={width} src="/images/singing.jpg" alt="Lowrie singing" />
+      <StyledPhoto width={width} src="/images/singing.jpg" alt="Lowrie singing" />
       <p>
         Please let me know if you are looking for a specific song that's not on my list. 
         I'm normally very happy to learn new songs, provided I have enough notice; 

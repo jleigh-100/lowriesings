@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container } from "../Body.jsx";
 import { SendIcon } from "../Icons.jsx";
+import { useWindowDimensions } from "../../hooks.js";
 
 const Message = styled.div`
   font-size: 20px;
@@ -27,6 +28,17 @@ const TextInputContainer = styled.div`
     margin: 5px;
   }
   padding: 10px;
+  margin-bottom: 20px;
+`;
+
+const StyledImg = styled.img`
+  width: ${({ divWidth }) => divWidth > 768 ? '30vw' : '100%'};
+  height: max-content;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
 `;
 
 const StyledInput = styled.textarea`
@@ -68,6 +80,15 @@ const StyledButton = styled.button`
   }
 `;
 
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: ${({ width }) => width < 768 ? 'center' : 'left'};
+`;
+const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: ${({ width }) => width < 768 ? 'column-reverse' : 'row'};
+`;
+
 const Question = ({ children }) => {
   return <Message className="question">{children}</Message>;
 };
@@ -75,11 +96,9 @@ const Answer = ({ children }) => {
   return <Message className="answer">{children}</Message>;
 };
 
-export const FAQs = ({ message, setMessage }) => {
-
+const QuestionsAndAnswers = () => {
   return (
-    <Container>
-      <h1>FAQs</h1>
+    <div style={{ marginLeft: 20, marginTop: 20 }}>
       <Question>How much time do you need to set up?</Question>
       <Answer>
         I like to arrive one hour before the event starts, so I can make sure
@@ -95,7 +114,7 @@ export const FAQs = ({ message, setMessage }) => {
         Absolutely, I'm happy for your set list to be curated however you choose. You can pick each individual song from my song list or I can put together a playlist for you.
       </Answer>
       <Answer>
-       I'm always happy to chat through anything so we can find the perfect set list!
+        I'm always happy to chat through anything so we can find the perfect set list!
       </Answer>
       <Question>What happens if my timings change after I've booked you?</Question>
       <Answer>
@@ -107,7 +126,27 @@ export const FAQs = ({ message, setMessage }) => {
       <Answer>
         My influences range from Amy Winehouse, to Adele, to Aretha Franklin
       </Answer>
+    </div>
+  )
+}
+
+export const FAQs = ({ message, setMessage }) => {
+  const { width } = useWindowDimensions();
+  return (
+    <Container>
+      <h1>FAQs</h1>
+      <ContentContainer width={width}>
+        <ImageContainer>
+          <StyledImg
+            src="images/lowrie_smiling.jpg"
+            alt="Black and white photo of Lowrie"
+            divWidth={width}
+          />
+        </ImageContainer>
+        <QuestionsAndAnswers width={width} />
+      </ContentContainer>
       <p>If you have any more questions, feel free to ask below!</p>
+
       <TextInputContainer>
         <StyledForm
           action={`mailto:lowriesings@gmail.com?subject=Website request&body=${message.replaceAll("\n", "%0D")}`}
