@@ -149,8 +149,7 @@ export const HomePage = ({ setCurrentPage }) => {
             bring to your special day.</p>
 
           <StyledLink onClick={() => setCurrentPage("Contact")}>
-            Contact me today to enquire - I can't wait to hear from you and be 
-            a part of your special day!
+            Get in touch today to enquire - I can't wait to hear from you and help make your day unforgettable!
           </StyledLink>
           {/* <audio controls>
             <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
