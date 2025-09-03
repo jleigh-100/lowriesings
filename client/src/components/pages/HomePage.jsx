@@ -152,7 +152,6 @@ export const HomePage = ({ setCurrentPage }) => {
           <p>Simply sit back, relax, and enjoy the cosy, soulful atmosphere I can 
             bring to your special day.</p>
 
-          </p>
           <p> Contact me today to enquire and I will provide a quote back within 24 hours.</p>
 
           </p>
