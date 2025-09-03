@@ -154,7 +154,6 @@ export const HomePage = ({ setCurrentPage }) => {
 
           <p> Contact me today to enquire and I will provide a quote back within 24 hours.</p>
 
-          </p>
           <StyledLink onClick={() => setCurrentPage("Contact")}>
             I cannot wait to hear from you and be a part of your special day!
           </StyledLink>
