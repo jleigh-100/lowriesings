@@ -93,9 +93,8 @@ export const HomePage = ({ setCurrentPage }) => {
       <StyledInfo width={width}>
         {width < 768 && (
           <p>
-            I'm Lowrie, a 28 year old female solo singer, based in Bath (South
-            West England) - I perform with top-quality backing tracks at
-            weddings and events.
+            Hi, I’m Lowrie — a professional solo singer specialising in wedding and events. 
+            I'm based in Bath, South West England, but I travel nationwide across the UK.
           </p>
         )}
         <StyledMainImg
@@ -109,16 +108,17 @@ export const HomePage = ({ setCurrentPage }) => {
         <div>
           {width > 769 && (
             <p>
-              I'm Lowrie, a 28 year old female solo singer, based in Bath (South
-              West England) - I perform with top-quality backing tracks at
-              weddings and events.
+              Hi, I’m Lowrie — a professional solo singer specialising in 
+              wedding and events. I'm based in Bath, South West England, 
+              but I travel nationwide across the UK.
             </p>
           )}
           <p>
-            My favourite songs to sing includes Adele, Amy Winehouse and Alicia
-            Keys. I absolutely love to perform a wide range of music, spanning
-            from the 1960's to current chart hits. I also love learning new
-            songs on request and discovering new tunes.
+            As a live acoustic singer, I can create the perfect ambiance 
+            for your special occasion. I perform with high-quality backing 
+            tracks, and have my own professional PA system and microphone 
+            to ensure excellent sound quality.
+
           </p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
@@ -127,11 +127,17 @@ export const HomePage = ({ setCurrentPage }) => {
             />
           </StyledYoutubeVideoContainer>}
           <p>
-            I have a First Class degree in Music with Performance from the
-            University of Southampton. During my time at University, I also
-            studied specialised singing for one year in Norway.
+            My setlist features favourites from artists such as Adele, 
+            Amy Winehouse, and Whitney Houston. I offer a diverse selection 
+            of songs, ranging from timeless upbeat classics of the 1970s to 
+            acoustic covers of current chart hits. I also enjoy learning new 
+            songs on request to tailor the performance to the unique atmosphere 
+            of your wedding or event.
+
           </p>
-          <p>I have my own portable PA system and microphone.</p>
+          <p>I hold a First Class degree in Music with Performance from the 
+            University of Southampton. I also spent a year studying singing at 
+            the Music Conservatoire in Bergen, Norway as part of my training.</p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
               src="https://www.youtube.com/embed/xCULUKBj2kQ"
@@ -139,9 +145,16 @@ export const HomePage = ({ setCurrentPage }) => {
             />
           </StyledYoutubeVideoContainer>}
           <p>
-            Sit back, relax, and let me bring the cosy, acoustic vibes to your
-            special day or memorable event. It doesn't matter how big or small,
-            music is so integral to any event.
+            Please feel free to explore my wedding packages and event 
+            pricing under the 'Price List' tab.
+
+          </p>
+          <p>Simply sit back, relax, and enjoy the cosy, soulful atmosphere I can 
+            bring to your special day.</p>
+
+          </p>
+          <p> Contact me today to enquire and I will provide a quote back within 24 hours.</p>
+
           </p>
           <StyledLink onClick={() => setCurrentPage("Contact")}>
             I cannot wait to hear from you and be a part of your special day!
