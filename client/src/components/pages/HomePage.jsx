@@ -145,17 +145,12 @@ export const HomePage = ({ setCurrentPage }) => {
             />
           </StyledYoutubeVideoContainer>}
           <p>
-            Please feel free to explore my wedding packages and event 
-            pricing under the 'Price List' tab.
-
-          </p>
-          <p>Simply sit back, relax, and enjoy the cosy, soulful atmosphere I can 
+            Simply sit back, relax, and enjoy the cosy, soulful atmosphere I can 
             bring to your special day.</p>
 
-          <p> Contact me today to enquire and I will provide a quote back within 24 hours.</p>
-
           <StyledLink onClick={() => setCurrentPage("Contact")}>
-            I cannot wait to hear from you and be a part of your special day!
+            Contact me today to enquire - I can't wait to hear from you and be 
+            a part of your special day!
           </StyledLink>
           {/* <audio controls>
             <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
