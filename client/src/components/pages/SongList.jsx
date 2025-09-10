@@ -17,7 +17,7 @@ export const SongList = () => {
   return (
     <Container>
       <h1>Song List</h1>
-      <StyledPhoto width={width} src="/images/singing.jpg" alt="Lowrie singing" />
+      <StyledPhoto width={width} src="/images/singing.jpg" alt="Lowrie sings" />
       <p>
         Please let me know if you are looking for a specific song that's not on my list. 
         I'm normally very happy to learn new songs, provided I have enough notice; 
