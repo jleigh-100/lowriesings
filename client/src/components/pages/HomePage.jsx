@@ -103,7 +103,7 @@ export const HomePage = ({ setCurrentPage }) => {
           // loading="lazy"
           fetchPriority="high"
           src="/images/lowrie_singing_blue.jpg"
-          alt="Lowrie singing"
+          alt="Lowrie Sings"
         />
         <div>
           {width > 769 && (
