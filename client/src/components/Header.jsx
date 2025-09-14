@@ -138,7 +138,12 @@ const Header = ({ currentPage, setCurrentPage }) => {
   return (
     <Container width={width}>
       <HeaderContainer width={width}>
-        <StyledImage src="/images/logo.jpg" alt="Lowrie Sings Logo" height={width > 768 ? "100px" : "80px"} />
+        <StyledImage
+          src="/images/logo.jpg"
+          alt="Lowrie Sings Logo"
+          height={width > 768 ? "100px" : "80px"}
+          onClick={() => setCurrentPage('LowrieSings')}
+        />
       </HeaderContainer>
       <BurgerMenu
         currentPage={currentPage}
