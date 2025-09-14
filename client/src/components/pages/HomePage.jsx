@@ -93,14 +93,13 @@ export const HomePage = ({ setCurrentPage }) => {
       <StyledInfo width={width}>
         {width < 768 && (
           <p>
-            Hi, I’m Lowrie — a professional solo singer specialising in wedding and events. 
+            Hi, I'm Lowrie — a professional solo singer specialising in wedding and events. 
             I'm based in Bath, South West England, but I travel nationwide across the UK.
           </p>
         )}
         <StyledMainImg
           width={width}
           rel="preload"
-          // loading="lazy"
           fetchPriority="high"
           src="/images/lowrie_singing_blue.jpg"
           alt="Lowrie Sings"
@@ -108,7 +107,7 @@ export const HomePage = ({ setCurrentPage }) => {
         <div>
           {width > 769 && (
             <p>
-              Hi, I’m Lowrie — a professional solo singer specialising in 
+              Hi, I'm Lowrie — a professional solo singer specialising in 
               wedding and events. I'm based in Bath, South West England, 
               but I travel nationwide across the UK.
             </p>
@@ -133,7 +132,6 @@ export const HomePage = ({ setCurrentPage }) => {
             acoustic covers of current chart hits. I also enjoy learning new 
             songs on request to tailor the performance to the unique atmosphere 
             of your wedding or event.
-
           </p>
           <p>I hold a First Class degree in Music with Performance from the 
             University of Southampton. I also spent a year studying singing at 
@@ -147,7 +145,6 @@ export const HomePage = ({ setCurrentPage }) => {
           <p>
             Simply sit back, relax, and enjoy the cosy, soulful atmosphere I can 
             bring to your special day.</p>
-
           <StyledLink onClick={() => setCurrentPage("Contact")}>
             Get in touch today to enquire - I can't wait to hear from you and help make your day unforgettable!
           </StyledLink>

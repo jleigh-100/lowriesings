@@ -4,10 +4,11 @@ import { useWindowDimensions } from "../../hooks";
 
 const Container = styled.div`
   display: flex;
-  margin: 0 20px;
+  margin: 0 15px;
   align-items: center;
   padding: 10px;
   flex-direction: column;
+  min-width: 340px;
 `;
 
 const Header = styled.h3`
@@ -120,7 +121,6 @@ export const PriceList = () => {
   return (
     <Container>
       <h1>Price List</h1>
-
       <>
         <h4>All prices include:</h4>
         <p>- PA equipment and a video consultation (or an in-person meet up if we're local)</p>
@@ -132,7 +132,7 @@ export const PriceList = () => {
       </>
       <StyledPhoto
         src="images/lowrie_lights.jpg"
-        alt="Black and white photo of Lowrie"
+        alt="Photo of Lowrie with lights in the background"
       />
       <Header>Wedding Packages</Header>
       <StyledWeddingContainer width={width}>

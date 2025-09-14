@@ -34,6 +34,7 @@ const TextInputContainer = styled.div`
 const StyledImg = styled.img`
   width: ${({ divWidth }) => divWidth > 768 ? '30vw' : '100%'};
   height: max-content;
+  max-height: 500px;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -139,7 +140,7 @@ export const FAQs = ({ message, setMessage }) => {
         <ImageContainer>
           <StyledImg
             src="images/lowrie_smiling.jpg"
-            alt="Black and white photo of Lowrie"
+            alt="Photo of Lowrie smiling holding a microphone"
             divWidth={width}
           />
         </ImageContainer>
