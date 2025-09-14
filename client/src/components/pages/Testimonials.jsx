@@ -27,7 +27,7 @@ const Message = styled.div`
 
 const MessageContainer = styled.div`
   min-height: 50px;
-  max-height: 300px;
+  max-height: 350px;
   overflow: scroll;
 
   /* scroll bar styling */
@@ -36,10 +36,13 @@ const MessageContainer = styled.div`
   &::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
   }
+  p {
+    margin-bottom: 0;
+  }
 `;
 
 const ClientContainer = styled.div`
-  height: 100px;
+  height: 50px;
   display: flex;
   align-items: end;
 `;
@@ -56,11 +59,11 @@ export const Testimonials = () => {
       by: "Olivia L",
     },
     {
-      message: "Our wedding ceremony was made all the more special with Lowrie's performance and many of our guests commented on her beautiful voice. Thank you, Lowrie, for making our day so special. ",
+      message: "Our wedding ceremony was made all the more special with Lowrie's performance and many of our guests commented on her beautiful voice. Thank you, Lowrie, for making our day so special.",
       by: "Sam S",
     },
     {
-      message: "She set the perfect atmosphere for our drinks reception. She learnt a few special songs for us too. I would recommend her to anyone. ",
+      message: "She set the perfect atmosphere for our drinks reception. She learnt a few special songs for us too. I would recommend her to anyone.",
       by: "Kieran S",
     },
     {
