@@ -32,9 +32,10 @@ const TextInputContainer = styled.div`
 `;
 
 const StyledImg = styled.img`
-  width: ${({ divWidth }) => divWidth > 768 ? '30vw' : '100%'};
+  ${({ divWidth }) => divWidth > 768 && 'width: 30vw;'}
+  ${({ divWidth }) => divWidth > 768 && 'max-width: 500px;'}
   height: max-content;
-  max-height: 500px;
+  ${({ divWidth }) => divWidth < 768 && "max-height: 500px;"}
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -137,7 +138,7 @@ export const FAQs = ({ message, setMessage }) => {
     <Container>
       <h1>FAQs</h1>
       <ContentContainer width={width}>
-        <ImageContainer>
+        <ImageContainer width={width}>
           <StyledImg
             src="images/lowrie_smiling.jpg"
             alt="Photo of Lowrie smiling holding a microphone"
