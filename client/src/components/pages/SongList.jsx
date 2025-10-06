@@ -20,7 +20,7 @@ export const SongList = () => {
       <StyledPhoto width={width} src="/images/singing.jpg" alt="Lowrie sings" />
       <p>
         Please let me know if you are looking for a specific song that's not on my list. 
-        I'm normally very happy to learn new songs, provided I have enough notice; 
+        I'm normally very happy to learn up to three new songs per booking, provided I have enough notice; 
         I can find an appropriate backing track; and that the song is appropriate for my voice!
       </p>
       <ul>
@@ -32,6 +32,7 @@ export const SongList = () => {
         <li>Adele - One and Only</li>
         <li>Adele - Someone Like You</li>
         <li>Aerosmith - Don &#x27;t Wanna Miss A Thing</li>
+        <li>Alex Warren - Ordinary</li>
         <li>Alicia Keyes - If I Ain &#x27;t Got You</li>
         <li>Amazing Grace</li>
         <li>Amy Winehouse - Valerie </li>
@@ -87,6 +88,7 @@ export const SongList = () => {
         <li>Etta James - At Last</li>
         <li>Eva Cassidy - Songbird</li>
         <p>F</p>
+        <li>Foundations - Build Me Up Buttercup</li>
         <li>Frank Sinatra - Fly Me To The Moon</li>
         <p>G</p>
         <li>Gabrielle Aplin - The Power Of Love</li>
@@ -118,7 +120,6 @@ export const SongList = () => {
         <li>Meghan Trainor - Dear Future Husband</li>
         <li>Michael Buble - Everything</li>
         <li>Michael Buble - Feeling Good</li>
-        <li>Miley Cyrus - Flowers </li>
         <p>N</p>
         <li>Natalie Cole - This Will Be (An Everlasting Love)</li>
         <li>Natasha Beddingfield - Unwritten</li>
@@ -167,17 +168,32 @@ export const SongList = () => {
         <li>Tangled - When Will My Life Begin</li>
         <li>The Little Mermaid - Part of Your World</li>
         <p>**Christmas Songs**</p>
+        <li>Andy Williams – It’s The Most Wonderful Time of the Year</li>
         <li>Ariana Grande - Santa Tell Me</li>
+        <li>Bobby Helm - Jingle Bell Rock</li>
+        <li>Brenda Lee – Rockin’ Around The Christmas Tree</li>
+        <li>Coldplay – Christmas Lights</li>
+        <li>Dean Martin – Let It Snow</li>
+        <li>Dean Martin – White Christmas</li>
         <li>Dean Martin - Winter Wonderland</li>
+        <li>Ed Sheeran and Elton John – Merry Christmas</li>
+        <li>Frank Sinartra – Have Yourself A Merry Little Christmas</li>
         <li>Joni Mitchell - River</li>
+        <li>Jose Feliciano – Feliz Navidad</li>
         <li>Kelly Clarkson - Underneath The Tree</li>
         <li>Leona Lewis - One More Sleep</li>
+        <li>Leonard Cohen - Hallelujah</li>
         <li>Mariah Carey - All I Want For Christmas Is You</li>
+        <li>Michael Buble – Holly Jolly Christmas</li>
         <li>Michael Buble - Let It Snow</li>
         <li>
           Michael Buble - It &#x27;s Beginning to Look a Lot Like Christmas
         </li>
+        <li>Nat King Cole – Joy To The World</li>
+        <li>Nat King Cole – The Christmas Song (Merry Christmas To You)</li>
+        <li>Pentatonix – Mary, Did You Know?</li>
         <li>Sia - Snowman</li>
+        <li>Teddy Swims – Silent Night</li>
         <li>Wham - Last Christmas</li>
         <li>Wizzard - I Wish It Could Be Christmas Everyday</li>
       </ul>
