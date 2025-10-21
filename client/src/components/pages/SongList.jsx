@@ -96,8 +96,6 @@ export const SongList = () => {
         <li>Gabrielle Aplin - The Power Of Love</li>
         <li>George Michael - Faith</li>
         <li>Goo Goo Dolls - Iris</li>
-        <p>H</p>
-        <li>Harry Styles - Adore You</li>
         <p>J</p>
         <li>James Arthur - Falling Like The Stars</li>
         <li>James Arthur - Say You Won &#x27;t Let Go</li>
@@ -109,7 +107,6 @@ export const SongList = () => {
         <li>John Legend - All Of Me</li>
         <li>Joss Stone - Some Kind Of Wonderful</li>
         <li>Journey - Don't Stop Believing</li>
-        <li>Justin Bieber - Love Yourself</li>
         <p>K</p>
         <li>Katrina & The Waves - Walking On Sunshine</li>
         <li>Kenny Rogers & Dolly Parton - Islands In The Stream</li>
@@ -124,7 +121,7 @@ export const SongList = () => {
         <p>M</p>
         <li>Marvin Gaye - Ain &#x27;t No Mountain High Enough</li>
         <li>Marvin Gaye - I Heard It Through The Grapevine</li>
-        <li>McFadden &amp;Whitehead - Ain &#x27;t No Stoppin &#x27;Us Now</li>
+        <li>McFadden &amp; Whitehead - Ain &#x27;t No Stoppin &#x27;Us Now</li>
         <li>Meghan Trainor - Dear Future Husband</li>
         <li>Michael Buble - Everything</li>
         <li>Michael Buble - Feeling Good</li>
@@ -136,14 +133,13 @@ export const SongList = () => {
         <li>Oasis - Wonderwall</li>
         <li>Olivia Dean - Dive</li>
         <li>Olivia Dean - Man I Need</li>
-        <li>So Easy To Fall In Love</li>
+        <li>Olivia Dean - So Easy To Fall In Love</li>
         <li>One Direction - Little Things</li>
         <p>Q</p>
         <li>Queen - Crazy Little Thing Called Love</li>
         <li>Queen - Don't Stop Me Now</li>
         <p>R</p>
         <li>Radiohead - Creep</li>
-        <li>Rag N Bone Man - Human</li>
         <li>Rihanna - Love On The Brain </li>
         <li>Rihanna - Stay</li>
         <li>Ruelle - I Get To Love You</li>
@@ -163,7 +159,6 @@ export const SongList = () => {
         <li>Taylor Swift - Our Song</li>
         <li>Taylor Swift - Lover</li>
         <li>Taylor Swift - 22</li>
-        <li>Tina Turner - What &#x27;s Love Got To Do</li>
         <li>Tracey Chapman - Fast Car</li>
         <p>W</p>
         <li>Whitney Houston - My Love Is Your Love</li>
@@ -171,7 +166,7 @@ export const SongList = () => {
         <p>**Disney Songs**</p>
         <li>Aladdin - A Whole New World</li>
         <li>Beauty and The Beast - Tale As Old As Time</li>
-        <li>Hercules - I Won &#x27;t Say Say (I &#x27;m In Love)</li>
+        <li>Hercules - I Won &#x27;t Say Say I &#x27;m In Love</li>
         <li>Lion King - Can You Feel The Love Tonight</li>
         <li>Moana - How Far I &#x27;ll Go</li>
         <li>Tangled - I See The Light</li>
