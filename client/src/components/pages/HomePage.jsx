@@ -107,15 +107,14 @@ export const HomePage = ({ setCurrentPage }) => {
         <div>
           {width > 769 && (
             <p>
-              Hi, I'm Lowrie — a professional solo singer specialising in 
-              wedding and events. I'm based in Bath, South West England, 
-              but I travel nationwide across the UK.
+              I'm Lowrie, a professional Wedding and Events singer based in the South West, 
+              though I travel nationwide across the UK.
             </p>
           )}
           <p>
-            As a live acoustic singer, I can create the perfect ambiance 
-            for your special occasion. I perform with high-quality backing 
-            tracks, and have my own professional PA system and microphone 
+            I specialise in acoustic Pop songs, ranging from timeless 80s classics to current chart hits. 
+            As a live singer, I can create the perfect soundtrack to your wedding day or special occasion. 
+            I perform with high-quality backing tracks, and have my own professional PA system and microphone 
             to ensure excellent sound quality.
 
           </p>
@@ -126,16 +125,10 @@ export const HomePage = ({ setCurrentPage }) => {
             />
           </StyledYoutubeVideoContainer>}
           <p>
-            My setlist features favourites from artists such as Adele, 
-            Amy Winehouse, and Whitney Houston. I offer a diverse selection 
-            of songs, ranging from timeless upbeat classics of the 1970s to 
-            acoustic covers of current chart hits. I also enjoy learning new 
-            songs on request to tailor the performance to the unique atmosphere 
-            of your wedding or event.
+            When booking with me, you are free to select each and every individual song from my ever-growing song list, to ensure the perfect playlist! 
+            As part of all wedding bookings, I can learn up to four new special songs for you too.
+            I am passionate about connecting with people via  singing and music, and I put my all into each and every booking.
           </p>
-          <p>I hold a First Class degree in Music with Performance from the 
-            University of Southampton. I also spent a year studying singing at 
-            the Music Conservatoire in Bergen, Norway as part of my training.</p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
               src="https://www.youtube.com/embed/xCULUKBj2kQ"
@@ -146,7 +139,8 @@ export const HomePage = ({ setCurrentPage }) => {
             Simply sit back, relax, and enjoy the cosy, soulful atmosphere I can 
             bring to your special day.</p>
           <StyledLink onClick={() => setCurrentPage("Contact")}>
-            Get in touch today to enquire - I can't wait to hear from you and help make your day unforgettable!
+            Get in touch for a no obligation quote today, all enquiries will be responded to within 48 hours.
+            I can't wait to hear from you and help make your day unforgettable!
           </StyledLink>
           {/* <audio controls>
             <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
