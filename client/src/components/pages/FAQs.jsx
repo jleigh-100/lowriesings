@@ -101,32 +101,39 @@ const Answer = ({ children }) => {
 const QuestionsAndAnswers = () => {
   return (
     <div style={{ marginLeft: 20, marginTop: 20 }}>
+       <Question>How do I book?</Question>
+      <Answer>
+        Please enquire with me using my contact form (or send me an email via lowriesings@gmail.com). Please include your wedding or event details, 
+        such as the date, venue, timings and any special requests. I'll then send you a no obligation quote within 24 hours. If you would like go ahead with the booking, I'll
+        just a completed booking form and 20% deposit to secure your date (with the remaining balance will be due 30 days before). Once I receive these, I will be very excited to confirm your booking!
+      </Answer>
+       <What happens once my booking is confirmed?</Question>
+      <Answer>
+        I'll be in touch to request your selected song list around 2 months before your big day. Then I will arrange a video chat (or in-person meet up if you're local to Bath) 
+      around 1-2 months before to discuss all of the final details! Feel free to send me a message anytime if you have any questions or would like any advice, I'm here to make sure you're comfortable and happy with everything!
+      </Answer>
       <Question>How much time do you need to set up?</Question>
       <Answer>
-        I like to arrive one hour before the event starts, so I can make sure
-        everything is set up and do a sound check.
+        I like to arrive at least one hour before my performance time starts, so I can make sure
+        everything is set up and do a sound check. However, I can be flexible with this as my set up takes approximately 30 minutes, so I can set up earlier or later if necessary!
       </Answer>
-      <Question>Do you bring all the equipment you need to perform?</Question>
+      <Question>Do you bring all of the equipment you need to perform?</Question>
       <Answer>
-        Yes, of course! I will bring my own microphone, leads and an amp. All I
-        require is a plug socket!
+        Yes I provide my own PA system (Bose S1 Pro +) and microphone and leads etc. My set up is entirely wirelss, which means I can set up inside or outside, 
+        or I can easily move to a different location within the venue to sing. I also have Public Liability Insurance, please let me know if your venue requires me to send them a copy of this.
       </Answer>
-      <Question>Can I pick the pieces you play from the set list?</Question>
+      <Question>Can I pick the songs from the set list?</Question>
       <Answer>
-        Absolutely, I'm happy for your set list to be curated however you choose. You can pick each individual song from my song list or I can put together a playlist for you.
+        Absolutely, I'm happy for your set list to be curated however you choose. You can pick each individual song from my list or I can put together a playlist for you based on your preferences.
       </Answer>
       <Answer>
-        I'm always happy to chat through anything so we can find the perfect set list!
+        I'm always happy to give advice and chat through anything your preferences so we can create the perfect set list together!
       </Answer>
-      <Question>What happens if my timings change after I've booked you?</Question>
+      <Question>What if my timings change after I've booked you?</Question>
       <Answer>
-        I will always try my best to be flexible to help ensure your event runs
-        as smoothly as possible. If timings change slightly in the run up to the
-        event just let me know and I'm sure I can accommodate this for you
-      </Answer>
-      <Question>Which artists have you been most influenced by?</Question>
-      <Answer>
-        My influences range from Amy Winehouse, to Adele, to Aretha Franklin
+        I'll always try my best to be flexible to help ensure your event runs
+        as smoothly as possible. If your timings change slightly in the run up to the
+        event, just let me know as soon as possible and I'm sure I can accommodate this for you
       </Answer>
     </div>
   )
