@@ -137,9 +137,9 @@ export const HomePage = ({ setCurrentPage }) => {
           </StyledYoutubeVideoContainer>}
           <p>
             Sit back, relax, and enjoy the cosy, soulful atmosphere I can 
-            bring to your special day.</p>
+            bring to your special day. I can't wait to hear from you and help make your day unforgettable!</p>
           <StyledLink onClick={() => setCurrentPage("Contact")}>
-            Get in touch for a no obligation quote today, I can't wait to hear from you and help make your day unforgettable!
+            Get in touch today for a no obligation quote (please include details about your venue, date and any special requests)!
           </StyledLink>
           {/* <audio controls>
             <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
