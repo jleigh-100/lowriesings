@@ -139,7 +139,7 @@ export const HomePage = ({ setCurrentPage }) => {
             Sit back, relax, and enjoy the cosy, soulful atmosphere I can 
             bring to your special day. I can't wait to hear from you and help make your day unforgettable!</p>
           <StyledLink onClick={() => setCurrentPage("Contact")}>
-            Get in touch today for a no obligation quote (please include details about your venue, date and any special requests)!
+            Get in touch today for a no obligation quote!
           </StyledLink>
           {/* <audio controls>
             <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
