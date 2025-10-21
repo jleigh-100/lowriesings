@@ -19,9 +19,9 @@ export const SongList = () => {
       <h1>Song List</h1>
       <StyledPhoto width={width} src="/images/singing.jpg" alt="Lowrie sings" />
       <p>
-        Please let me know if you are looking for a specific song that's not on my list. 
-        I'm normally very happy to learn up to three new songs per booking, provided I have enough notice; 
-        I can find an appropriate backing track; and that the song is appropriate for my voice!
+        You are free to carefully curate your playlist when booking with me, by selecting each individual song from my list below. 
+        Alternatively, if you let me know the vibe you'd like, I can put together a draft set list for you and you can edit it from there!
+        For weddings, I can learn up to four new special songs for you included in the booking.
       </p>
       <ul>
         <p>A</p>
@@ -69,6 +69,8 @@ export const SongList = () => {
         <li>Corinne Bailey Rae - Like a Star</li>
         <li>Cyndi Lauper - Time After Time</li>
         <li>Cyndi Lauper - Girls Just Wanna Have Fun</li>
+        <p>D</p>
+        <li>Dolly Parton - 9 to 5</li>
         <p>E</p>
         <li>Ed Sheeran - Thinking Out Loud</li>
         <li>Ed Sheeran - First Times</li>
@@ -102,20 +104,26 @@ export const SongList = () => {
         <li>Jamie Lawson - I Wasn &#x27;t Expecting That</li>
         <li>Jason Mraz - I Won &#x27;t Give Up</li>
         <li>Jason Mraz - I &#x27;m Yours</li>
-        <li>Jason Mraz - Lucy</li>
-        <li>Jessie J - Price Tag</li>
-        <li>Justin Bieber - Love Yourself</li>
+        <li>Jason Mraz - Lucky</li>
+        <li>Jessie J - Price Tag (Acoustic)</li>
         <li>John Legend - All Of Me</li>
+        <li>Joss Stone - Some Kind Of Wonderful</li>
+        <li>Journey - Don't Stop Believing</li>
+        <li>Justin Bieber - Love Yourself</li>
+        <p>K</p>
+        <li>Katrina & The Waves - Walking On Sunshine</li>
+        <li>Kenny Rogers & Dolly Parton - Islands In The Stream</li>
         <p>L</p>
         <li>Lady Gaga - Bad Romance</li>
         <li>Leon Bridges - Beyond</li>
         <li>Leonard Cohen - Hallelujah</li>
-        <li>Lily Allen - Smile</li>
+        <li>Lewis Capaldi - Someone You Loved</li>
         <li>Lily Allen - Somewhere Only We Know</li>
         <li>Lorde - Royals</li>
         <li>Lorde - Solar Power</li>
         <p>M</p>
         <li>Marvin Gaye - Ain &#x27;t No Mountain High Enough</li>
+        <li>Marvin Gaye - I Heard It Through The Grapevine</li>
         <li>McFadden &amp;Whitehead - Ain &#x27;t No Stoppin &#x27;Us Now</li>
         <li>Meghan Trainor - Dear Future Husband</li>
         <li>Michael Buble - Everything</li>
@@ -123,13 +131,16 @@ export const SongList = () => {
         <p>N</p>
         <li>Natalie Cole - This Will Be (An Everlasting Love)</li>
         <li>Natasha Beddingfield - Unwritten</li>
-        <li>Niall Horan - Slow Hands</li>
         <li>Noah Kahan - Stick Season</li>
         <p>O</p>
+        <li>Oasis - Wonderwall</li>
         <li>Olivia Dean - Dive</li>
+        <li>Olivia Dean - Man I Need</li>
+        <li>So Easy To Fall In Love</li>
         <li>One Direction - Little Things</li>
         <p>Q</p>
         <li>Queen - Crazy Little Thing Called Love</li>
+        <li>Queen - Don't Stop Me Now</li>
         <p>R</p>
         <li>Radiohead - Creep</li>
         <li>Rag N Bone Man - Human</li>
@@ -145,6 +156,7 @@ export const SongList = () => {
         <li>Snow Patrol - Chasing Cars</li>
         <li>Stevie Wonder - Signed, Sealed, Delivered (I &#x27;m Yours)</li>
         <li>Stevie Wonder - Isn &#x27;t She Lovely</li>
+        <li>Stevie Wonder - Superstition</li>
         <li>Stooshe - Black Heart</li>
         <p>T</p>
         <li>Taylor Swift - Love Story</li>
@@ -155,9 +167,7 @@ export const SongList = () => {
         <li>Tracey Chapman - Fast Car</li>
         <p>W</p>
         <li>Whitney Houston - My Love Is Your Love</li>
-        <li>Whitney Houston - Wanna Dance With Somebody</li>
-        <p>Z</p>
-        <li>Zara Larson - Lush Life</li>
+        <li>Whitney Houston - I Wanna Dance With Somebody</li>
         <p>**Disney Songs**</p>
         <li>Aladdin - A Whole New World</li>
         <li>Beauty and The Beast - Tale As Old As Time</li>
@@ -176,6 +186,7 @@ export const SongList = () => {
         <li>Dean Martin – Let It Snow</li>
         <li>Dean Martin – White Christmas</li>
         <li>Dean Martin - Winter Wonderland</li>
+        <li>Eartha Kitt - Santa Baby</li>
         <li>Ed Sheeran and Elton John – Merry Christmas</li>
         <li>Frank Sinartra – Have Yourself A Merry Little Christmas</li>
         <li>Joni Mitchell - River</li>
