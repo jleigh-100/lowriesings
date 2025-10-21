@@ -103,13 +103,14 @@ const QuestionsAndAnswers = () => {
     <div style={{ marginLeft: 20, marginTop: 20 }}>
        <Question>How do I book?</Question>
       <Answer>
-        Please enquire with me using my contact form (or send me an email via lowriesings@gmail.com). Please include your wedding or event details, 
-        such as the date, venue, timings and any special requests. I'll then send you a no obligation quote within 24 hours. If you would like go ahead with the booking, I'll
+        Please enquire with me using my contact form (or send me an email via lowriesings@gmail.com), including your wedding or event details, 
+        such as the date; venue; timings; and any special requests. I'll then send you a no obligation quote within 24 hours. If you would like go ahead with the booking, I'll
         just a completed booking form and 20% deposit to secure your date (with the remaining balance will be due 30 days before). Once I receive these, I will be very excited to confirm your booking!
       </Answer>
        <What happens once my booking is confirmed?</Question>
       <Answer>
-        I'll be in touch to request your selected song list around 2 months before your big day. Then I will arrange a video chat (or in-person meet up if you're local to Bath) 
+        I'll be in touch to request your selected song list around 2 months before your big day. For any new song requests you would like me to learn, I require at least 2 months notice for these. 
+      Then I will arrange a video chat (or in-person meet up if you're local to Bath) 
       around 1-2 months before to discuss all of the final details! Feel free to send me a message anytime if you have any questions or would like any advice, I'm here to make sure you're comfortable and happy with everything!
       </Answer>
       <Question>How much time do you need to set up?</Question>
