@@ -127,7 +127,7 @@ export const HomePage = ({ setCurrentPage }) => {
           <p>
             When booking with me, you are free to select each and every individual song from my ever-growing song list, to ensure the perfect playlist! 
             As part of all wedding bookings, I can learn up to four new special songs for you too.
-            I am passionate about connecting with people via  singing and music, and I put my all into each and every booking.
+            I am passionate about connecting with people via  singing and music, and I put my all into each and every booking!
           </p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
@@ -136,11 +136,10 @@ export const HomePage = ({ setCurrentPage }) => {
             />
           </StyledYoutubeVideoContainer>}
           <p>
-            Simply sit back, relax, and enjoy the cosy, soulful atmosphere I can 
+            Sit back, relax, and enjoy the cosy, soulful atmosphere I can 
             bring to your special day.</p>
           <StyledLink onClick={() => setCurrentPage("Contact")}>
-            Get in touch for a no obligation quote today, all enquiries will be responded to within 48 hours.
-            I can't wait to hear from you and help make your day unforgettable!
+            Get in touch for a no obligation quote today, I can't wait to hear from you and help make your day unforgettable!
           </StyledLink>
           {/* <audio controls>
             <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
