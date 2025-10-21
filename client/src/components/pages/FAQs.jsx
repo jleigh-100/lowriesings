@@ -107,7 +107,7 @@ const QuestionsAndAnswers = () => {
         such as the date; venue; timings; and any special requests. I'll then send you a no obligation quote within 24 hours. If you would like go ahead with the booking, I'll
         just a completed booking form and 20% deposit to secure your date (with the remaining balance will be due 30 days before). Once I receive these, I will be very excited to confirm your booking!
       </Answer>
-       <What happens once my booking is confirmed?</Question>
+      <Question>What happens once my booking is confirmed?</Question>
       <Answer>
         I'll be in touch to request your selected song list around 2 months before your big day. For any new song requests you would like me to learn, I require at least 2 months notice for these. 
       Then I will arrange a video chat (or in-person meet up if you're local to Bath) 
