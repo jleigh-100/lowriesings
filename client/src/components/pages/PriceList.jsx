@@ -165,7 +165,6 @@ export const PriceList = () => {
         <p>
           - Absolutely anything else - please get in touch!
         <p>
-        
         I usually charge an hourly fee for these events (plus travel costs where applicable)</p>
       <StyledPerformanceContainer width={width}>
         {performances.map((p, i) => (
