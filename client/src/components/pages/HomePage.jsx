@@ -94,7 +94,7 @@ export const HomePage = ({ setCurrentPage }) => {
         {width < 768 && (
           <p>
             Hi, I'm Lowrie — a professional solo singer specialising in wedding and events. 
-            I'm based in Bath, South West England, but I travel nationwide across the UK.
+            I'm based in Bath, South West England, though I can happily travel further afield!
           </p>
         )}
         <StyledMainImg
@@ -108,7 +108,7 @@ export const HomePage = ({ setCurrentPage }) => {
           {width > 769 && (
             <p>
               I'm Lowrie, a professional Wedding and Events singer based in the South West, 
-              though I travel nationwide across the UK.
+              though I can happily travel further afield!
             </p>
           )}
           <p>
@@ -125,9 +125,9 @@ export const HomePage = ({ setCurrentPage }) => {
             />
           </StyledYoutubeVideoContainer>}
           <p>
-            When booking with me, you are free to select each and every individual song from my ever-growing song list, to ensure the perfect playlist! 
+            When booking with me, you can select each and every individual song from my ever-growing song list, to ensure the perfect playlist! 
             As part of all wedding bookings, I can learn up to four new special songs for you too.
-            I am passionate about connecting with people via  singing and music, and I put my all into each and every booking!
+            I am passionate about connecting with people via singing and music, and I put my all into each and every booking!
           </p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
