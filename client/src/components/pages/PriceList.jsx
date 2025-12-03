@@ -146,17 +146,22 @@ export const PriceList = () => {
       </StyledWeddingContainer>
 
       <Header>Other events</Header>
-      <p>If you're looking for a singer for your:
+       <h4>If you're looking for a singer for your:</h4>
          <p>
           - Corporate Event
+        </p>
         <p>
           - Pub
+        </p>
         <p>
           - Birthday Party
+        </p>
         <p>
           - Christmas Party
+        </p>
         <p>
           - Baby Shower
+        </p>
         <p>
           - Absolutely anything else - please get in touch!
         <p>
