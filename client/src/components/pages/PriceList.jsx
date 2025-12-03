@@ -72,15 +72,15 @@ width: 100%;
 const performances = [
   {
     name: "1 hour",
-    price: 160,
+    price: 180,
   },
   {
     name: "2 hours",
-    price: 240,
+    price: 260,
   },
   {
     name: "3 hours",
-    price: 300,
+    price: 340,
   },
 ];
 
@@ -123,12 +123,15 @@ export const PriceList = () => {
       <h1>Price List</h1>
       <>
         <h4>All prices include:</h4>
-        <p>- PA equipment and a video consultation (or an in-person meet up if we're local)</p>
+        <p>- Use of my wireless PA system (I have two Bose S1 Pro+ Speakers) and a microphone.</p>
+         <p>
+          - A video or phone consultation (or an in-person meet up over coffee, if we're local!)
+        </p>
         <p>
-          - Travel up to 25 miles, thereafter mileage will be charged
+          - Travel costs up to 15 miles, thereafter mileage will be charged
           at the standard rate of 45p per mile
         </p>
-        <p>- Public liability insurance of £10 million</p>
+        <p>- Public Liability Insurance of up to £10 million</p>
       </>
       <StyledPhoto
         src="images/lowrie_lights.jpg"
