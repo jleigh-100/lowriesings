@@ -123,13 +123,12 @@ export const PriceList = () => {
       <h1>Price List</h1>
       <>
         <h4>All prices include:</h4>
-        <p>- Use of my wireless PA system (I have two Bose S1 Pro+ Speakers) and a microphone.</p>
+        <p>- Use of my wireless PA system (I have two Bose S1 Pro+ Speakers) and a microphone</p>
          <p>
           - A video or phone consultation (or an in-person meet up over coffee, if we're local!)
         </p>
         <p>
-          - Travel costs up to 15 miles, thereafter mileage will be charged
-          at the standard rate of 45p per mile
+          - Travel costs up to 15 miles from Bath. Beyond that, mileage is charged at the standard rate of 45p per mile (I will happily trave further afield!)
         </p>
         <p>- Public Liability Insurance of up to £10 million</p>
       </>
@@ -147,7 +146,15 @@ export const PriceList = () => {
       </StyledWeddingContainer>
 
       <Header>Other events</Header>
-      <p>If you're looking for a singer for your corporate event, birthday party, baby shower, anniversary, Christmas party, or absolutely anything else please get in touch. I charge an hourly fee for these events</p>
+      <p>If you're looking for a singer for your:
+        - Corporate event
+        - Birthday party
+        - Baby shower
+        - Anniversary
+        - Christmas party
+        - Or absolutely anything else - please get in touch!
+        
+        I usually charge an hourly fee for these events (plus travel costs where applicable)</p>
       <StyledPerformanceContainer width={width}>
         {performances.map((p, i) => (
           <StyledPerformancePackage key={i} width={width}>
