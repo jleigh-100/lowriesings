@@ -128,7 +128,7 @@ export const PriceList = () => {
           - A video or phone consultation (or an in-person meet up over coffee, if we're local!)
         </p>
         <p>
-          - Travel costs up to 15 miles from Bath. Beyond that, mileage is charged at the standard rate of 45p per mile (I will happily trave further afield!)
+          - Travel costs up to 15 miles from Bath. Beyond that, mileage is charged at the standard rate of 45p per mile.
         </p>
         <p>- Public Liability Insurance of up to £10 million</p>
       </>
@@ -147,12 +147,19 @@ export const PriceList = () => {
 
       <Header>Other events</Header>
       <p>If you're looking for a singer for your:
-        - Corporate event
-        - Birthday party
-        - Baby shower
-        - Anniversary
-        - Christmas party
-        - Or absolutely anything else - please get in touch!
+         <p>
+          - Corporate Event
+        <p>
+          - Pub
+        <p>
+          - Birthday Party
+        <p>
+          - Christmas Party
+        <p>
+          - Baby Shower
+        <p>
+          - Absolutely anything else - please get in touch!
+        <p>
         
         I usually charge an hourly fee for these events (plus travel costs where applicable)</p>
       <StyledPerformanceContainer width={width}>
