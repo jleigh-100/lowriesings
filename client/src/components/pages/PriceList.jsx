@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   margin: 0 15px;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   flex-direction: column;
   min-width: 340px;
 `;
@@ -40,8 +40,9 @@ const StyledPackage = styled.div`
   border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 10px 0;
   max-width: 330px;
+  background: #faeef8;
   width: 100%;
 `;
 
@@ -91,19 +92,23 @@ const packages = [
   },
   {
     name: "Drinks Reception Package",
-    img: "images/packages/drinksreception.jpeg",
-  },
-  {
-    name: "Ceremony and Drinks Reception Package",
-    img: "images/packages/ceremonyanddrinks.jpeg",
+    img: "images/packages/drinks_reception.jpeg",
   },
   {
     name: "Wedding Breakfast Package",
-    img: "images/packages/diamond.jpeg",
+    img: "images/packages/breakfast.jpeg",
   },
   {
-    name: "Anything else?",
-    img: "images/packages/anythingelse.jpeg",
+    name: "First Dance & Evening Performance",
+    img: "images/packages/firstdance_evening.jpeg",
+  },
+  {
+    name: "Ceremony & Reception Package",
+    img: "images/packages/ceremony_reception.jpeg",
+  },
+  {
+    name: "Diamond Package",
+    img: "images/packages/diamond.jpeg",
   },
 ];
 
@@ -137,6 +142,10 @@ export const PriceList = () => {
         alt="Photo of Lowrie with lights in the background"
       />
       <Header>Wedding Packages</Header>
+      <p>Please feel free to mix and match any packages, or ask for something completely bespoke.</p>
+      <p>Just send me an email and I'll happily create a personalised quote for you!</p>
+      <p>I always aim to respond within 24 hours. </p>
+      <p></p>
       <StyledWeddingContainer width={width}>
         {packages.map((p, i) => (
           <StyledPackage key={i} width={width}>
