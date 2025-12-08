@@ -55,21 +55,21 @@ const StyledQuote = styled(Quote)`
 export const Testimonials = () => {
   const testimonials = [
     {
-      message: "It was such a pleasure to have Lowrie's beautiful voice as the backdrop of our wedding ceremony! Lowrie is truly the most talented singer, we can't recommend her enough!",
-      by: "Olivia L",
+      message: "Perfect singer for the best day! Lowrie sang for our ceremony and drinks reception and we would recommend her to anyone. Thank you Lowrie for making our day so special.",
+      by: "Emilia and Nick, 06.12.25",
     },
     {
       message: "Our wedding ceremony was made all the more special with Lowrie's performance and many of our guests commented on her beautiful voice. Thank you, Lowrie, for making our day so special.",
-      by: "Sam S",
+      by: "Henrietta and George, 10.10.25",
     },
     {
-      message: "She set the perfect atmosphere for our drinks reception. She learnt a few special songs for us too. I would recommend her to anyone.",
-      by: "Kieran S",
+      message: "It was such a pleasure to have Lowrie's beautiful voice as the backdrop of our wedding ceremony! Lowrie is truly the most talented singer, we can't recommend her enough!",
+      by: "Liv and Oliver, 5.10.24",
     },
     {
       message:
-        "I hired Lowrie to perform at my company Christmas party. Alongside her stunning voice, she brought fantastic energy to the night and got everyone dancing! I would definitely hire her again for future company events.",
-      by: "Daisy T",
+        "Lowrie performed at my company summer party. Alongside her stunning voice, she brought fantastic energy to the night and got everyone dancing! I would definitely hire her again for future company events.",
+      by: "Daisy T, 27.08.25",
     },
     
   ];
