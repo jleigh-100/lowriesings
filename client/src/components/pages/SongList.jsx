@@ -38,13 +38,10 @@ export const SongList = () => {
         <li>Amy Winehouse - Valerie </li>
         <li>Aretha Franklin - Think</li>
         <li>Aretha Franklin - I Say a Little Prayer</li>
-        <li>Aretha Franklin - (You Make Me Feel Like) A Natural Woman</li>
-        <li>Aretha Franklin - Bridge Over Troubled Water</li>
         <li>Ariana Grande - Into You</li>
         <p>B</p>
         <li>Beatles - All You Need Is Love</li>
         <li>Beatles - Here Comes The Sun</li>
-        <li>Beatles - Hey Jude</li>
         <li>Beatles - Let It Be</li>
         <li>Ben E. King - Stand By Me</li>
         <li>Beyonce - Ave Maria</li>
@@ -55,6 +52,7 @@ export const SongList = () => {
         <li>Billie Eilish - Birds Of A Feather</li>
         <li>Birdy - Skinny Love</li>
         <li>Birdy - Wings</li>
+        <li>Breakfast At Tiffanys - Moon River</li>
         <li>Bruno Mars - Grenade</li>
         <li>Bruno Mars - Marry You</li>
         <li>Bruno Mars - Just The Way You Are</li>
@@ -62,15 +60,16 @@ export const SongList = () => {
         <li>Candi Statin - You Got The Love</li>
         <li>Chappell Roan - Pink Pony Club</li>
         <li>Christina Perri - A Thousand Years</li>
+        <li>Christina Perri - You Are My Sunshine</li>
         <li>Clean Bandit - Rather Be</li>
         <li>Coldplay - Yellow</li>
         <li>Coldplay - Fix You</li>
         <li>Corinne Bailey Rae - Put Your Records On</li>
-        <li>Corinne Bailey Rae - Like a Star</li>
         <li>Cyndi Lauper - Time After Time</li>
         <li>Cyndi Lauper - Girls Just Wanna Have Fun</li>
         <p>D</p>
         <li>Dolly Parton - 9 to 5</li>
+        <li>Doris Day - Dream A Little Dream Of Me</li>
         <p>E</p>
         <li>Ed Sheeran - Thinking Out Loud</li>
         <li>Ed Sheeran - First Times</li>
@@ -88,6 +87,7 @@ export const SongList = () => {
         <li>Emeli Sande - Read All About It (Part III)</li>
         <li>Emeli Sande - Next To Me</li>
         <li>Etta James - At Last</li>
+        <li>Etta James - Someday My Prince Will Come</li>
         <li>Eva Cassidy - Songbird</li>
         <p>F</p>
         <li>Foundations - Build Me Up Buttercup</li>
@@ -99,7 +99,6 @@ export const SongList = () => {
         <p>J</p>
         <li>James Arthur - Falling Like The Stars</li>
         <li>James Arthur - Say You Won &#x27;t Let Go</li>
-        <li>Jamie Lawson - I Wasn &#x27;t Expecting That</li>
         <li>Jason Mraz - I Won &#x27;t Give Up</li>
         <li>Jason Mraz - I &#x27;m Yours</li>
         <li>Jason Mraz - Lucky</li>
@@ -116,6 +115,7 @@ export const SongList = () => {
         <li>Leonard Cohen - Hallelujah</li>
         <li>Lewis Capaldi - Someone You Loved</li>
         <li>Lily Allen - Somewhere Only We Know</li>
+        <li>Louis Armstrong - What A Wonderful World</li>
         <li>Lorde - Royals</li>
         <li>Lorde - Solar Power</li>
         <p>M</p>
@@ -139,7 +139,6 @@ export const SongList = () => {
         <li>Queen - Crazy Little Thing Called Love</li>
         <li>Queen - Don't Stop Me Now</li>
         <p>R</p>
-        <li>Radiohead - Creep</li>
         <li>Rihanna - Love On The Brain </li>
         <li>Rihanna - Stay</li>
         <li>Ruelle - I Get To Love You</li>
@@ -150,6 +149,8 @@ export const SongList = () => {
         <li>Sam Smith - How Will I Know</li>
         <li>Sixpence None The Richer - Kiss Me</li>
         <li>Snow Patrol - Chasing Cars</li>
+        <li>Sound Of Music - Edelweiss</li>
+        <li>Sound Of Music - My Favourite Things</li>
         <li>Stevie Wonder - Signed, Sealed, Delivered (I &#x27;m Yours)</li>
         <li>Stevie Wonder - Isn &#x27;t She Lovely</li>
         <li>Stevie Wonder - Superstition</li>
