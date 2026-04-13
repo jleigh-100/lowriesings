@@ -19,13 +19,12 @@ export const SongList = () => {
       <h1>Song List</h1>
       <StyledPhoto width={width} src="/images/singing.jpg" alt="Lowrie sings" />
       <p>
-        You are free to carefully curate your playlist when booking with me, by selecting each individual song from my list below. 
-        Alternatively, if you let me know the vibe you'd like, I can put together a draft set list for you and you can edit it from there!
+        You are free to create your very own personalised playlist when booking with me, by selecting each individual song from my list below. 
+        Alternatively, if you let me know the sort of vibe you'd like, I can put together a draft set list for you.
         For weddings, I can learn up to four new special songs for you included in the booking.
       </p>
       <ul>
         <p>A</p>
-        <li>ABBA - I Do, I Do, I Do, I Do, I Do,</li>
         <li>ABBA - Honey Honey</li>
         <li>ABBA - Mama Mia</li>
         <li>Adele - Make You Feel My Love</li>
@@ -110,7 +109,6 @@ export const SongList = () => {
         <li>Katrina & The Waves - Walking On Sunshine</li>
         <li>Kenny Rogers & Dolly Parton - Islands In The Stream</li>
         <p>L</p>
-        <li>Lady Gaga - Bad Romance</li>
         <li>Leon Bridges - Beyond</li>
         <li>Leonard Cohen - Hallelujah</li>
         <li>Lewis Capaldi - Someone You Loved</li>
@@ -139,7 +137,6 @@ export const SongList = () => {
         <li>Queen - Crazy Little Thing Called Love</li>
         <li>Queen - Don't Stop Me Now</li>
         <p>R</p>
-        <li>Rihanna - Love On The Brain </li>
         <li>Rihanna - Stay</li>
         <li>Ruelle - I Get To Love You</li>
         <li>RuthAnne - The Vow</li>
