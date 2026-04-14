@@ -55,11 +55,11 @@ const StyledQuote = styled(Quote)`
 export const Testimonials = () => {
   const testimonials = [
     {
-      message: "We had so many compliments on how good Lowrie was! She sang at our drinks reception and was the perfect edition to our day! Would definitely recommend.",
+      message: "We had so many compliments on how good Lowrie was! She sang at our drinks reception and was the perfect edition to our day!",
       by: "Mia and James at Winkworth Farm, Malmesbury (28 March 2026)",
     },
     {
-      message: "Lowrie is the perfect singer for the best wedding day! Lowrie sang for our ceremony and drinks reception - thank you so much for making our day so special.",
+      message: "Lowrie is the perfect singer for the best wedding day! Thank you so much for making our day so special.",
       by: "Emilia and Nick at Priston Mill, Bath (06 December 2025)",
     },
     {
@@ -68,8 +68,8 @@ export const Testimonials = () => {
     },
     {
       message:
-        "Lowrie performed for my company Christmas party. Alongside her stunning voice, she brought fantastic energy to the night and got everyone dancing!",
-      by: "Daisy at DoubleTree by Hilton, Bristol (19 December 2025)",
+        "Lowrie performed for our Christmas party. Alongside her stunning voice, she brought fantastic energy to the night and got everyone dancing!",
+      by: "DoubleTree by Hilton, Bristol (19 December 2025)",
     },
     
   ];
