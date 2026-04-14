@@ -103,32 +103,32 @@ const QuestionsAndAnswers = () => {
     <div style={{ marginLeft: 20, marginTop: 20 }}>
        <Question>How do I book?</Question>
       <Answer>
-        Please enquire with me using my contact form (or send me an email via lowriesings@gmail.com), including your wedding or event details, 
+        Please enquire with me using my contact form (or send me an email via lowriesings@gmail.com). Please includ your wedding or event details, 
         such as the date; venue; timings; and any special requests. I'll then send you a no obligation quote within 24 hours. If you would like go ahead with the booking, I'll
-        just a completed booking form and 20% deposit to secure your date (with the remaining balance will be due 30 days before). Once I receive these, I will be very excited to confirm your booking!
+        just require a completed booking form and 20% deposit to secure your date (with the remaining balance will be due 30 days before). Once I receive these, I will be very excited to confirm your booking!
       </Answer>
       <Question>What happens once my booking is confirmed?</Question>
       <Answer>
-        I'll be in touch to request your selected song list around 2 months before your big day. For any new song requests you would like me to learn, I require at least 2 months notice for these. 
-      Then I will arrange a video chat (or in-person meet up if you're local to Bath) 
+        I'll be in touch to request your selected song list around one month before your big day. For any new song requests you would like me to learn, I require at least two months notice for these. 
+      We will arrange a phone or video chat (or in-person meet up if you're local to Bath!) 
       around 1-2 months before to discuss all of the final details! Feel free to send me a message anytime if you have any questions or would like any advice, I'm here to make sure you're comfortable and happy with everything!
       </Answer>
       <Question>How much time do you need to set up?</Question>
       <Answer>
-        I like to arrive at least one hour before my performance time starts, so I can make sure
-        everything is set up and do a sound check. However, I can be flexible with this as my set up takes approximately 30 minutes, so I can set up earlier or later if necessary!
+        I like to arrive at least one hour before my performance time starts, so I can complete my sound check and make sure
+        everything is set up. However, I can be flexible with this as my set up only takes approximately 30 minutes, so I can set up earlier or later if necessary!
       </Answer>
       <Question>Do you bring all of the equipment you need to perform?</Question>
       <Answer>
-        Yes I provide my own PA system (Bose S1 Pro +) and microphone and leads etc. My set up is entirely wirelss, which means I can set up inside or outside, 
+        Yes I provide my own PA system (I use two wireless Bose S1 Pro +) with my microphone and leads etc. My set up is entirely wirelss, which means I can set up inside or outside, 
         or I can easily move to a different location within the venue to sing. I also have Public Liability Insurance, please let me know if your venue requires me to send them a copy of this.
       </Answer>
       <Question>Can I pick the songs from the set list?</Question>
       <Answer>
-        Absolutely, I'm happy for your set list to be curated however you choose. You can pick each individual song from my list or I can put together a playlist for you based on your preferences.
+        Absolutely, I'm happy for your set list to be curated however you choose. You can select each individual song from my list or I can put together a playlist for you based on your preferences.
       </Answer>
       <Answer>
-        I'm always happy to give advice and chat through anything your preferences so we can create the perfect set list together!
+        I'm always happy to give advice and chat through any of your preferences, so that we can create the perfect set list together!
       </Answer>
       <Question>What if my timings change after I've booked you?</Question>
       <Answer>
