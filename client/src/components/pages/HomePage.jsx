@@ -93,8 +93,8 @@ export const HomePage = ({ setCurrentPage }) => {
       <StyledInfo width={width}>
         {width < 768 && (
           <p>
-            Hi, I'm Lowrie — a professional solo singer specialising in wedding and events. 
-            I'm based in Bath, South West England, though I can happily travel further afield!
+            Hi, I'm Lowrie - a professional solo singer specialising in wedding and events. 
+            I'm based in Bath, in the South West, though I can happily travel further afield!
           </p>
         )}
         <StyledMainImg
@@ -107,12 +107,12 @@ export const HomePage = ({ setCurrentPage }) => {
         <div>
           {width > 769 && (
             <p>
-              I'm Lowrie, a professional Wedding and Events singer based in the South West, 
+              I'm Lowrie, a professional wedding and events singer based in the South West, 
               though I can happily travel further afield!
             </p>
           )}
           <p>
-            I specialise in acoustic Pop songs, ranging from timeless 80s classics to current chart hits. 
+            I specialise in singing acoustic pop and soul songs, ranging from timeless 80s classics to current chart hits. 
             As a live singer, I can create the perfect soundtrack to your wedding day or special occasion. 
             I perform with high-quality backing tracks, and have my own professional PA system and microphone 
             to ensure excellent sound quality.
@@ -127,7 +127,7 @@ export const HomePage = ({ setCurrentPage }) => {
           <p>
             When booking with me, you can select each and every individual song from my ever-growing song list, to ensure the perfect playlist! 
             As part of all wedding bookings, I can learn up to four new special songs for you too.
-            I am passionate about connecting with people via singing and music, and I put my all into each and every booking!
+            I am passionate about connecting with people via singing and music, and I promise to put my all into each and every booking!
           </p>
           {width < 768 && <StyledYoutubeVideoContainer width={width}>
             <YoutubeVideo
@@ -139,7 +139,7 @@ export const HomePage = ({ setCurrentPage }) => {
             Sit back, relax, and enjoy the cosy, soulful atmosphere I can 
             bring to your special day. I can't wait to hear from you and help make your day unforgettable!</p>
           <StyledLink onClick={() => setCurrentPage("Contact")}>
-            Get in touch today for a no obligation quote!
+            Get in touch today for a free quote!
           </StyledLink>
           {/* <audio controls>
             <source src="audio/Lowrie_Singing.m4a" type="audio/mp4" />
@@ -153,15 +153,15 @@ export const HomePage = ({ setCurrentPage }) => {
           title="Lowrie Sings Showreel 2025"
         />
         <YoutubeVideo
-          src="https://www.youtube.com/embed/xCULUKBj2kQ"
-          title="Isn't She Lovely - Stevie Wonder (Cover by Lowrie)"
+          src="https://youtu.be/ooaz7HOWJdM?si=5bhFb2RklzZJmbTQ"
+          title="Man I Need - Olivia Dean (Cover by Lowrie Sings)"
         />
       </StyledYoutubeVideoContainer>}
       <Testimonials />
       <StyledSubImg
         width={width}
         loading="lazy"
-        src="images/lowireatawedding.jpg"
+        src="images/lowrieatawedding.jpg"
         alt="Lowrie at a wedding"
       />
     </Container>
