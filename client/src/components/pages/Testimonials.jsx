@@ -64,7 +64,7 @@ export const Testimonials = () => {
     },
     {
       message: "It was such a pleasure to have Lowrie's beautiful voice as the backdrop of our wedding ceremony! Lowrie is truly the most talented singer, we can't recommend her enough!",
-      by: "Liv and Oliver, 5.10.24",
+      by: "Liv and Oliver, 5.10.25",
     },
     {
       message:
