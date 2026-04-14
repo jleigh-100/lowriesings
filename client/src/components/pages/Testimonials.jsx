@@ -37,12 +37,13 @@ const MessageContainer = styled.div`
     display: none;  /* Safari and Chrome */
   }
   p {
-    margin-bottom: 0;
+    margin-bottom: 40px;
+    margin-top: 20px;
   }
 `;
 
 const ClientContainer = styled.div`
-  height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: end;
 `;

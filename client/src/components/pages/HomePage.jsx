@@ -153,7 +153,7 @@ export const HomePage = ({ setCurrentPage }) => {
           title="Lowrie Sings Showreel 2025"
         />
         <YoutubeVideo
-          src="https://youtu.be/ooaz7HOWJdM?si=5bhFb2RklzZJmbTQ"
+          src="https://www.youtube.com/embed/ooaz7HOWJdM"
           title="Man I Need - Olivia Dean (Cover by Lowrie Sings)"
         />
       </StyledYoutubeVideoContainer>}

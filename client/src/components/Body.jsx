@@ -7,7 +7,7 @@ import { PriceList } from "./pages/PriceList.jsx";
 import { Contact } from "./pages/Contact.jsx";
 
 export const Container = styled.div`
-  margin: 0 20px;
+  margin: 20px;
   display: flex;
   min-height: 85%;
   flex-direction: column;
