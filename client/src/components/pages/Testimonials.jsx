@@ -59,8 +59,8 @@ export const Testimonials = () => {
       by: "Emilia and Nick, 06.12.25",
     },
     {
-      message: "Our wedding ceremony was made all the more special with Lowrie's performance and many of our guests commented on her beautiful voice. Thank you, Lowrie, for making our day so special.",
-      by: "Hettie and George, 10.10.25",
+      message: "Lowrie was so lovely and we had so many compliments on how good she was! Lowrie sang at our drinks reception and was the perfect edition to our day! Would definitely recommend.",
+      by: "Mia and James, 28 March 2026",
     },
     {
       message: "It was such a pleasure to have Lowrie's beautiful voice as the backdrop of our wedding ceremony! Lowrie is truly the most talented singer, we can't recommend her enough!",
