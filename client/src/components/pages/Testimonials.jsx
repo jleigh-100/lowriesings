@@ -59,7 +59,7 @@ export const Testimonials = () => {
       by: "Mia and James at Winkworth Farm, Malmesbury (28 March 2026)",
     },
     {
-      message: "Perfect singer for the best day! Lowrie sang for our ceremony and drinks reception and we would recommend her to anyone. Thank you for making our day so special.",
+      message: "Lowrie is the perfect singer for the best wedding day! Lowrie sang for our ceremony and drinks reception - thank you so much for making our day so special.",
       by: "Emilia and Nick at Priston Mill, Bath (06 December 2025)",
     },
     {
