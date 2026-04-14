@@ -55,7 +55,7 @@ const StyledQuote = styled(Quote)`
 export const Testimonials = () => {
   const testimonials = [
     {
-      message: "We had so many compliments on how good Lowrie was! She sang at our drinks reception and was the perfect edition to our day!",
+      message: "We had so many compliments on how good Lowrie was! She was the perfect edition to our wedding drinks recepetion!",
       by: "Mia and James at Winkworth Farm (28 March 2026)",
     },
     {
