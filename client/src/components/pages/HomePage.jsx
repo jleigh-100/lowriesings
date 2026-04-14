@@ -5,7 +5,7 @@ import styled from "styled-components";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
 const Container = styled.div`
-  margin: 8px;
+  margin: 20px 8px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;

@@ -44,7 +44,7 @@ const Container = styled.div`
   height: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
 `;
 
 const StyledImg = styled.img`
