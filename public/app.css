@@ -1,10 +1,10 @@
-/* @font-face {
-    font-family: 'Edensor';
-    src: url("fonts/Louis_George_Cafe.ttf");
-} */
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto.ttf");
+}
 
 * {
-    font-family: 'roboto-regular';
+    font-family: 'Roboto';
     font-size: 26px;
 }
 
@@ -18,7 +18,7 @@ body {
     margin: 0;
     background-color: #ffeff7;
     h1 {
-        font-family: 'roboto-regular';
+        font-family: 'Roboto';
         margin: 10px 0;
         font-size: 40px;
     }

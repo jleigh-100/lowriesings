@@ -46,7 +46,7 @@ const StyledImg = styled.img`
 const StyledInput = styled.textarea`
   width: 100%;
   font-size: 26px;
-  // font-family: "Edensor";
+  font-family: "Roboto";
   border: none;
   background: #FBEFF7;
   resize: none;

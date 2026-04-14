@@ -26,7 +26,7 @@ const StyledForm = styled.form`
 
 const StyledInput = styled.input`
   width: 90%;
-  // font-family: "Edensor";
+  font-family: "Roboto";
   font-size: 20px;
 `;
 
@@ -34,7 +34,7 @@ const StyledTextArea = styled.textarea`
   padding: 10px;
   width: calc(90% - 22px);
   border-radius: 10px;
-  // font-family: "Edensor";
+  font-family: "Roboto";
   font-size: 20px;
   resize: none;
 `;
