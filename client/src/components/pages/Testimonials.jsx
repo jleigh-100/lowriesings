@@ -56,20 +56,20 @@ export const Testimonials = () => {
   const testimonials = [
     {
       message: "We had so many compliments on how good Lowrie was! She sang at our drinks reception and was the perfect edition to our day!",
-      by: "Mia and James at Winkworth Farm, Malmesbury (28 March 2026)",
+      by: "Mia and James at Winkworth Farm (28 March 2026)",
     },
     {
       message: "Lowrie is the perfect singer for the best wedding day! Thank you so much for making our day so special.",
-      by: "Emilia and Nick at Priston Mill, Bath (06 December 2025)",
+      by: "Emilia and Nick at Priston Mill (06 December 2025)",
     },
     {
       message: "It was such a pleasure to have Lowrie's beautiful voice as the backdrop of our wedding ceremony! Lowrie is truly the most talented singer, we can't recommend her enough!",
-      by: "Liv and Oliver at The Carriage Hall, Nottingham (05 October 2025)",
+      by: "Liv and Oliver at The Carriage Hall (05 October 2025)",
     },
     {
       message:
         "Lowrie performed for our Christmas party. Alongside her stunning voice, she brought fantastic energy to the night and got everyone dancing!",
-      by: "DoubleTree by Hilton, Bristol (19 December 2025)",
+      by: "The Hilton, Bristol (19 December 2025)",
     },
     
   ];
