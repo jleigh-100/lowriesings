@@ -4,7 +4,7 @@ import { useWindowDimensions } from "../../hooks";
 
 const Container = styled.div`
   display: flex;
-  margin: 0 15px;
+  margin: 0 10px;
   align-items: center;
   padding: 20px 15px;
   flex-direction: column;
