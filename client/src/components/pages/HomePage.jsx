@@ -107,8 +107,8 @@ export const HomePage = ({ setCurrentPage }) => {
         <div>
           {width > 769 && (
             <p>
-              I'm Lowrie, a professional wedding and events singer based in the South West, 
-              though I can happily travel further afield!
+              Hi, I'm Lowrie - a professional solo singer specialising in wedding and events. 
+              I'm based in Bath, in the South West (though I can happily travel further afield).
             </p>
           )}
           <p>
