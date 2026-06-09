@@ -70,7 +70,7 @@ export const Testimonials = () => {
     {
       message:
         "Lowrie sang for our vow renewal ceremony and she was fabulous! We truely had the best day and would definitely book Lowrie again.",
-      by: "The Hilton, Bristol (19 December 2025)"    
+      by: "Amy, Bristol (19 October 2025)"    
   ];
   const { width } = useWindowDimensions();
 
