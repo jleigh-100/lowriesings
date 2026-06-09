@@ -169,12 +169,12 @@ export const PriceList = () => {
           - Christmas Party
         </p>
         <p>
-          - Baby Shower
+          - Hen Do
         </p>
         <p>
-          - Absolutely anything else - please get in touch!
+          - Or absolutely anything else - please get in touch!
         </p>
-        <p>I usually charge an hourly fee for these events (plus travel costs where applicable)</p>
+        <p>I usually charge an hourly fee for these events (plus travel costs after 15 miles from Bath, where applicable)</p>
       <StyledPerformanceContainer width={width}>
         {performances.map((p, i) => (
           <StyledPerformancePackage key={i} width={width}>
