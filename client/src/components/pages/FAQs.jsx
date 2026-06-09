@@ -112,9 +112,11 @@ const QuestionsAndAnswers = () => {
       <Question>What happens after my booking is confirmed?</Question>
         <Answer>
       I'll be in touch around one month before your wedding or event to request your song selections and to finalise your playlist. If there are any special song requests you'd like me to learn, please let me know at least two months in advance (up to three new songs are included with all wedding bookings).
-        
+      </Answer>
+      <Answer>
       Around two months before your big day, we'll also arrange a phone call, video chat, or, if you're local to Bath, an in-person meeting to go over all the final details and ensure everything is going to be perfect on the day!
-        
+      </Answer>
+      <Answer>
       In the meantime, please feel free to get in touch at any point if you have any questions or would like any advice. I'm here to make the process as smooth and stress-free as possible, and to make sure you're completely happy with every aspect of your music.
       </Answer>
       <Question>How much time do you need to set up?</Question>
@@ -124,8 +126,11 @@ const QuestionsAndAnswers = () => {
       </Answer>
       <Question>Do you bring all of the equipment you need to perform?</Question>
       <Answer>
-        Of course! I'll bring my own PA system (two wireless Bose S1 Pro +), as well as my microphone and all of the necessary equipment. Beccause my set up is completelyentirely wirelss, I can perform both indoors and outdoors, 
-        and I can easily relocate within the venue ir required. I also have Public Liability Insurance up to £10 million. If your venue would like a copy of my certificate, just let me know and I can send it over.
+        Of course! I'll bring my own PA system (two wireless Bose S1 Pro + speakers), as well as my microphone and all of the necessary equipment. Beccause my set up is completely entirely wirelss, I can perform both indoors and outdoors, 
+        and I can easily relocate within the venue ir required. 
+      </Answer>
+      <Answer>
+        I also have Public Liability Insurance up to £10 million. If your venue would like a copy of my certificate, just let me know and I can send it over.
       </Answer>
       <Question>Can I pick the songs from the set list?</Question>
       <Answer>
