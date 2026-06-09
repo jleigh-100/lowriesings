@@ -103,16 +103,16 @@ const QuestionsAndAnswers = () => {
     <div style={{ marginLeft: 20, marginTop: 20 }}>
        <Question>How can I book Lowrie Sings?</Question>
       <Answer>
-        Please send me an email via lowriesings@gmail.com. Please make sure you include all of the details about your wedding or event - including
-        the date, venue, timings, and any special requests. I'll then send you a no obligation quote within 48 hours. 
-        
-        If you are happy with the quote and would like go ahead with the booking, I'll send you my booking form and 20% deposit invoice to secure your date in my diary. Once I receive both of these back, I will then be very excited to confirm your booking!
+        Please send me an email to enquire, via lowriesings@gmail.com. Please make sure to include all of the details about your wedding or event - including
+        the date, venue, timings, and any special requests. I'll then send you a free quote within 48 hours. 
+        };
+        If you are happy with the quote and would like go ahead with the booking (yay!), I'll send my booking form and 20% deposit invoice across to secure your date in my diary. Once I receive both of these back, I will then be very excited to confirm your booking!
       </Answer>
       <Question>What happens after my booking is confirmed?</Question>
       <Answer>
       I'll be in touch around one month before your wedding or event to request your song selections and to finalise your playlist. If there are any special song requests you'd like me to learn, please let me know at least two months in advance (up to three new songs are included with all wedding bookings).
         
-      Around 1-2 months before your big day, we'll also arrange a phone call, video chat, or, if you're local to Bath, an in-person meeting to go over all the final details and ensure everything is going to be perfect on the day!
+      Around two months before your big day, we'll also arrange a phone call, video chat, or, if you're local to Bath, an in-person meeting to go over all the final details and ensure everything is going to be perfect on the day!
         
       In the meantime, please feel free to get in touch at any point if you have any questions or would like any advice. I'm here to make the process as smooth and stress-free as possible, and to make sure you're completely happy with every aspect of your music.
       </Answer>
