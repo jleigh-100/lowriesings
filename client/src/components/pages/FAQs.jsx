@@ -105,11 +105,12 @@ const QuestionsAndAnswers = () => {
       <Answer>
         Please send me an email to enquire, via lowriesings@gmail.com. Please make sure to include all of the details about your wedding or event - including
         the date, venue, timings, and any special requests. I'll then send you a free quote within 48 hours. 
-        };
-        If you are happy with the quote and would like go ahead with the booking (yay!), I'll send my booking form and 20% deposit invoice across to secure your date in my diary. Once I receive both of these back, I will then be very excited to confirm your booking!
       </Answer>
-      <Question>What happens after my booking is confirmed?</Question>
       <Answer>
+        If you are happy with the quote and would like go ahead with the booking (yay!), I'll send my booking form and 20% deposit invoice across to secure your date in my diary. Once I receive both of these back, I will then be very excited to confirm your booking!
+        </Answer>
+      <Question>What happens after my booking is confirmed?</Question>
+        <Answer>
       I'll be in touch around one month before your wedding or event to request your song selections and to finalise your playlist. If there are any special song requests you'd like me to learn, please let me know at least two months in advance (up to three new songs are included with all wedding bookings).
         
       Around two months before your big day, we'll also arrange a phone call, video chat, or, if you're local to Bath, an in-person meeting to go over all the final details and ensure everything is going to be perfect on the day!
@@ -118,13 +119,13 @@ const QuestionsAndAnswers = () => {
       </Answer>
       <Question>How much time do you need to set up?</Question>
       <Answer>
-        I like to arrive at least one hour before for weddings, so I can complete my sound check and make sure
-        everything is set up. However, I can be flexible with this as my set up only takes approximately 30 minutes, so I can set up earlier or later if necessary!
+       I usually aim to arrive at least an hour before a wedding so I have plenty of time to complete my sound check and get everything set up. 
+        That said, my setup only takes about 30 minutes, so I'm very happy to be flexible and adjust my arrival time if required.
       </Answer>
       <Question>Do you bring all of the equipment you need to perform?</Question>
       <Answer>
-        Of course! I will bring my own PA system (I use two wireless Bose S1 Pro +), plus my microphone and leads etc. My set up is entirely wirelss, which means I can set up inside or outside, 
-        or I can easily move to a different location within the venue to sing. I also hold Public Liability Insurance up to £10 million, so do let me know if your venue requires me to send them a copy of this and I can send it across.
+        Of course! I'll bring my own PA system (two wireless Bose S1 Pro +), as well as my microphone and all of the necessary equipment. Beccause my set up is completelyentirely wirelss, I can perform both indoors and outdoors, 
+        and I can easily relocate within the venue ir required. I also have Public Liability Insurance up to £10 million. If your venue would like a copy of my certificate, just let me know and I can send it over.
       </Answer>
       <Question>Can I pick the songs from the set list?</Question>
       <Answer>
