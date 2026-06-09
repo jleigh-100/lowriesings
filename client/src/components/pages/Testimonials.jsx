@@ -70,10 +70,7 @@ export const Testimonials = () => {
     {
       message:
         "Lowrie sang for our vow renewal ceremony and she was fabulous! We truely had the best day and would definitely book Lowrie again.",
-      by: "The Hilton, Bristol (19 December 2025)",
-    },
-    <li>Want to hear what other couples have to say about my singing? Check out my reviews on Hitched: https://www.hitched.co.uk/wedding-music-and-djs/lowrie-gelbier-bull_370691.htm</li>
-    
+      by: "The Hilton, Bristol (19 December 2025)"    
   ];
   const { width } = useWindowDimensions();
 
