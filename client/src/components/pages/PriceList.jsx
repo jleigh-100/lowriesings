@@ -128,23 +128,23 @@ export const PriceList = () => {
       <h1>Price List</h1>
       <>
         <h4>All prices include:</h4>
-        <p>- Use of my wireless PA system (I have two Bose S1 Pro+ Speakers) and a microphone</p>
+        <p>- All necessary equipment (I have two Bose S1 Pro+ Speakers).</p>
          <p>
-          - A video or phone consultation (or an in-person meet up over coffee, if we're local!)
+          - A phone call or video chat consultation (or an in-person meet up over coffee, if you're local to Bath!).
         </p>
         <p>
           - Travel costs up to 15 miles from Bath. Beyond that, mileage is charged at the standard rate of 45p per mile.
         </p>
-        <p>- Public Liability Insurance of up to £10 million</p>
+        <p>- Public Liability Insurance of up to £10 million.</p>
       </>
       <StyledPhoto
         src="images/lowrie_lights.jpg"
         alt="Photo of Lowrie with lights in the background"
       />
       <Header>Wedding Packages</Header>
-      <p>Please feel free to mix and match any packages, or ask for something completely bespoke.</p>
-      <p>Just send me an email and I'll happily create a personalised quote for you!</p>
-      <p>I always aim to respond within 24 hours. </p>
+      <p>Please feel free to mix and match any packages, or ask me for a quote for something completely bespoke.</p>
+      <p>Just send me an email with your wedding or event details and I'll happily send over a free quote for you!</p>
+      <p>I always aim to respond to all enquiries within 48 hours. </p>
       <p></p>
       <StyledWeddingContainer width={width}>
         {packages.map((p, i) => (
