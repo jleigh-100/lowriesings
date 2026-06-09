@@ -19,9 +19,9 @@ export const SongList = () => {
       <h1>Song List</h1>
       <StyledPhoto width={width} src="/images/singing.jpg" alt="Lowrie sings" />
       <p>
-        You are free to create your very own personalised playlist when booking with me, by selecting each individual song from my list below. 
+        You can create your very own personalised playlist when booking with me, by selecting each individual song from my list below. 
         Alternatively, if you let me know the sort of vibe you'd like, I can put together a draft set list for you.
-        For weddings, I can learn up to four new special songs for you included in the booking.
+        For weddings, I can learn up to three new special songs for you included in the booking.
       </p>
       <ul>
         <p>A</p>
@@ -31,6 +31,7 @@ export const SongList = () => {
         <li>Adele - One and Only</li>
         <li>Adele - Someone Like You</li>
         <li>Aerosmith - Don &#x27;t Wanna Miss A Thing</li>
+        <li>Al Green - Let &#x27;s Stay Together</li>
         <li>Alex Warren - Ordinary</li>
         <li>Alicia Keyes - If I Ain &#x27;t Got You</li>
         <li>Amazing Grace</li>
@@ -58,8 +59,9 @@ export const SongList = () => {
         <p>C</p>
         <li>Candi Statin - You Got The Love</li>
         <li>Chappell Roan - Pink Pony Club</li>
+        <li>Chelsey Johnson - Dreams</li>
+        <li> Chelsey Johnson - You To Me Are Everything</li>
         <li>Christina Perri - A Thousand Years</li>
-        <li>Christina Perri - You Are My Sunshine</li>
         <li>Clean Bandit - Rather Be</li>
         <li>Coldplay - Yellow</li>
         <li>Coldplay - Fix You</li>
@@ -75,7 +77,6 @@ export const SongList = () => {
         <li>Ed Sheeran - Tenerife Sea</li>
         <li>Ed Sheeran - Photograph</li>
         <li>Ed Sheeran - Perfect</li>
-        <li>Ed Sheeran - Kiss Me</li>
         <li>Ed Sheeran - Shivers</li>
         <li>Ed Sheeran - Happier</li>
         <li>Ed Sheeran - Galway Girl</li>
@@ -109,7 +110,6 @@ export const SongList = () => {
         <li>Katrina & The Waves - Walking On Sunshine</li>
         <li>Kenny Rogers & Dolly Parton - Islands In The Stream</li>
         <p>L</p>
-        <li>Leon Bridges - Beyond</li>
         <li>Leonard Cohen - Hallelujah</li>
         <li>Lewis Capaldi - Someone You Loved</li>
         <li>Lily Allen - Somewhere Only We Know</li>
@@ -117,10 +117,10 @@ export const SongList = () => {
         <li>Lorde - Royals</li>
         <li>Lorde - Solar Power</li>
         <p>M</p>
+        <li>Maisie Peters - Feels Like This</li>
         <li>Marvin Gaye - Ain &#x27;t No Mountain High Enough</li>
         <li>Marvin Gaye - I Heard It Through The Grapevine</li>
         <li>McFadden &amp; Whitehead - Ain &#x27;t No Stoppin &#x27;Us Now</li>
-        <li>Meghan Trainor - Dear Future Husband</li>
         <li>Michael Buble - Everything</li>
         <li>Michael Buble - Feeling Good</li>
         <p>N</p>
@@ -134,7 +134,6 @@ export const SongList = () => {
         <li>Olivia Dean - So Easy To Fall In Love</li>
         <li>One Direction - Little Things</li>
         <p>Q</p>
-        <li>Queen - Crazy Little Thing Called Love</li>
         <li>Queen - Don't Stop Me Now</li>
         <p>R</p>
         <li>Rihanna - Stay</li>
@@ -144,8 +143,9 @@ export const SongList = () => {
         <li>Sam Smith - Latch</li>
         <li>Sam Smith - Stay With Me</li>
         <li>Sam Smith - How Will I Know</li>
+        <li>Shania Twain - From This Moment</li>
+        <li>Shania Twain - Still The One</li>
         <li>Sixpence None The Richer - Kiss Me</li>
-        <li>Snow Patrol - Chasing Cars</li>
         <li>Sound Of Music - Edelweiss</li>
         <li>Sound Of Music - My Favourite Things</li>
         <li>Stevie Wonder - Signed, Sealed, Delivered (I &#x27;m Yours)</li>
@@ -155,7 +155,6 @@ export const SongList = () => {
         <p>T</p>
         <li>Taylor Swift - Love Story</li>
         <li>Taylor Swift - Our Song</li>
-        <li>Taylor Swift - Lover</li>
         <li>Taylor Swift - 22</li>
         <li>Tracey Chapman - Fast Car</li>
         <p>W</p>
