@@ -55,8 +55,12 @@ const StyledQuote = styled(Quote)`
 
 export const Testimonials = () => {
   const testimonials = [
+     {
+      message: "Lowrie brought such a beautiful vibe to our wedding and so many of our guests commented on how amazing she was. We would recommend her in a heartbeat!",
+      by: "Chandni and Rahul at Manor By The Lake (02 May 2026)",
+    },
     {
-      message: "We had so many compliments on how good Lowrie was! She was the perfect edition to our wedding drinks recepetion!",
+      message: "We had so many compliments on how good Lowrie was! She was the perfect edition to our wedding drinks reception!",
       by: "Mia and James at Winkworth Farm (28 March 2026)",
     },
     {
@@ -64,14 +68,11 @@ export const Testimonials = () => {
       by: "Emilia and Nick at Priston Mill (06 December 2025)",
     },
     {
-      message: "It was such a pleasure to have Lowrie's beautiful voice as the backdrop of our wedding ceremony! Lowrie is truly the most talented singer, we can't recommend her enough!",
-      by: "Liv and Oliver at The Carriage Hall (05 October 2025)",
-    },
-    {
       message:
-        "Lowrie performed for our Christmas party. Alongside her stunning voice, she brought fantastic energy to the night and got everyone dancing!",
+        "Lowrie sang for our vow renewal ceremony and she was fabulous! We truely had the best day and would definitely book Lowrie again.",
       by: "The Hilton, Bristol (19 December 2025)",
     },
+    <li>Want to hear what other couples have to say about my singing? Check out my reviews on Hitched: https://www.hitched.co.uk/wedding-music-and-djs/lowrie-gelbier-bull_370691.htm</li>
     
   ];
   const { width } = useWindowDimensions();
