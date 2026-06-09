@@ -9,7 +9,7 @@ export const sendMessage = (messageText) => {
     console.log(messageText);
     // send email
     toast.success(
-      "Thanks for your message! I try to response to everyone within 2 days",
+      "Thanks for your message! I aim to respond to all enquiries within 24 hours.",
       { theme: "colored" },
     );
   }
@@ -72,8 +72,8 @@ export const Contact = ({ message, setMessage }) => {
         alt="Black and white photo of Lowrie"
       />
       <p>
-        I'd love to hear from you! Please get in touch to let me know your name,
-        event date and location and I'll get back to you as soon as possible!
+        I would love to hear from you! Please get in touch to let me know your name(s),
+        wedding or event date and location. I aim to respond to all enquires within 48 hours & I will always let you know if I am unavailable too. Thank you so much x
       </p>
       <StyledForm onSubmit={handleClick}>
         <StyledTextArea
