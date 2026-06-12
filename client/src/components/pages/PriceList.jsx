@@ -93,29 +93,33 @@ const performances = [
 const individualPackages = [
   {
     name: "Ceremony Package",
-    img: "images/packages/ceremony.jpeg",
+    img: "images/packages/individual/ceremony.jpeg",
   },
   {
     name: "Drinks Reception Package",
-    img: "images/packages/drinks_reception.jpeg",
+    img: "images/packages/individual/drinks.jpeg",
   },
   {
     name: "Wedding Breakfast Package",
-    img: "images/packages/breakfast.jpeg",
+    img: "images/packages/individual/breakfast.jpeg",
   },
   {
     name: "First Dance & Evening Performance",
-    img: "images/packages/firstdance_evening.jpeg",
+    img: "images/packages/individual/firstdance_evening.jpeg",
   },
 ];
 const combinedPackages = [
   {
-    name: "Ceremony & Reception Package",
-    img: "images/packages/ceremony_reception.jpeg",
+    name: "Aquamarine Package",
+    img: "images/packages/combined/aquamarine.jpeg",
+  },
+  {
+    name: "Ruby Package",
+    img: "images/packages/combined/ruby.jpeg",
   },
   {
     name: "Diamond Package",
-    img: "images/packages/diamond.jpeg",
+    img: "images/packages/combined/diamond.jpeg",
   },
 ];
 
