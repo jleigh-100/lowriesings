@@ -15,6 +15,11 @@ const Header = styled.h3`
   font-size: 40px;
 `;
 
+const StyledPackagesHeaders = styled.h4`
+  font-size: 30px;
+  margin-bottom: 40px;
+`;
+
 const StyledWeddingContainer = styled.div`
   display: flex;
   padding: 0 10px;
@@ -85,7 +90,7 @@ const performances = [
   },
 ];
 
-const packages = [
+const individualPackages = [
   {
     name: "Ceremony Package",
     img: "images/packages/ceremony.jpeg",
@@ -102,6 +107,8 @@ const packages = [
     name: "First Dance & Evening Performance",
     img: "images/packages/firstdance_evening.jpeg",
   },
+];
+const combinedPackages = [
   {
     name: "Ceremony & Reception Package",
     img: "images/packages/ceremony_reception.jpeg",
@@ -146,8 +153,17 @@ export const PriceList = () => {
       <p>Just send me an email with your wedding or event details and I'll happily send over a free quote for you!</p>
       <p>I always aim to respond to all enquiries within 48 hours. </p>
       <p></p>
+      <StyledPackagesHeaders>Individual Packages</StyledPackagesHeaders>
       <StyledWeddingContainer width={width}>
-        {packages.map((p, i) => (
+        {individualPackages.map((p, i) => (
+          <StyledPackage key={i} width={width}>
+            <StyledImg src={p.img} alt={p.name} />
+          </StyledPackage>
+        ))}
+      </StyledWeddingContainer>
+      <StyledPackagesHeaders>Combination Packages</StyledPackagesHeaders>
+      <StyledWeddingContainer width={width}>
+        {combinedPackages.map((p, i) => (
           <StyledPackage key={i} width={width}>
             <StyledImg src={p.img} alt={p.name} />
           </StyledPackage>
