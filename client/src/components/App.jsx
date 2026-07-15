@@ -3,6 +3,7 @@ import Header from "./Header.jsx";
 import Body from "./Body.jsx";
 import Footer from "./Footer.jsx";
 import { useWindowDimensions } from "../hooks.js";
+import { Analytics } from "@vercel/analytics/react";
 import styled from "styled-components";
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <Container width={width}>
+      <Analytics />
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Body currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Footer />
